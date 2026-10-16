@@ -1,0 +1,1630 @@
+category	text
+saludo	Buenos días, {NOMBRE}. ¿En qué le puedo ayudar?
+saludo	Buenas tardes, gracias por comunicarse con nosotros.
+saludo	Buenas noches, {NOMBRE}. Con mucho gusto le atiendo.
+saludo	Hola, {NOMBRE}. Bienvenido a nuestro canal de atención.
+saludo	Hola, buenos días. Mi nombre es {NOMBRE} y estaré atendiendo su solicitud.
+saludo	Buenas tardes, {NOMBRE}. ¿Cómo está?
+saludo	Buenos días. Gracias por escribirnos, ¿en qué le puedo colaborar?
+saludo	Hola, {NOMBRE}, un gusto saludarle.
+saludo	Buenas tardes. Con gusto le colaboro con su solicitud.
+saludo	Buenos días, ¿cómo le va? Cuénteme en qué le puedo ayudar hoy.
+saludo	Hola, bienvenida a nuestro servicio al cliente.
+saludo	Buenas noches. Gracias por contactarnos, estamos para servirle.
+saludo	Buenos días, señor {NOMBRE}. ¿En qué le puedo servir?
+saludo	Buenas tardes, señora {NOMBRE}. Es un gusto atenderla.
+saludo	Hola, {NOMBRE}. Gracias por su paciencia, ya estoy revisando su caso.
+saludo	Buenos días. Le saluda {NOMBRE}, del equipo de atención al cliente.
+saludo	Hola, ¿cómo está? Estoy aquí para ayudarle.
+saludo	Buenas tardes, gracias por elegirnos. ¿Qué necesita hoy?
+saludo	Buenos días, don {NOMBRE}. Con mucho gusto le ayudo.
+saludo	Buenas tardes, doña {NOMBRE}. ¿En qué le puedo colaborar?
+saludo	Hola, buenas noches. Cuénteme, ¿qué inquietud tiene?
+saludo	Buenos días, {NOMBRE}. Gracias por esperar en línea.
+saludo	Hola, {NOMBRE}. Recibimos su mensaje y con gusto le respondemos.
+saludo	Buenas tardes. Bienvenido, ¿en qué le podemos ayudar?
+saludo	Buenos días. Espero que se encuentre muy bien.
+saludo	Hola, {NOMBRE}. Espero que esté teniendo un buen día.
+saludo	Buenas tardes, {NOMBRE}. Gracias por comunicarse de nuevo con nosotros.
+saludo	Buenos días, ¿con quién tengo el gusto de hablar?
+saludo	Hola, buenas tardes. ¿Me regala su nombre, por favor?
+saludo	Buenas noches, {NOMBRE}. Estoy a su disposición.
+saludo	Buenos días. Le damos la bienvenida a nuestro chat de servicio.
+saludo	Hola, {NOMBRE}, qué gusto tenerle de nuevo por aquí.
+saludo	Buenas tardes, ¿en qué le puedo ser útil?
+saludo	Buenos días, {NOMBRE}. Con gusto revisamos su solicitud.
+saludo	Hola. Gracias por escribirnos, en un momento le atiendo.
+saludo	Buenas tardes. Mi nombre es {NOMBRE}, ¿con quién tengo el gusto?
+saludo	Buenos días, gracias por contactarnos. ¿Cómo le puedo ayudar?
+saludo	Hola, {NOMBRE}. Bienvenido, cuénteme su caso con tranquilidad.
+saludo	Buenas noches. Gracias por comunicarse a nuestra línea de atención.
+saludo	Buenos días, {NOMBRE}. Ya tengo su caso en pantalla.
+saludo	Hola, buenas. ¿En qué le puedo orientar?
+saludo	Buenas tardes, {NOMBRE}. Gracias por confiar en nosotros.
+saludo	Buenos días. Estamos felices de atenderle.
+saludo	Hola, {NOMBRE}. ¿Cómo ha estado?
+saludo	Buenas tardes. Le habla {NOMBRE}, ¿en qué le colaboro?
+saludo	Buenos días, gracias por su mensaje. Con gusto le ayudo.
+saludo	Hola, {NOMBRE}. Gracias por esperar, ya estoy con usted.
+saludo	Buenas tardes, bienvenido. Cuénteme qué necesita.
+saludo	Buenos días, {NOMBRE}. ¿Qué tal su día?
+saludo	Hola, buenos días. Con mucho gusto atiendo su consulta.
+saludo	Buenas noches, bienvenida. ¿En qué le puedo ayudar esta noche?
+saludo	Buenos días. Gracias por comunicarse con el área de servicio al cliente.
+saludo	Hola, {NOMBRE}. Estoy revisando la información que nos envió.
+saludo	Buenas tardes, {NOMBRE}. Le saludo cordialmente.
+saludo	Buenos días, reciba un cordial saludo.
+saludo	Hola, {NOMBRE}. Reciba un cordial saludo de parte de todo el equipo.
+saludo	Buenas tardes. Es un placer atenderle.
+saludo	Buenos días, {NOMBRE}. Un placer saludarle.
+saludo	Hola, ¿qué tal? Gracias por escribirnos.
+saludo	Buenas tardes, {NOMBRE}. Gracias por su mensaje, ya le colaboro.
+saludo	Buenos días. Para nosotros es un gusto atenderle.
+saludo	Hola, {NOMBRE}. Le doy la bienvenida a nuestro servicio de atención.
+saludo	Buenas noches, {NOMBRE}. ¿Cómo le podemos ayudar?
+saludo	Buenos días, señor. Cuénteme en qué le puedo colaborar.
+saludo	Buenas tardes, señora. ¿En qué le puedo servir hoy?
+saludo	Hola. Mi nombre es {NOMBRE} y le voy a acompañar en este proceso.
+saludo	Buenos días, {NOMBRE}. Gracias por contactarnos tan temprano.
+saludo	Buenas tardes. Gracias por comunicarse, ¿cuál es el motivo de su contacto?
+saludo	Hola, {NOMBRE}. ¿En qué le podemos colaborar el día de hoy?
+saludo	Buenos días. ¿Me podría indicar en qué le puedo ayudar?
+saludo	Buenas tardes, {NOMBRE}. Con mucho gusto le atiendo en este momento.
+saludo	Hola, buenas tardes. Gracias por su paciencia.
+saludo	Buenos días, {NOMBRE}. Gracias por volver a escribirnos.
+saludo	Buenas noches. Estamos atentos a su solicitud.
+saludo	Hola, {NOMBRE}. Gracias por comunicarse, ¿todo bien?
+saludo	Buenos días. Será un gusto ayudarle con su inquietud.
+saludo	Buenas tardes, ¿cómo está? Espero que muy bien.
+saludo	Hola, {NOMBRE}. Bienvenido nuevamente.
+saludo	Buenos días, ¿qué tal? Cuénteme su inquietud.
+saludo	Buenas tardes, {NOMBRE}. Ya me encuentro revisando su solicitud.
+saludo	Hola, buenos días. ¿Con quién tengo el gusto?
+saludo	Buenas noches, {NOMBRE}. Gracias por esperar nuestra respuesta.
+saludo	Buenos días, {NOMBRE}. Le escribo para darle respuesta a su solicitud.
+saludo	Hola, {NOMBRE}. Le escribimos para hacerle seguimiento a su caso.
+saludo	Buenas tardes. Le contactamos para darle una actualización de su solicitud.
+saludo	Buenos días, {NOMBRE}. Nos comunicamos con usted por su solicitud del {FECHA}.
+saludo	Hola, {NOMBRE}. Le escribo en respuesta a su correo.
+saludo	Buenas tardes, {NOMBRE}. Damos respuesta a su mensaje del día de ayer.
+saludo	Buenos días. Gracias por su interés en nuestros productos.
+saludo	Hola, {NOMBRE}. Gracias por su interés en nuestros servicios.
+saludo	Buenas tardes, gracias por escribirnos por este medio.
+saludo	Buenos días, {NOMBRE}. Gracias por usar nuestro chat.
+saludo	Hola, buenas noches. Ya le atiendo.
+saludo	Buenas tardes. Bienvenido a la línea de atención, habla {NOMBRE}.
+saludo	Buenos días, ¿cómo amaneció?
+saludo	Hola, {NOMBRE}. ¡Qué gusto saludarle!
+saludo	Buenas tardes, {NOMBRE}. ¡Bienvenido!
+saludo	Buenos días. ¡Gracias por comunicarse con nosotros!
+saludo	Hola, {NOMBRE}. ¡Buenos días! ¿En qué le ayudo?
+saludo	Buenas noches. ¡Con gusto le atendemos!
+saludo	Buenos días, {NOMBRE}. Cuénteme, ¿qué le sucedió?
+saludo	Hola, {NOMBRE}. Gracias por esperar, ¿en qué estábamos?
+saludo	Buenas tardes. Le saluda el equipo de servicio al cliente.
+saludo	Buenos días, {NOMBRE}. Me alegra poder ayudarle hoy.
+saludo	Hola, buenas tardes, {NOMBRE}. Cuénteme qué inconveniente presenta.
+saludo	Buenas tardes. ¿Qué inconveniente tiene, por favor?
+saludo	Buenos días, {NOMBRE}. Con gusto le colaboro con su pedido.
+saludo	Hola, {NOMBRE}. Con gusto le colaboro con su factura.
+saludo	Buenas tardes, {NOMBRE}. Con mucho gusto le colaboro con su cuenta.
+saludo	Buenos días. Gracias por comunicarse, soy {NOMBRE}, ¿en qué le ayudo?
+saludo	Hola, ¿cómo está, {NOMBRE}? Espero que bien.
+saludo	Buenas noches, {NOMBRE}. Lamento la espera, ya le atiendo.
+saludo	Buenos días. Agradecemos que se haya comunicado con nosotros.
+saludo	Hola, {NOMBRE}. Agradecemos su mensaje y su paciencia.
+saludo	Buenas tardes, gracias por preferirnos.
+saludo	Buenos días, {NOMBRE}. Gracias por preferirnos siempre.
+saludo	Hola, {NOMBRE}. Es un gusto volver a atenderle.
+saludo	Buenas tardes, ¿me regala un momento mientras reviso su información?
+saludo	Buenos días, {NOMBRE}. Por favor, cuénteme cómo le puedo ayudar.
+saludo	Hola. Para poder ayudarle, ¿me regala su nombre completo?
+saludo	Buenas tardes, {NOMBRE}. Gracias por la información que nos compartió.
+saludo	Buenos días, ¿en qué le podemos servir?
+saludo	Hola, {NOMBRE}. Le atiende {NOMBRE}, con mucho gusto.
+saludo	Buenas noches, bienvenido a nuestro servicio de soporte.
+saludo	Buenos días, {NOMBRE}. Bienvenido a soporte técnico.
+saludo	Hola, buenas tardes. Bienvenida a soporte técnico, ¿qué le sucede?
+saludo	Buenas tardes, {NOMBRE}. Gracias por reportar el inconveniente.
+saludo	Buenos días. Gracias por informarnos, con gusto le ayudamos.
+saludo	Hola, {NOMBRE}. Gracias por avisarnos.
+saludo	Buenas tardes, {NOMBRE}. ¿Qué tal todo?
+saludo	Buenos días, {NOMBRE}. Le saludo y quedo atento a su solicitud.
+saludo	Hola, {NOMBRE}. Estoy listo para ayudarle.
+saludo	Buenas tardes. Estoy lista para ayudarle, cuénteme.
+saludo	Buenos días, {NOMBRE}. Bienvenido al canal de chat de servicio al cliente.
+saludo	Hola, {NOMBRE}. Gracias por escribirnos por el chat.
+saludo	Buenas tardes. Gracias por escribirnos a través de nuestra página web.
+saludo	Buenos días, {NOMBRE}. Recibimos su solicitud a través del formulario.
+saludo	Hola, {NOMBRE}. Hemos recibido su correo y lo estamos revisando.
+saludo	Buenas tardes. Le confirmamos que recibimos su mensaje.
+saludo	Buenos días, {NOMBRE}. Ya recibimos su solicitud y la estamos gestionando.
+saludo	Hola, buenas. ¿Me confirma su nombre, por favor?
+saludo	Buenas tardes, {NOMBRE}. Gracias, ya tengo su información.
+saludo	Buenos días. ¿En qué le puedo ayudar el día de hoy?
+saludo	Hola, {NOMBRE}. Muy buenos días.
+saludo	Muy buenas tardes, {NOMBRE}. ¿Cómo le puedo ayudar?
+saludo	Muy buenas noches. Gracias por comunicarse con nosotros.
+saludo	Muy buenos días, {NOMBRE}. Bienvenido.
+saludo	Hola, {NOMBRE}. Muy buenas tardes, ¿en qué le colaboro?
+saludo	Buenas tardes. Con gusto, cuénteme.
+saludo	Buenos días, {NOMBRE}. A la orden, ¿qué necesita?
+saludo	Hola, {NOMBRE}. A la orden para lo que necesite.
+saludo	Buenas tardes, a la orden. ¿En qué le ayudo?
+saludo	Buenos días, siga, con mucho gusto le atiendo.
+saludo	Hola, {NOMBRE}. Gracias por llamar, ¿en qué le puedo ayudar?
+saludo	Buenas tardes, gracias por llamar a nuestra línea de servicio.
+saludo	Buenos días, {NOMBRE}. Gracias por su llamada.
+saludo	Buenos días, {NOMBRE}. Gracias por comunicarse con nosotros. Vi que nos escribió por su pedido, ¿me confirma el número, por favor?
+saludo	Buenas tardes, {NOMBRE}. Le saluda {NOMBRE}, del área de facturación. Estoy revisando la consulta que nos dejó ayer.
+saludo	Hola, {NOMBRE}. Bienvenido nuevamente. Veo que tiene un caso abierto, ¿desea que lo revisemos?
+saludo	Buenas noches. Gracias por esperar, {NOMBRE}. Ya estoy con usted para ayudarle con su cuenta.
+saludo	Buenos días, {NOMBRE}. Le escribimos para confirmar la entrega programada para mañana.
+saludo	Buenas tardes, {NOMBRE}. Le contacto para darle respuesta a su solicitud de reembolso.
+saludo	Hola, buenos días. Gracias por comunicarse con soporte técnico, mi nombre es {NOMBRE}.
+saludo	Buenas tardes. Con gusto le atiendo, por favor cuénteme qué sucedió con su servicio.
+saludo	Buenos días, {NOMBRE}. Espero que se encuentre muy bien. Le escribo con información sobre su envío.
+saludo	Hola, {NOMBRE}. Qué gusto saludarle. ¿En qué le puedo colaborar el día de hoy?
+saludo	Buenas tardes, {NOMBRE}. Recibimos su queja y queremos darle una solución lo antes posible.
+saludo	Buenos días. Le damos la bienvenida, {NOMBRE}. Su solicitud ya fue asignada a un asesor.
+saludo	Hola, buenas tardes. Le habla {NOMBRE}, voy a acompañarle con el cambio de su producto.
+saludo	Buenos días, {NOMBRE}. Le escribimos porque detectamos una novedad con su pedido.
+saludo	Buenas noches, {NOMBRE}. Gracias por su mensaje, mañana a primera hora revisamos su caso.
+saludo	Buenos días, {NOMBRE}. Gracias por comunicarse con nuestra línea de atención. Antes de empezar, ¿me confirma su nombre completo y su número de documento, por favor?
+saludo	Buenas tardes, {NOMBRE}. Le saluda {NOMBRE}, del equipo de servicio al cliente. Recibimos su mensaje sobre el cobro de su factura y ya estamos revisando el caso con el área encargada.
+saludo	Hola, {NOMBRE}. Muchas gracias por escribirnos. Vi que tuvo un inconveniente con la entrega de su pedido, así que voy a revisar con la transportadora qué fue lo que sucedió.
+saludo	Buenos días. Bienvenido a soporte técnico. Para ayudarle mejor, cuénteme qué equipo tiene, desde cuándo presenta la falla y si le aparece algún mensaje en la pantalla.
+saludo	Buenas noches, {NOMBRE}. Gracias por esperar en línea. Ya tengo su información en pantalla y con mucho gusto le ayudo con el cambio de su plan.
+saludo	Buenos días, {NOMBRE}. Le escribimos para hacerle seguimiento a la solicitud que radicó la semana pasada. Queremos saber si el inconveniente ya quedó solucionado.
+saludo	Hola, buenas tardes. Gracias por comunicarse con nosotros. Le cuento que en este momento estamos presentando un alto volumen de solicitudes, pero ya estoy con usted.
+saludo	Buenas tardes, {NOMBRE}. Le contactamos de parte del área de logística para coordinar la entrega de su pedido, que quedó pendiente por una novedad en la dirección.
+saludo	Buenos días, {NOMBRE}. Espero que esté muy bien. Le escribo para contarle que ya tenemos respuesta sobre la garantía de su producto.
+saludo	Hola, {NOMBRE}. Gracias por volver a comunicarse. Revisé el historial de su caso y veo que ya habló con uno de mis compañeros, así que vamos a continuar desde ahí.
+saludo	Buenas tardes, {NOMBRE}. Gracias por contactarnos. Le informo que su caso fue asignado a mí, así que de ahora en adelante seré quien le acompañe hasta que quede solucionado.
+saludo	Hola, {NOMBRE}. Bienvenido a nuestro canal de atención. Para empezar, ¿me podría contar si su consulta es sobre un pedido, una factura o su cuenta?
+disculpa	Qué pena con usted, {NOMBRE}, por los inconvenientes presentados.
+disculpa	Le pedimos una disculpa por las molestias ocasionadas.
+disculpa	Lamentamos mucho lo sucedido con su pedido.
+disculpa	Le ofrezco disculpas por la demora en nuestra respuesta.
+disculpa	Entiendo su molestia y le pido disculpas en nombre de la empresa.
+disculpa	Qué pena la espera, {NOMBRE}. Ya estoy revisando su caso.
+disculpa	Lamentamos los inconvenientes que esta situación le ha causado.
+disculpa	Le pedimos excusas por el retraso en la entrega.
+disculpa	Comprendo perfectamente su situación, y lamento lo ocurrido.
+disculpa	Disculpe la demora, estoy validando la información.
+disculpa	Qué pena con usted, no era nuestra intención causarle molestias.
+disculpa	Lamento mucho que haya tenido esta experiencia.
+disculpa	Le ofrecemos nuestras más sinceras disculpas.
+disculpa	Entiendo lo frustrante que puede ser esta situación.
+disculpa	Tiene toda la razón, y le pido disculpas por el error.
+disculpa	Lamentamos que el producto no haya llegado en buen estado.
+disculpa	Le pedimos disculpas por la confusión con su factura.
+disculpa	Qué pena, {NOMBRE}, hubo un error en el sistema.
+disculpa	Discúlpenos por la información incorrecta que le dimos.
+disculpa	Lamento que haya tenido que comunicarse varias veces.
+disculpa	Le ofrezco disculpas por el tiempo de espera en la línea.
+disculpa	Comprendo su inconformidad y vamos a darle solución.
+disculpa	Entiendo su preocupación, {NOMBRE}, y voy a ayudarle.
+disculpa	Lamentamos el cobro adicional que se generó en su cuenta.
+disculpa	Qué pena con usted por el inconveniente con el pago.
+disculpa	Le pedimos disculpas, el retraso se debió a una falla de la transportadora.
+disculpa	Disculpe las molestias, estamos trabajando para solucionarlo.
+disculpa	Lamentamos que su experiencia no haya sido la esperada.
+disculpa	Le pido mil disculpas por lo sucedido.
+disculpa	Qué pena, {NOMBRE}, tiene razón en su reclamo.
+disculpa	Lamento la confusión, permítame explicarle nuevamente.
+disculpa	Le ofrecemos disculpas por no haberle respondido a tiempo.
+disculpa	Entiendo que esta situación es incómoda, y lo lamentamos mucho.
+disculpa	Discúlpeme, me equivoqué en la información que le di.
+disculpa	Lamentamos profundamente lo ocurrido con su servicio.
+disculpa	Le pedimos excusas por la interrupción del servicio.
+disculpa	Qué pena con usted, la falla ya fue reportada al área técnica.
+disculpa	Comprendo su malestar y le aseguro que haremos lo posible por solucionarlo.
+disculpa	Lamentamos que haya recibido un producto diferente al que pidió.
+disculpa	Le pedimos disculpas por el error en la dirección de entrega.
+disculpa	Disculpe, {NOMBRE}, no fue posible procesar su solicitud a tiempo.
+disculpa	Le ofrezco una disculpa por la mala atención que recibió.
+disculpa	Lamentamos que el asesor anterior no le haya dado solución.
+disculpa	Entiendo su molestia, y quiero que sepa que su caso es prioridad para nosotros.
+disculpa	Qué pena con usted por hacerle esperar tanto.
+disculpa	Lamento informarle que hubo un retraso con su pedido.
+disculpa	Le pedimos disculpas por el doble cobro en su tarjeta.
+disculpa	Disculpe la incomodidad, ya estamos gestionando la devolución.
+disculpa	Lamentamos que la plataforma haya presentado fallas.
+disculpa	Qué pena, {NOMBRE}, el sistema estuvo caído durante la mañana.
+disculpa	Le ofrecemos disculpas por la falta de comunicación.
+disculpa	Comprendo lo importante que es para usted recibir su pedido a tiempo.
+disculpa	Lamentamos no haber cumplido con la fecha de entrega prometida.
+disculpa	Le pido disculpas por la respuesta tan demorada.
+disculpa	Entiendo perfectamente, y lamento que haya pasado por esto.
+disculpa	Disculpe, {NOMBRE}, la información que le dieron no era correcta.
+disculpa	Lamentamos el inconveniente con el acceso a su cuenta.
+disculpa	Qué pena con usted por las molestias con su contraseña.
+disculpa	Le pedimos disculpas por los mensajes repetidos que recibió.
+disculpa	Lamentamos que haya recibido correos que no solicitó.
+disculpa	Le ofrezco disculpas, el producto se agotó después de su compra.
+disculpa	Lamentamos que su pedido haya sido cancelado sin previo aviso.
+disculpa	Qué pena, {NOMBRE}, por la confusión con su devolución.
+disculpa	Entiendo que esperaba una respuesta más rápida, y lo lamento.
+disculpa	Le pedimos disculpas por el trato recibido en nuestra tienda.
+disculpa	Disculpe los inconvenientes, su caso ya fue escalado.
+disculpa	Lamentamos los errores en el cobro de su factura de {FECHA}.
+disculpa	Comprendo su frustración, {NOMBRE}, y estoy aquí para ayudarle.
+disculpa	Le pido excusas por la llamada que se cortó.
+disculpa	Qué pena con usted, se cayó la llamada.
+disculpa	Lamentamos que la garantía haya tardado tanto.
+disculpa	Le ofrecemos disculpas por no haberle informado del cambio.
+disculpa	Disculpe, no tuvimos en cuenta su solicitud anterior.
+disculpa	Lamentamos que el técnico no haya llegado a la cita programada.
+disculpa	Qué pena, {NOMBRE}, el técnico tuvo un inconveniente en la ruta.
+disculpa	Le pedimos disculpas por reprogramar su visita.
+disculpa	Entiendo su molestia por la demora en el reembolso.
+disculpa	Lamentamos que haya tenido que esperar más de lo indicado.
+disculpa	Le ofrezco disculpas por el malentendido.
+disculpa	Disculpe, {NOMBRE}, fue un error de nuestra parte.
+disculpa	Lamentamos sinceramente las molestias causadas.
+disculpa	Qué pena con usted, ya mismo le corregimos la información.
+disculpa	Le pido disculpas, voy a revisar su caso con más detalle.
+disculpa	Comprendo que no es la respuesta que esperaba, y lo lamento.
+disculpa	Lamentamos que la promoción no se haya aplicado a su compra.
+disculpa	Le pedimos disculpas, el descuento no se reflejó por un error del sistema.
+disculpa	Qué pena, {NOMBRE}, el cupón debió aplicarse automáticamente.
+disculpa	Disculpe la insistencia, solo necesitamos confirmar un dato.
+disculpa	Lamentamos tener que solicitarle nuevamente esta información.
+disculpa	Le ofrecemos disculpas por el empaque en mal estado.
+disculpa	Entiendo que el producto llegó incompleto, y lo lamento mucho.
+disculpa	Qué pena con usted, le haremos llegar la pieza faltante.
+disculpa	Lamentamos que el producto haya presentado fallas tan pronto.
+disculpa	Le pedimos disculpas por la talla equivocada.
+disculpa	Disculpe, {NOMBRE}, enviamos el color equivocado.
+disculpa	Lamentamos el inconveniente, le enviaremos el producto correcto sin costo.
+disculpa	Le pido disculpas por las molestias, y le agradezco su paciencia.
+disculpa	Comprendo, {NOMBRE}. Lamento que haya sucedido esto.
+disculpa	Qué pena la demora, el sistema está un poco lento.
+disculpa	Disculpe, {NOMBRE}, estoy teniendo dificultades para consultar su información.
+disculpa	Lamentamos que no haya podido completar su compra.
+disculpa	Le ofrecemos disculpas por el error en el valor cobrado.
+disculpa	Entiendo su inquietud, y lamento la falta de claridad en la factura.
+disculpa	Qué pena con usted, no le explicamos bien las condiciones.
+disculpa	Lamentamos que las condiciones no hayan sido claras desde el principio.
+disculpa	Le pedimos disculpas por cualquier inconveniente que esto le genere.
+disculpa	Disculpe las molestias que esto pueda ocasionarle.
+disculpa	Lamentamos informarle que no fue posible aprobar su solicitud.
+disculpa	Qué pena, {NOMBRE}, en este momento no tenemos disponibilidad.
+disculpa	Le ofrezco disculpas, no contamos con ese producto en inventario.
+disculpa	Lamentamos que el servicio no esté disponible en su ciudad.
+disculpa	Entiendo su decepción, y le pido disculpas.
+disculpa	Le pido una disculpa por no haberle devuelto la llamada.
+disculpa	Qué pena con usted, quedamos en llamarle y no lo hicimos.
+disculpa	Lamentamos no haberle informado sobre el estado de su caso.
+disculpa	Disculpe, {NOMBRE}, su solicitud quedó pendiente por un error interno.
+disculpa	Le pedimos disculpas por la experiencia tan negativa.
+disculpa	Lamentamos que se haya sentido mal atendido.
+disculpa	Comprendo su posición, y le ofrezco disculpas.
+disculpa	Qué pena, {NOMBRE}, le transfirieron al área equivocada.
+disculpa	Le ofrecemos disculpas por las transferencias entre áreas.
+disculpa	Lamentamos que haya tenido que repetir su caso varias veces.
+disculpa	Disculpe que le haga repetir la información.
+disculpa	Le pido excusas, se me pasó ese detalle.
+disculpa	Lamentamos las fallas en la aplicación.
+disculpa	Qué pena con usted, la aplicación está en mantenimiento.
+disculpa	Le pedimos disculpas por la intermitencia en el servicio.
+disculpa	Lamentamos que su pago haya sido rechazado.
+disculpa	Entiendo su preocupación por el cobro, y lo vamos a revisar de inmediato.
+disculpa	Le ofrezco disculpas por el bloqueo de su cuenta.
+disculpa	Qué pena, {NOMBRE}, su cuenta se bloqueó por seguridad.
+disculpa	Lamentamos que no haya recibido el código de verificación.
+disculpa	Disculpe, {NOMBRE}, el código pudo haber llegado a la carpeta de correo no deseado.
+disculpa	Le pedimos disculpas por los cambios en el horario de atención.
+disculpa	Lamentamos no haber podido atenderle ayer.
+disculpa	Qué pena con usted, nuestras líneas estuvieron congestionadas.
+disculpa	Le ofrecemos disculpas por la alta demanda de solicitudes.
+disculpa	Comprendo lo urgente de su caso, {NOMBRE}.
+disculpa	Lamento mucho la situación, voy a hacer todo lo posible por ayudarle.
+disculpa	Le pido disculpas y le agradezco por informarnos.
+disculpa	Qué pena, gracias por hacérnoslo saber.
+disculpa	Lamentamos las molestias, y valoramos mucho sus comentarios.
+disculpa	Disculpe, {NOMBRE}, tomaremos en cuenta su sugerencia.
+disculpa	Le pedimos disculpas, ya corregimos el error.
+disculpa	Lamentamos el error, ya fue solucionado.
+disculpa	Qué pena con usted, ya quedó corregido.
+disculpa	Le ofrezco disculpas nuevamente por todo lo ocurrido.
+disculpa	Una vez más, le pedimos disculpas por las molestias.
+disculpa	Nuevamente, qué pena con usted por la espera.
+disculpa	De nuevo, lamentamos los inconvenientes ocasionados.
+disculpa	Le reitero nuestras disculpas, {NOMBRE}.
+disculpa	Discúlpenos, {NOMBRE}, y gracias por su comprensión.
+disculpa	Le agradecemos su comprensión y le pedimos disculpas por la demora.
+disculpa	Lamentamos lo sucedido y agradecemos su paciencia.
+disculpa	Le pido disculpas y le agradezco su tiempo.
+disculpa	Qué pena con usted, {NOMBRE}. Revisé su caso y efectivamente hubo un error en el despacho. Ya lo estamos corrigiendo.
+disculpa	Lamentamos mucho la demora en la entrega. La transportadora tuvo inconvenientes en la ruta, pero su pedido llegará mañana.
+disculpa	Le pido disculpas por la confusión. La información correcta es que el reembolso tarda hasta diez días hábiles.
+disculpa	Entiendo su molestia, {NOMBRE}. Le pido disculpas y le confirmo que el cobro duplicado será reversado.
+disculpa	Qué pena la espera tan larga. Tuvimos un alto volumen de solicitudes, pero ya le estoy atendiendo.
+disculpa	Lamentamos que el producto haya llegado con daños. Le enviaremos uno nuevo sin ningún costo.
+disculpa	Le ofrezco disculpas por el inconveniente con su contraseña. Ya le envié un nuevo enlace para restablecerla.
+disculpa	Comprendo lo que me dice, {NOMBRE}, y tiene toda la razón. Vamos a solucionar su caso hoy mismo.
+disculpa	Qué pena con usted por las llamadas repetidas. Ya actualizamos su información para que no vuelva a suceder.
+disculpa	Lamento que haya tenido que esperar tanto por una respuesta. Su caso ya fue escalado con prioridad alta.
+disculpa	Le pedimos disculpas por la falla en la aplicación. Nuestro equipo técnico ya la está solucionando.
+disculpa	Entiendo su frustración, {NOMBRE}. Le pido disculpas y le explico qué vamos a hacer para solucionarlo.
+disculpa	Qué pena, {NOMBRE}, el técnico no pudo asistir a la cita. ¿Le parece bien si la reprogramamos para mañana?
+disculpa	Lamentamos que el descuento no se haya aplicado. Le haremos la devolución de la diferencia a su tarjeta.
+disculpa	Le pido disculpas, {NOMBRE}. Me equivoqué al darle la fecha de entrega, la fecha correcta es el {FECHA}.
+disculpa	Qué pena con usted, {NOMBRE}. Revisé su caso y veo que le dimos una información equivocada sobre el plazo del reembolso. El plazo correcto es de diez días hábiles a partir de hoy.
+disculpa	Lamentamos mucho lo sucedido con su pedido. Entendemos que es muy incómodo recibir un producto en mal estado, por eso le enviaremos uno nuevo sin ningún costo adicional.
+disculpa	Le pido disculpas por la demora en nuestra respuesta. Su caso requería una revisión con el área técnica, y ya tenemos una solución para usted.
+disculpa	Entiendo perfectamente su molestia, {NOMBRE}. No es la experiencia que queremos que tengan nuestros clientes, y le aseguro que vamos a solucionarlo hoy mismo.
+disculpa	Qué pena la espera, {NOMBRE}. El sistema estuvo presentando lentitud durante la mañana, pero ya pude consultar la información de su cuenta.
+disculpa	Lamentamos que el técnico no haya llegado en el horario acordado. Ya hablé con el área de visitas y le confirmo que mañana será el primero en la ruta.
+disculpa	Le ofrecemos disculpas por el cobro adicional en su factura. Fue un error en la liquidación, y el valor será descontado en su próximo periodo de facturación.
+disculpa	Comprendo su frustración, {NOMBRE}. Ha tenido que comunicarse varias veces por el mismo caso, y eso no debió pasar. Voy a hacerme cargo personalmente de su solicitud.
+disculpa	Qué pena con usted por el inconveniente con el pago. La plataforma presentó una falla temporal, pero ya está funcionando y puede intentar de nuevo.
+disculpa	Lamentamos que no haya podido ingresar a su cuenta. Ya restablecimos el acceso y le enviamos un correo con las instrucciones para crear una nueva contraseña.
+disculpa	Le pido disculpas, {NOMBRE}. Revisé la grabación de la llamada anterior y efectivamente no le dieron la información completa. Permítame explicarle cómo funciona el proceso.
+disculpa	Qué pena con usted, {NOMBRE}. El cupón no se aplicó por una falla en la página, pero ya le hicimos la devolución de la diferencia, que verá reflejada en su tarjeta en unos días.
+pregunta	¿Me regala su número de documento, por favor?
+pregunta	¿Me podría indicar el número de su pedido?
+pregunta	¿En qué le puedo ayudar?
+pregunta	¿En qué más le puedo colaborar?
+pregunta	¿Me confirma su correo electrónico registrado?
+pregunta	¿Me podría regalar su número de celular?
+pregunta	¿Desde qué fecha presenta el inconveniente?
+pregunta	¿Me puede enviar una foto del producto?
+pregunta	¿El producto presenta algún daño visible?
+pregunta	¿Me confirma la dirección de entrega, por favor?
+pregunta	¿Ya intentó reiniciar el equipo?
+pregunta	¿Le aparece algún mensaje de error en la pantalla?
+pregunta	¿Me podría describir con más detalle lo que sucede?
+pregunta	¿Cuál es el motivo de su solicitud?
+pregunta	¿Con qué medio de pago realizó la compra?
+pregunta	¿Recuerda la fecha aproximada de la compra?
+pregunta	¿Tiene a la mano el número de la factura?
+pregunta	¿Me confirma su nombre completo, por favor?
+pregunta	¿Usted es el titular de la cuenta?
+pregunta	¿Me autoriza a revisar la información de su cuenta?
+pregunta	¿Desea que le enviemos la información a su correo?
+pregunta	¿Prefiere que le contactemos por llamada o por correo?
+pregunta	¿A qué hora le queda más fácil que le llamemos?
+pregunta	¿Le parece bien si le llamamos mañana en la mañana?
+pregunta	¿Desea continuar con la solicitud?
+pregunta	¿Está de acuerdo con la solución que le proponemos?
+pregunta	¿Quiere que le explique el proceso paso a paso?
+pregunta	¿Pudo realizar el procedimiento que le indiqué?
+pregunta	¿Le funcionó la solución?
+pregunta	¿Ya le llegó el correo de confirmación?
+pregunta	¿Recibió el código de verificación en su celular?
+pregunta	¿El inconveniente se presenta en el computador o en el celular?
+pregunta	¿Qué navegador está utilizando?
+pregunta	¿Desde qué dispositivo intenta ingresar?
+pregunta	¿Me confirma si el pago aparece debitado en su cuenta bancaria?
+pregunta	¿Cuántas unidades desea pedir?
+pregunta	¿Qué talla necesita?
+pregunta	¿En qué color lo prefiere?
+pregunta	¿Desea agregar algún otro producto a su pedido?
+pregunta	¿Desea que le enviemos el pedido a la misma dirección?
+pregunta	¿Alguien estará en la dirección para recibir el pedido?
+pregunta	¿Me indica un punto de referencia para la entrega?
+pregunta	¿En qué ciudad se encuentra?
+pregunta	¿Me confirma el barrio, por favor?
+pregunta	¿Desea solicitar el cambio o la devolución del dinero?
+pregunta	¿Prefiere el reembolso a la tarjeta o un saldo a favor?
+pregunta	¿El producto se encuentra en su empaque original?
+pregunta	¿Conserva la factura de compra?
+pregunta	¿Me podría enviar el comprobante de pago?
+pregunta	¿Me envía una captura de pantalla del error, por favor?
+pregunta	¿Hace cuánto tiempo tiene el producto?
+pregunta	¿El producto tiene garantía vigente?
+pregunta	¿Le han realizado alguna reparación anteriormente?
+pregunta	¿Desea programar la visita técnica?
+pregunta	¿Qué día le queda mejor para la visita del técnico?
+pregunta	¿Prefiere la visita en la mañana o en la tarde?
+pregunta	¿Me confirma un número de contacto alterno?
+pregunta	¿Desea actualizar sus datos de contacto?
+pregunta	¿Su correo sigue siendo {CORREO}?
+pregunta	¿Su número de contacto sigue siendo {TELEFONO}?
+pregunta	¿La dirección {DIRECCION} es correcta?
+pregunta	¿El pedido {NUMERO_PEDIDO} es el que presenta el inconveniente?
+pregunta	¿Me confirma si la compra fue por {VALOR}?
+pregunta	¿El cobro que no reconoce es por {VALOR}?
+pregunta	¿La transacción se realizó el {FECHA}?
+pregunta	¿Me regala un momento mientras verifico la información?
+pregunta	¿Me permite ponerle en espera unos minutos?
+pregunta	¿Sigue en línea, {NOMBRE}?
+pregunta	¿Me escucha bien?
+pregunta	¿Pudo leer la información que le envié?
+pregunta	¿Tiene alguna otra inquietud?
+pregunta	¿Hay algo más en lo que le pueda ayudar?
+pregunta	¿Le quedó clara la información?
+pregunta	¿Tiene alguna pregunta adicional?
+pregunta	¿Desea que le envíe el enlace de pago?
+pregunta	¿Desea pagar en efectivo o con tarjeta?
+pregunta	¿Cuántas cuotas desea diferir el pago?
+pregunta	¿Desea recibir la factura electrónica en su correo?
+pregunta	¿La factura debe salir a nombre de una empresa?
+pregunta	¿Me regala el NIT de la empresa?
+pregunta	¿Me confirma la razón social para la factura?
+pregunta	¿Desea cancelar el pedido?
+pregunta	¿Está seguro de que desea cancelar la suscripción?
+pregunta	¿Me podría contar por qué desea cancelar el servicio?
+pregunta	¿Le gustaría conocer nuestras promociones vigentes?
+pregunta	¿Desea que le inscribamos en el programa de beneficios?
+pregunta	¿Autoriza el tratamiento de sus datos personales?
+pregunta	¿Acepta los términos y condiciones del servicio?
+pregunta	¿Cómo nos conoció?
+pregunta	¿Cómo calificaría la atención recibida?
+pregunta	¿Recomendaría nuestro servicio a un familiar o amigo?
+pregunta	¿Qué podríamos mejorar en nuestra atención?
+pregunta	¿Me podría indicar el modelo del equipo?
+pregunta	¿Me regala el número de serie del producto?
+pregunta	¿El equipo enciende?
+pregunta	¿El indicador de luz está encendido?
+pregunta	¿Ya revisó que el cable esté bien conectado?
+pregunta	¿Probó con otro tomacorriente?
+pregunta	¿Desde cuándo no tiene servicio?
+pregunta	¿Otros usuarios en su casa tienen el mismo problema?
+pregunta	¿Ha cambiado recientemente su contraseña?
+pregunta	¿Recuerda el usuario con el que se registró?
+pregunta	¿Desea que le enviemos un enlace para restablecer su contraseña?
+pregunta	¿Tiene acceso al correo electrónico registrado?
+pregunta	¿Puede revisar la carpeta de correo no deseado?
+pregunta	¿Le llegó el mensaje de texto?
+pregunta	¿Desea que le reenviemos el código?
+pregunta	¿Me confirma los últimos cuatro dígitos de la tarjeta?
+pregunta	¿La tarjeta está a su nombre?
+pregunta	¿El pago lo realizó por PSE?
+pregunta	¿Le apareció algún mensaje después de pagar?
+pregunta	¿Le descontaron el dinero de su cuenta?
+pregunta	¿Cuál es el estado que le aparece en el pedido?
+pregunta	¿Desea que le comparta el número de guía?
+pregunta	¿Ya revisó el estado del envío en la página de la transportadora?
+pregunta	¿Recibió alguna llamada de la transportadora?
+pregunta	¿Le dejaron algún aviso de visita?
+pregunta	¿Prefiere recoger el pedido en el punto de atención?
+pregunta	¿Le queda cerca alguno de nuestros puntos físicos?
+pregunta	¿Desea agendar una cita en el punto de atención?
+pregunta	¿A nombre de quién quedó registrada la compra?
+pregunta	¿Fue usted quien realizó la compra?
+pregunta	¿La compra la hizo por la página web o en la tienda?
+pregunta	¿Tiene el código del cupón que intentó usar?
+pregunta	¿Qué mensaje le aparece al aplicar el cupón?
+pregunta	¿Me confirma qué producto desea cambiar?
+pregunta	¿Por cuál producto lo desea cambiar?
+pregunta	¿Desea que le avisemos cuando el producto esté disponible?
+pregunta	¿Le parece bien esta alternativa?
+pregunta	¿Me confirma si está de acuerdo para continuar?
+pregunta	¿Me da su autorización para realizar el cambio?
+pregunta	¿Le puedo ayudar con algo más el día de hoy?
+pregunta	¿Qué otra inquietud tiene, {NOMBRE}?
+pregunta	¿Me podría repetir el número, por favor?
+pregunta	¿Me deletrea su correo, por favor?
+pregunta	¿Me confirma si su correo termina en punto com?
+pregunta	¿Cómo prefiere que le llamemos?
+pregunta	¿Habla con el titular del servicio?
+pregunta	¿Me podría comunicar con el titular de la cuenta?
+pregunta	¿Cuál es su relación con el titular?
+pregunta	¿Tiene una autorización firmada por el titular?
+pregunta	¿Desea dejar una observación en su caso?
+pregunta	¿Quiere que le deje el número de radicado?
+pregunta	¿Ya tiene un número de radicado de su solicitud anterior?
+pregunta	¿Me regala el número de radicado, por favor?
+pregunta	¿Desea presentar una queja formal?
+pregunta	¿Desea que escale su caso al área encargada?
+pregunta	¿Le parece si le doy respuesta en un plazo de tres días hábiles?
+pregunta	¿Cuándo intentó ingresar por última vez?
+pregunta	¿Me podría indicar qué opción seleccionó?
+pregunta	¿En qué paso del proceso se encuentra?
+pregunta	¿Hasta qué paso logró avanzar?
+pregunta	¿Le aparece el botón de confirmar?
+pregunta	¿Ya actualizó la aplicación a la última versión?
+pregunta	¿Tiene suficiente espacio en el celular?
+pregunta	¿Está conectado a una red wifi?
+pregunta	¿Puede intentar desde otro navegador?
+pregunta	¿Ya borró el historial y las cookies del navegador?
+pregunta	¿Le funcionó al cerrar sesión e ingresar de nuevo?
+pregunta	¿Cuál es el horario en el que puede recibir el pedido?
+pregunta	¿Desea que le enviemos el producto por envío express?
+pregunta	¿Está de acuerdo con el valor del envío?
+pregunta	¿Desea que le explique cómo se calcula el envío?
+pregunta	¿Me confirma el número del documento que aparece en la factura?
+pregunta	¿Se comunicó anteriormente por este mismo caso?
+pregunta	¿Con quién habló la última vez?
+pregunta	¿Qué le indicaron en la llamada anterior?
+pregunta	Para poder ayudarle, ¿me regala el número de su pedido y el correo con el que hizo la compra?
+pregunta	¿Me podría confirmar si el producto llegó con todos sus accesorios? Así sabremos qué debemos enviarle.
+pregunta	¿El inconveniente se presenta siempre o solo en algunas ocasiones? Esa información nos ayuda con el diagnóstico.
+pregunta	Antes de continuar, ¿me confirma si usted es el titular de la cuenta?
+pregunta	¿Me regala una foto de la etiqueta del paquete? Con ella podemos validar la guía.
+pregunta	¿Ya intentó apagar y encender el equipo? Si no ha funcionado, le indico otro procedimiento.
+pregunta	¿Desea que le enviemos el producto de reemplazo a la misma dirección o a una diferente?
+pregunta	¿Prefiere que le devolvamos el dinero o que le enviemos un producto nuevo?
+pregunta	¿Me confirma si el cobro que no reconoce aparece en su tarjeta débito o en la de crédito?
+pregunta	¿Le parece si le llamo en quince minutos para confirmar que el servicio quedó funcionando?
+pregunta	¿Me podría indicar en qué fecha realizó el pago? Así lo puedo ubicar más rápido.
+pregunta	¿Tiene el número de radicado de la solicitud anterior? Con él puedo revisar el historial.
+pregunta	¿Qué mensaje le aparece cuando intenta pagar? Si puede, envíeme una captura de pantalla.
+pregunta	¿Me confirma un horario en el que haya alguien en casa para recibir al técnico?
+pregunta	¿Me autoriza a enviarle la información de su caso al correo registrado?
+pregunta	Para poder revisar su caso, ¿me podría confirmar el número del pedido, la fecha de la compra y el correo electrónico con el que se registró?
+pregunta	¿Me podría contar con más detalle qué sucede cuando intenta pagar? Por ejemplo, si le aparece algún mensaje de error o si la página se cierra.
+pregunta	¿El producto presenta algún golpe o daño visible? Si es así, le agradecería que me enviara una foto del producto y otra del empaque.
+pregunta	¿Me confirma si desea que le devolvamos el dinero a la misma tarjeta con la que pagó, o si prefiere que quede como saldo a favor para una próxima compra?
+pregunta	¿En qué horario le queda más fácil recibir la visita del técnico? Tenemos disponibilidad en la mañana, entre ocho y doce, o en la tarde, entre dos y seis.
+pregunta	¿Ya revisó si el código de verificación le llegó a la carpeta de correo no deseado? A veces los mensajes automáticos terminan allí.
+pregunta	¿Me regala un número de contacto alterno? Así, si la transportadora no logra comunicarse con usted, puede intentar con ese número.
+pregunta	¿Me confirma si el cobro que no reconoce es el que aparece el {FECHA} por un valor de {VALOR}? Con esa información puedo ubicar la transacción.
+pregunta	¿Usted es el titular de la cuenta o está realizando la gestión en nombre de otra persona? Le pregunto porque algunos trámites solo los puede hacer el titular.
+pregunta	¿Desea que le explique paso a paso cómo realizar el cambio desde la página web, o prefiere que lo hagamos juntos por este medio?
+pregunta	¿Me confirma si el equipo presenta la falla desde que lo recibió o si empezó después de algún tiempo de uso? Esa información es importante para la garantía.
+pregunta	¿Le parece bien si le envío el enlace de pago por correo? Así puede realizar el pago con calma desde su computador o desde el celular.
+pedido	Su pedido {NUMERO_PEDIDO} fue confirmado correctamente.
+pedido	Le confirmo que su pedido ya se encuentra en preparación.
+pedido	Su pedido fue recibido y está en proceso de alistamiento.
+pedido	El pedido {NUMERO_PEDIDO} se encuentra en estado pendiente de pago.
+pedido	Una vez se confirme el pago, iniciaremos el alistamiento de su pedido.
+pedido	Su compra por {VALOR} fue registrada con éxito.
+pedido	Le informamos que su pedido fue aprobado.
+pedido	El pedido quedó registrado a nombre de {NOMBRE}.
+pedido	Le enviamos el resumen de su pedido al correo {CORREO}.
+pedido	Su pedido incluye tres productos y el costo del envío.
+pedido	Revisé su pedido y todo se encuentra en orden.
+pedido	El producto que solicitó se encuentra disponible.
+pedido	Qué pena, el producto que solicitó se encuentra agotado en este momento.
+pedido	Le podemos ofrecer un producto similar con las mismas características.
+pedido	Su pedido fue cancelado según su solicitud.
+pedido	Le confirmo que la cancelación de su pedido quedó registrada.
+pedido	El reembolso de su pedido cancelado se verá reflejado en los próximos días hábiles.
+pedido	No es posible modificar el pedido porque ya fue despachado.
+pedido	Aún podemos modificar su pedido, ya que no ha sido despachado.
+pedido	Con gusto le agrego el producto a su pedido.
+pedido	Le retiré el producto del pedido como lo solicitó.
+pedido	El nuevo valor de su pedido es de {VALOR}.
+pedido	Su pedido tiene un descuento aplicado de {VALOR}.
+pedido	El cupón fue aplicado correctamente a su pedido.
+pedido	El cupón no aplica para los productos de su pedido.
+pedido	El cupón ya se encuentra vencido.
+pedido	Su pedido cumple con el valor mínimo para envío gratis.
+pedido	Le faltan {VALOR} para obtener el envío gratis.
+pedido	Para realizar su pedido, ingrese a nuestra página web y agregue los productos al carrito.
+pedido	Puede hacer su pedido por la página web o en cualquiera de nuestras tiendas.
+pedido	Le comparto el enlace para que realice su pedido.
+pedido	Una vez realice el pago, le llegará un correo con la confirmación.
+pedido	Su pedido quedó apartado por veinticuatro horas.
+pedido	El pedido se encuentra en revisión por parte de nuestra área de seguridad.
+pedido	Su pedido está retenido mientras validamos la información del pago.
+pedido	Le confirmamos que la validación fue exitosa y su pedido continúa el proceso.
+pedido	El pedido {NUMERO_PEDIDO} ya fue facturado.
+pedido	El pedido se dividió en dos envíos porque los productos salen de bodegas diferentes.
+pedido	Uno de los productos de su pedido llegará en un envío separado.
+pedido	Le informamos que parte de su pedido ya fue despachada.
+pedido	Su pedido está listo para ser recogido en el punto de atención.
+pedido	Puede recoger su pedido presentando su documento de identidad.
+pedido	Para recoger el pedido, la persona autorizada debe presentar una carta firmada.
+pedido	El pedido estará disponible en la tienda a partir del {FECHA}.
+pedido	Su pedido se mantendrá en la tienda durante quince días.
+pedido	Si no recoge el pedido en ese plazo, será cancelado automáticamente.
+pedido	El pedido tiene un tiempo estimado de preparación de dos días hábiles.
+pedido	Los productos personalizados tienen un tiempo de fabricación de diez días hábiles.
+pedido	Su pedido es de entrega inmediata.
+pedido	El producto que pidió está en preventa y se despachará el {FECHA}.
+pedido	Le avisaremos por correo cuando su pedido sea despachado.
+pedido	Le confirmo el cambio de dirección de su pedido.
+pedido	Ya actualizamos el número de contacto de su pedido.
+pedido	El pedido no se pudo procesar porque el pago fue rechazado.
+pedido	Le recomiendo intentar el pago nuevamente con otro medio.
+pedido	Su pedido quedó registrado, pero el pago aún está pendiente.
+pedido	El pago de su pedido fue aprobado.
+pedido	El pedido fue creado dos veces por error, ya cancelamos el duplicado.
+pedido	Le confirmo que solo se generó un cobro por su pedido.
+pedido	Su pedido incluye la garantía extendida.
+pedido	Puede consultar el estado de su pedido en la sección Mis pedidos.
+pedido	Para consultar su pedido, ingrese con su usuario y contraseña.
+pedido	Le comparto el detalle del pedido: dos camisetas y un pantalón.
+pedido	El pedido contiene un producto en promoción.
+pedido	La promoción aplica solo para compras realizadas hasta el {FECHA}.
+pedido	Su pedido fue enviado a la bodega para el alistamiento.
+pedido	Estamos revisando el estado de su pedido con el área de logística.
+pedido	Le doy respuesta sobre su pedido en cuanto tenga información.
+pedido	El pedido no aparece en nuestro sistema con ese número.
+pedido	¿Me confirma de nuevo el número del pedido, por favor?
+pedido	Ya encontré su pedido, permítame revisar el estado.
+pedido	Su pedido se encuentra en camino.
+pedido	El pedido ya fue entregado según nuestro sistema.
+pedido	El pedido aparece como entregado el {FECHA}.
+pedido	Si no recibió el pedido, vamos a abrir una investigación con la transportadora.
+pedido	Abrimos un caso para revisar la entrega de su pedido.
+pedido	Le confirmo que el producto faltante será enviado sin costo adicional.
+pedido	Vamos a reponer el producto de su pedido.
+pedido	El cambio de su pedido fue aprobado.
+pedido	Le enviaremos el nuevo producto una vez recibamos el anterior.
+pedido	El producto debe estar sin uso y con sus etiquetas para realizar el cambio.
+pedido	Tiene treinta días calendario para solicitar el cambio de su pedido.
+pedido	El plazo para solicitar el cambio ya venció.
+pedido	Su solicitud de devolución fue recibida.
+pedido	La devolución de su pedido fue aprobada.
+pedido	Una vez recibamos el producto, procesaremos el reembolso.
+pedido	El pedido incluye un obsequio por su compra.
+pedido	El obsequio está sujeto a disponibilidad.
+pedido	Su pedido acumuló puntos en nuestro programa de beneficios.
+pedido	Los puntos se verán reflejados en su cuenta en las próximas cuarenta y ocho horas.
+pedido	Puede usar sus puntos en su próximo pedido.
+pedido	No es posible combinar el cupón con otras promociones.
+pedido	El precio del producto cambió después de su compra, pero se respetará el valor pagado.
+pedido	El valor de su pedido se mantiene según la fecha de compra.
+pedido	Su pedido mayorista requiere una cotización previa.
+pedido	Le enviaremos la cotización a su correo en un día hábil.
+pedido	La cotización tiene una vigencia de quince días.
+pedido	Para pedidos de más de diez unidades, por favor comuníquese con el área comercial.
+pedido	El área comercial se comunicará con usted para finalizar el pedido.
+pedido	Su pedido corporativo fue aprobado.
+pedido	Le confirmamos que su pedido de suscripción se renovará el {FECHA}.
+pedido	Puede pausar su suscripción desde la sección Mi cuenta.
+pedido	La suscripción quedó cancelada y no se realizarán más cobros.
+pedido	Su próximo pedido de la suscripción llegará el {FECHA}.
+pedido	Le recordamos que su pedido está pendiente de pago.
+pedido	El enlace de pago tiene una vigencia de veinticuatro horas.
+pedido	Si ya realizó el pago, por favor omita este mensaje.
+pedido	El pedido se actualizará en cuanto el banco confirme el pago.
+pedido	El banco puede tardar hasta dos horas en confirmar el pago.
+pedido	Le enviamos un nuevo enlace de pago a su correo.
+pedido	El pedido fue reprogramado para el {FECHA}.
+pedido	Le confirmo que su pedido mantiene la fecha de entrega.
+pedido	Su pedido incluye instalación gratuita.
+pedido	El técnico se comunicará con usted para programar la instalación.
+pedido	La instalación se realiza dentro de los cinco días hábiles siguientes a la entrega.
+pedido	El pedido requiere que alguien mayor de edad lo reciba.
+pedido	Su pedido tiene un seguro incluido.
+pedido	El pedido {NUMERO_PEDIDO} fue anulado por falta de pago.
+pedido	Puede volver a realizar el pedido cuando lo desee.
+pedido	Los productos de su carrito se guardarán durante siete días.
+pedido	Le sugiero completar el pedido pronto, ya que hay pocas unidades disponibles.
+pedido	El producto volvió a estar disponible y ya puede realizar su pedido.
+pedido	Le confirmo que su pedido quedó registrado con éxito.
+pedido	Gracias por su compra, su pedido está en buenas manos.
+pedido	Gracias por su pedido, {NOMBRE}.
+pedido	Muchas gracias por su compra.
+pedido	Le agradecemos por realizar su pedido con nosotros.
+pedido	Revisaré su pedido y le daré respuesta en breve.
+pedido	Permítame un momento mientras consulto su pedido.
+pedido	Ya validé su pedido y todo está correcto.
+pedido	El pedido presenta una novedad que estamos revisando.
+pedido	La novedad de su pedido ya fue solucionada.
+pedido	El pedido se encuentra detenido por una dirección incompleta.
+pedido	Por favor, complete la dirección para continuar con su pedido.
+pedido	Su pedido se reactivó y continuará con el proceso normal.
+pedido	El pedido fue devuelto a nuestra bodega.
+pedido	Vamos a reenviar su pedido sin costo adicional.
+pedido	El reenvío de su pedido se realizará el {FECHA}.
+pedido	Le confirmaremos por correo cuando su pedido sea reenviado.
+pedido	Su pedido tiene un tiempo de entrega estimado de tres a cinco días hábiles.
+pedido	Los pedidos realizados después de las tres de la tarde se procesan al día siguiente.
+pedido	Los pedidos del fin de semana se procesan el lunes.
+pedido	Los días festivos no se procesan pedidos.
+pedido	El pedido se procesará el próximo día hábil.
+pedido	Su pedido está en la cola de despacho.
+pedido	Le informamos que su pedido presenta un retraso por alta demanda.
+pedido	El retraso de su pedido se debe a la temporada de fin de año.
+pedido	Le compartimos el número de guía de su pedido: {NUMERO_GUIA}.
+pedido	Con el número de guía puede hacer seguimiento a su pedido.
+pedido	El pedido aún no tiene número de guía asignado.
+pedido	El número de guía se asignará una vez el pedido sea despachado.
+pedido	Su pedido fue verificado y empacado.
+pedido	El pedido salió de nuestra bodega hoy.
+pedido	Su pedido llegará en el transcurso del día.
+pedido	Le recomendamos revisar el pedido al momento de recibirlo.
+pedido	Si encuentra alguna novedad con su pedido, por favor infórmenos.
+pedido	Le confirmo que su pedido {NUMERO_PEDIDO} ya fue despachado. Le llegará un correo con el número de guía.
+pedido	Revisé su pedido y uno de los productos se encuentra agotado. ¿Desea esperarlo o prefiere cambiarlo por otro?
+pedido	Su pedido está en preparación. Una vez sea despachado, le enviaremos el número de guía para el seguimiento.
+pedido	Ya realizamos el cambio de talla en su pedido. El nuevo producto saldrá de nuestra bodega mañana.
+pedido	Su pedido fue cancelado y el reembolso ya está en proceso. Le llegará en un plazo de cinco a diez días hábiles.
+pedido	Le informo que su pedido quedó registrado correctamente. El valor total es de {VALOR}, incluido el envío.
+pedido	El pedido tiene un retraso en la preparación por alta demanda. Le pedimos un poco de paciencia, saldrá esta semana.
+pedido	Para cambiar la dirección de su pedido, necesito que me confirme la nueva dirección completa.
+pedido	Su pedido llegará en dos paquetes diferentes. El primero ya está en camino y el segundo saldrá mañana.
+pedido	El cupón que utilizó ya fue aplicado. El nuevo valor de su pedido es de {VALOR}.
+pedido	Gracias por su compra, {NOMBRE}. Su pedido fue confirmado y será entregado en los próximos días hábiles.
+pedido	Revisé su pedido con el área de logística. Nos confirmaron que el despacho se realizará el {FECHA}.
+pedido	Su pedido quedó pendiente porque el pago no fue aprobado. Le enviamos un nuevo enlace para que intente de nuevo.
+pedido	El producto de su pedido ya volvió a estar disponible. Lo despacharemos en las próximas veinticuatro horas.
+pedido	Le confirmo que agregamos el producto adicional a su pedido. El valor se actualizó a {VALOR}.
+pedido	Le confirmo que su pedido {NUMERO_PEDIDO} ya fue facturado y se encuentra en alistamiento. Mañana será entregado a la transportadora y le enviaremos el número de guía por correo.
+pedido	Revisé su pedido y veo que el pago quedó pendiente de aprobación por parte del banco. En cuanto el banco lo confirme, el pedido continuará con el proceso normal.
+pedido	Su pedido incluye un producto en preventa, por eso se despachará el {FECHA}. Los demás productos saldrán esta semana en un envío separado.
+pedido	Ya cancelamos el pedido duplicado que se generó por error. Le confirmo que solo se realizará un cobro por {VALOR}, correspondiente al pedido original.
+pedido	El cambio de su producto fue aprobado. Una vez la transportadora recoja el producto anterior, le enviaremos el nuevo en un plazo de tres días hábiles.
+pedido	Lamentablemente, el producto que pidió se agotó después de su compra. Le podemos ofrecer un producto similar o la devolución completa de su dinero.
+pedido	Su pedido quedó registrado con éxito. Recibirá un correo con el resumen de la compra, el valor pagado y la fecha estimada de entrega.
+pedido	Para modificar el pedido, necesito que me confirme qué producto desea retirar y cuál desea agregar. Le recuerdo que solo podemos hacer cambios antes del despacho.
+pedido	El pedido presenta una novedad porque la dirección registrada no tiene el número de la casa. ¿Me la confirma, por favor, para continuar con el envío?
+pedido	Gracias por su compra, {NOMBRE}. Le cuento que su pedido acumuló puntos en nuestro programa de beneficios, y los podrá usar a partir de la próxima semana.
+pedido	Su pedido mayorista requiere una cotización previa. El área comercial le enviará la cotización a su correo en un día hábil, con los precios y los tiempos de entrega.
+pedido	Le informo que el pedido está retenido mientras nuestra área de seguridad valida la información del pago. Este proceso tarda máximo veinticuatro horas.
+envio	Su envío ya se encuentra en camino.
+envio	El envío llegará entre el {FECHA} y el {FECHA}.
+envio	Le comparto el número de guía para que haga seguimiento a su envío: {NUMERO_GUIA}.
+envio	El paquete se encuentra en el centro de distribución de Bogotá.
+envio	Su envío está en reparto y llegará hoy.
+envio	La transportadora intentó realizar la entrega, pero no encontró a nadie en la dirección.
+envio	La transportadora realizará un segundo intento de entrega mañana.
+envio	Puede reclamar su paquete en la oficina de la transportadora.
+envio	El paquete estará disponible en la oficina durante cinco días hábiles.
+envio	El tiempo de entrega para ciudades principales es de dos a tres días hábiles.
+envio	Para municipios y zonas rurales, el tiempo de entrega es de cinco a ocho días hábiles.
+envio	El envío a su ciudad tiene un costo de {VALOR}.
+envio	El envío es gratis para compras superiores a {VALOR}.
+envio	Su envío tiene cobertura en todo el país.
+envio	Qué pena, en este momento no tenemos cobertura en su municipio.
+envio	Le ofrecemos la opción de recoger el pedido en una oficina cercana.
+envio	El envío express llega al día siguiente hábil.
+envio	El envío express solo está disponible para Bogotá, Medellín y Cali.
+envio	El paquete salió hacia su ciudad.
+envio	El paquete llegó a la ciudad de destino.
+envio	El paquete presenta un retraso por condiciones climáticas.
+envio	El envío se retrasó por un bloqueo en la vía.
+envio	Le informamos que la entrega se reprogramó para el {FECHA}.
+envio	Hablé con la transportadora y confirmaron la entrega para mañana.
+envio	La transportadora se comunicará con usted antes de la entrega.
+envio	Por favor, esté atento a la llamada de la transportadora.
+envio	El mensajero le llamará al número {TELEFONO}.
+envio	El envío fue entregado en la portería del edificio.
+envio	El paquete fue recibido por la persona que se encontraba en la dirección.
+envio	Según la transportadora, el paquete fue entregado el {FECHA}.
+envio	Si no recibió el paquete, vamos a abrir un reclamo con la transportadora.
+envio	El reclamo con la transportadora tiene un tiempo de respuesta de tres días hábiles.
+envio	Le mantendremos informado sobre el resultado del reclamo.
+envio	La transportadora confirmó la pérdida del paquete.
+envio	Vamos a enviarle un nuevo pedido sin costo.
+envio	Le confirmo que su envío fue recuperado y será entregado pronto.
+envio	El paquete llegó con el empaque averiado.
+envio	Le recomendamos no recibir el paquete si el empaque viene abierto.
+envio	Puede dejar una observación al mensajero si el paquete llega en mal estado.
+envio	Por favor, envíenos fotos del empaque y del producto.
+envio	La dirección registrada está incompleta.
+envio	¿Me confirma la dirección completa con el número del apartamento?
+envio	Ya actualizamos la dirección de entrega de su envío.
+envio	No es posible cambiar la dirección porque el envío ya está en ruta.
+envio	El envío se puede redirigir a una oficina de la transportadora.
+envio	El envío está programado para la jornada de la mañana.
+envio	Las entregas se realizan de lunes a sábado entre las ocho de la mañana y las seis de la tarde.
+envio	Los domingos y festivos no se realizan entregas.
+envio	Su paquete pesa más de lo normal y será entregado por un vehículo especial.
+envio	Los productos grandes se entregan en el primer piso.
+envio	El servicio de subida a pisos superiores tiene un costo adicional.
+envio	El paquete requiere firma al momento de la entrega.
+envio	Por favor, tenga a la mano su documento de identidad para recibir el paquete.
+envio	El envío contraentrega debe pagarse en efectivo al mensajero.
+envio	El valor a pagar contraentrega es de {VALOR}.
+envio	El mensajero no recibe pagos con tarjeta.
+envio	El envío internacional puede tardar entre diez y quince días hábiles.
+envio	Los envíos internacionales pueden estar sujetos a impuestos de aduana.
+envio	Su paquete se encuentra en proceso de nacionalización.
+envio	El paquete fue liberado de la aduana y continúa su recorrido.
+envio	El seguimiento del envío se actualiza cada veinticuatro horas.
+envio	Es posible que el estado del envío tarde en actualizarse.
+envio	El número de guía se activará en las próximas horas.
+envio	Puede consultar el estado del envío en la página de la transportadora.
+envio	Le envío el enlace para rastrear su paquete.
+envio	El paquete está en la bodega de la transportadora.
+envio	El paquete fue asignado a un mensajero.
+envio	El mensajero tuvo una novedad y la entrega se realizará mañana.
+envio	La novedad del envío es dirección errada.
+envio	La novedad del envío es destinatario ausente.
+envio	La novedad del envío es zona de difícil acceso.
+envio	Por favor, indíquenos un punto de referencia cerca de su casa.
+envio	Le confirmamos que la transportadora ya tiene el punto de referencia.
+envio	El envío fue devuelto al remitente por no poder entregarse.
+envio	Le haremos un nuevo envío cuando nos confirme la dirección.
+envio	El costo del reenvío lo asumimos nosotros.
+envio	El reenvío tiene un costo de {VALOR}, ya que la dirección fue registrada de forma incorrecta.
+envio	Su envío fue dividido en dos paquetes.
+envio	El segundo paquete llegará en los próximos días.
+envio	Recibirá un número de guía por cada paquete.
+envio	El paquete fue entregado en otra dirección por error.
+envio	Ya estamos gestionando la recuperación del paquete con la transportadora.
+envio	El envío está asegurado por el valor total de la compra.
+envio	El seguro cubre pérdida y daños durante el transporte.
+envio	Le confirmo que el envío tiene seguimiento en tiempo real.
+envio	El envío se encuentra en tránsito.
+envio	El paquete llegará en los próximos dos días hábiles.
+envio	El paquete está detenido por una revisión de seguridad.
+envio	El envío continúa su recorrido normalmente.
+envio	Su paquete llegó a la oficina de destino.
+envio	Puede recoger el paquete en la oficina más cercana a su domicilio.
+envio	La oficina atiende de lunes a viernes de ocho de la mañana a cinco de la tarde.
+envio	El sábado la oficina atiende hasta el mediodía.
+envio	Para recoger el paquete, presente el número de guía y su documento.
+envio	Otra persona puede recoger el paquete con una autorización firmada.
+envio	El envío no ha salido de nuestra bodega.
+envio	El envío saldrá de la bodega el {FECHA}.
+envio	Le avisaremos cuando el envío salga de la bodega.
+envio	El pedido se despachó con la transportadora que tiene cobertura en su zona.
+envio	La transportadora asignada para su envío nos confirmó la recogida.
+envio	El envío se encuentra en la ruta de entrega del día.
+envio	El mensajero está cerca de su dirección.
+envio	El mensajero llegará en aproximadamente una hora.
+envio	El mensajero no pudo ingresar al conjunto.
+envio	Por favor, autorice el ingreso del mensajero en la portería.
+envio	La entrega quedó confirmada para el {FECHA} en la tarde.
+envio	La entrega fue exitosa, gracias por confiar en nosotros.
+envio	Esperamos que haya recibido su paquete en perfectas condiciones.
+envio	Si tiene algún inconveniente con la entrega, no dude en escribirnos.
+envio	El tiempo de entrega empieza a contar desde la confirmación del pago.
+envio	Los tiempos de entrega son días hábiles, sin contar sábados, domingos ni festivos.
+envio	En temporada alta los envíos pueden tardar uno o dos días más.
+envio	Le pedimos paciencia, su envío llegará en los próximos días.
+envio	El paquete viaja por vía terrestre.
+envio	El paquete viaja por vía aérea.
+envio	El envío a San Andrés tiene un tiempo de entrega diferente.
+envio	Hacemos envíos a todo el territorio nacional.
+envio	No realizamos envíos a apartados aéreos.
+envio	El envío se puede programar para una fecha específica.
+envio	La entrega programada tiene un costo adicional de {VALOR}.
+envio	El envío no incluye el servicio de instalación.
+envio	El paquete lleva el nombre del destinatario que registró en la compra.
+envio	El envío está a nombre de {NOMBRE}.
+envio	El paquete puede ser recibido por cualquier persona mayor de edad en la dirección.
+envio	El paquete fue recogido en nuestra bodega por la transportadora.
+envio	La guía {NUMERO_GUIA} aparece como entregada.
+envio	La guía {NUMERO_GUIA} presenta una novedad en la entrega.
+envio	Estamos validando con la transportadora el estado de la guía.
+envio	La transportadora nos indica que el paquete está en la ciudad de destino.
+envio	Le confirmamos que el paquete está en buen estado.
+envio	El envío de devolución lo puede programar desde nuestra página.
+envio	Le enviamos la guía de devolución a su correo.
+envio	Imprima la guía de devolución y péguela en el paquete.
+envio	El mensajero recogerá el paquete de devolución en su dirección.
+envio	La recogida de la devolución se programó para el {FECHA}.
+envio	La devolución no tiene ningún costo para usted.
+envio	Una vez la devolución llegue a nuestra bodega, le notificaremos.
+envio	El paquete de devolución ya fue recibido en nuestra bodega.
+envio	El envío del producto de reemplazo saldrá esta semana.
+envio	Su producto de reemplazo ya fue despachado.
+envio	El paquete fue entregado al vecino según la información de la transportadora.
+envio	Por favor, verifique con la portería si recibieron el paquete.
+envio	El paquete puede tardar un poco más en llegar a zonas rurales.
+envio	El mensajero se comunicará con usted desde un número desconocido.
+envio	El envío viene en una caja sin marcas, por seguridad.
+envio	El paquete se encuentra en camino a la oficina de destino.
+envio	Le confirmamos que el envío llegó a Medellín.
+envio	El envío hacia Barranquilla saldrá mañana.
+envio	El paquete fue entregado en Cali el día de hoy.
+envio	El envío presenta un retraso, pero ya está en movimiento.
+envio	Le compartimos la fecha estimada de entrega: {FECHA}.
+envio	La fecha de entrega es estimada y puede variar.
+envio	La transportadora nos confirmó que su paquete está en la ciudad de destino. La entrega se realizará mañana en el transcurso del día.
+envio	Su envío presenta una novedad por dirección incompleta. ¿Me regala la dirección completa con el número del apartamento?
+envio	Le comparto el número de guía {NUMERO_GUIA}. Con él puede consultar el estado del envío en la página de la transportadora.
+envio	El mensajero intentó entregar el paquete, pero no encontró a nadie. Mañana se hará un segundo intento.
+envio	Abrimos un reclamo con la transportadora por su paquete. Le daremos respuesta en un plazo de tres días hábiles.
+envio	El envío a su municipio tarda entre cinco y ocho días hábiles. Le avisaremos cuando el paquete esté cerca.
+envio	Su paquete ya fue entregado en la portería. Si no lo ha recibido, por favor verifique con el personal del edificio.
+envio	Le informo que el envío se retrasó por un bloqueo en la vía. La transportadora estima la entrega para el {FECHA}.
+envio	La devolución quedó programada. El mensajero recogerá el paquete en su dirección el {FECHA}.
+envio	Le recordamos que el envío contraentrega debe pagarse en efectivo. El valor a pagar es de {VALOR}.
+envio	El paquete fue devuelto a nuestra bodega. Si nos confirma la dirección, lo enviaremos de nuevo sin costo.
+envio	Su envío express llegará mañana antes del mediodía. Por favor, esté atento a la llamada del mensajero.
+envio	El estado del envío se actualizará en las próximas horas. Si mañana no ve cambios, por favor escríbanos.
+envio	Hablé con la transportadora y el paquete ya salió a reparto. Debe llegar hoy antes de las seis de la tarde.
+envio	El paquete está en la oficina de la transportadora. Puede reclamarlo con su documento y el número de guía.
+envio	Hablé con la transportadora y me confirmaron que su paquete está en la bodega de la ciudad de destino. Mañana saldrá a reparto y debería llegar antes de las seis de la tarde.
+envio	El envío presenta un retraso por las lluvias de los últimos días, que afectaron algunas vías del país. Le pedimos paciencia, ya que la transportadora estima la entrega para el {FECHA}.
+envio	Según la transportadora, el paquete fue entregado en la portería del edificio. Le sugiero verificar con el personal de portería, y si no lo encuentran, abrimos un reclamo.
+envio	Abrimos un reclamo con la transportadora por la pérdida del paquete. Mientras tanto, vamos a enviarle un nuevo pedido para que no tenga que esperar el resultado del reclamo.
+envio	El mensajero intentó realizar la entrega hoy, pero no encontró a nadie en la dirección. ¿Le parece bien si programamos un segundo intento para mañana en la mañana?
+envio	Le recuerdo que el pedido es contraentrega, así que debe tener el valor exacto en efectivo, ya que el mensajero no siempre tiene cambio.
+envio	La guía de devolución ya fue generada y la enviamos a su correo. Por favor, imprímala, péguela en la caja y entréguela al mensajero cuando pase por su dirección.
+envio	Su paquete viaja por vía terrestre y el tiempo estimado de entrega es de cinco días hábiles. Puede consultar el avance con el número de guía {NUMERO_GUIA}.
+envio	Le confirmo que actualizamos la dirección de entrega antes del despacho, así que su pedido llegará a la nueva dirección sin ningún costo adicional.
+envio	El paquete llegó a la oficina de la transportadora porque no tenemos cobertura a domicilio en su vereda. Puede recogerlo presentando su documento de identidad.
+envio	Le comparto la fecha estimada de entrega de su pedido: {FECHA}. Tenga en cuenta que los tiempos son en días hábiles y no incluyen domingos ni festivos.
+envio	El paquete ya salió a reparto. El mensajero se comunicará con usted unos minutos antes de llegar, así que por favor esté atento al celular.
+facturacion	Su factura del mes ya se encuentra disponible.
+facturacion	Le enviamos la factura electrónica al correo {CORREO}.
+facturacion	El valor de su factura es de {VALOR}.
+facturacion	La fecha límite de pago de su factura es el {FECHA}.
+facturacion	Puede pagar su factura en línea a través de PSE.
+facturacion	Le comparto el enlace para pagar su factura.
+facturacion	Su pago fue recibido correctamente.
+facturacion	Le confirmo que su pago por {VALOR} fue aplicado.
+facturacion	El pago puede tardar hasta cuarenta y ocho horas en reflejarse.
+facturacion	Su cuenta se encuentra al día.
+facturacion	Usted tiene un saldo pendiente de {VALOR}.
+facturacion	Le recordamos que su factura está próxima a vencer.
+facturacion	Su factura se encuentra vencida.
+facturacion	El pago tardío genera intereses de mora.
+facturacion	Para evitar la suspensión del servicio, le recomendamos realizar el pago antes del {FECHA}.
+facturacion	Puede consultar el detalle de su factura en la sección Mis facturas.
+facturacion	El cobro adicional corresponde al servicio de instalación.
+facturacion	El valor adicional corresponde a los impuestos de ley.
+facturacion	El IVA está incluido en el valor total.
+facturacion	El cobro que observa corresponde a la renovación de su suscripción.
+facturacion	Revisamos su factura y el cobro es correcto.
+facturacion	Revisamos su factura y encontramos un error en el cobro.
+facturacion	Vamos a realizar el ajuste a su factura.
+facturacion	El ajuste se verá reflejado en su próxima factura.
+facturacion	Le generamos una nota crédito por {VALOR}.
+facturacion	La nota crédito se aplicará a su siguiente compra.
+facturacion	Su reembolso fue aprobado.
+facturacion	El reembolso se realizará al mismo medio de pago que utilizó.
+facturacion	El reembolso puede tardar entre cinco y quince días hábiles, según su banco.
+facturacion	El reembolso a tarjeta de crédito se refleja en el siguiente extracto.
+facturacion	Le confirmo que el reembolso ya fue procesado.
+facturacion	Le enviamos el soporte del reembolso a su correo.
+facturacion	El dinero ya fue devuelto a su cuenta bancaria.
+facturacion	Para el reembolso necesitamos una certificación bancaria a su nombre.
+facturacion	Por favor, envíenos la certificación bancaria en formato PDF.
+facturacion	El reembolso se realizará por transferencia en los próximos días.
+facturacion	Su solicitud de reembolso está en revisión.
+facturacion	La solicitud de reembolso fue rechazada porque el producto no cumple las condiciones.
+facturacion	Detectamos un doble cobro en su tarjeta.
+facturacion	Ya solicitamos la reversión del cobro duplicado.
+facturacion	La reversión del pago depende de los tiempos de su entidad bancaria.
+facturacion	El pago fue rechazado por su entidad financiera.
+facturacion	Le sugerimos comunicarse con su banco para verificar el motivo del rechazo.
+facturacion	La transacción quedó en estado pendiente.
+facturacion	Una vez el banco confirme la transacción, actualizaremos su pago.
+facturacion	La transacción fallida no genera ningún cobro.
+facturacion	Si le descontaron el dinero, el banco lo devolverá automáticamente.
+facturacion	Puede pagar en efectivo en cualquier punto autorizado.
+facturacion	Puede diferir su pago hasta en treinta y seis cuotas con tarjeta de crédito.
+facturacion	Aceptamos tarjetas débito, crédito y pagos por PSE.
+facturacion	El pago contraentrega está disponible para compras inferiores a {VALOR}.
+facturacion	Su factura quedó a nombre de {NOMBRE}.
+facturacion	Para facturar a nombre de una empresa necesitamos el NIT y la razón social.
+facturacion	Le enviaremos la factura a nombre de la empresa en las próximas horas.
+facturacion	No es posible modificar una factura electrónica ya emitida.
+facturacion	Vamos a anular la factura y generar una nueva con los datos correctos.
+facturacion	La nueva factura le llegará al correo registrado.
+facturacion	La factura {NUMERO_FACTURA} fue anulada.
+facturacion	Le reenvío la factura {NUMERO_FACTURA} a su correo.
+facturacion	Si no encuentra la factura, revise la carpeta de correo no deseado.
+facturacion	Puede descargar sus facturas desde nuestra página web.
+facturacion	Le comparto el certificado de retención en la fuente.
+facturacion	El certificado tributario estará disponible a partir del {FECHA}.
+facturacion	El valor del plan cambió a partir de este mes.
+facturacion	El incremento en su factura corresponde al ajuste anual de tarifas.
+facturacion	Le informamos el nuevo valor de su plan: {VALOR} mensuales.
+facturacion	El descuento de su plan terminó el mes pasado.
+facturacion	Su descuento sigue vigente hasta el {FECHA}.
+facturacion	Podemos ofrecerle un descuento por pronto pago.
+facturacion	Si paga antes del {FECHA}, obtiene un descuento del diez por ciento.
+facturacion	Su factura incluye el cobro proporcional de los días de servicio.
+facturacion	El primer cobro incluye la activación del servicio.
+facturacion	El cobro se realiza automáticamente cada mes.
+facturacion	Puede desactivar el cobro automático desde su cuenta.
+facturacion	Su tarjeta registrada para el cobro automático está vencida.
+facturacion	Por favor, actualice los datos de su tarjeta para evitar la suspensión.
+facturacion	Ya actualizamos el medio de pago de su cuenta.
+facturacion	El cobro automático quedó desactivado.
+facturacion	El servicio fue suspendido por falta de pago.
+facturacion	Una vez realice el pago, el servicio se reactivará en un plazo de cuatro horas.
+facturacion	Su servicio ya fue reactivado.
+facturacion	Podemos ofrecerle un acuerdo de pago.
+facturacion	El acuerdo de pago le permite pagar el saldo en tres cuotas.
+facturacion	Le confirmo que el acuerdo de pago quedó registrado.
+facturacion	La primera cuota del acuerdo vence el {FECHA}.
+facturacion	Su saldo a favor es de {VALOR}.
+facturacion	El saldo a favor se descontará de su próxima factura.
+facturacion	Puede solicitar la devolución del saldo a favor.
+facturacion	Le explico el detalle de los cobros de su factura.
+facturacion	El primer valor corresponde al plan, y el segundo a los servicios adicionales.
+facturacion	El cargo por reconexión es de {VALOR}.
+facturacion	El cargo por mora se aplica después de la fecha límite de pago.
+facturacion	Vamos a exonerarle el cargo por mora por esta única vez.
+facturacion	Le confirmo que se eliminó el cargo por mora.
+facturacion	El cobro no corresponde a nuestra empresa.
+facturacion	Le sugerimos revisar con su banco el origen de ese cobro.
+facturacion	El cobro aparece en su extracto con un nombre diferente.
+facturacion	Le confirmo que el cobro sí corresponde a su compra del {FECHA}.
+facturacion	El cobro está pendiente de aprobación por parte del banco.
+facturacion	La compra fue reversada por el banco.
+facturacion	El pago se realizó, pero aún no se ha conciliado.
+facturacion	Le enviaremos el paz y salvo a su correo.
+facturacion	Su cuenta se encuentra a paz y salvo.
+facturacion	El paz y salvo se genera una vez se confirme el último pago.
+facturacion	Su factura tiene un valor mínimo a pagar de {VALOR}.
+facturacion	Puede realizar abonos parciales a su factura.
+facturacion	El abono se aplicará al saldo más antiguo.
+facturacion	Su próxima factura llegará el {FECHA}.
+facturacion	La fecha de corte de su factura es el día quince de cada mes.
+facturacion	Puede cambiar la fecha de corte una vez al año.
+facturacion	Ya registramos el cambio de fecha de corte.
+facturacion	El valor del envío no es reembolsable.
+facturacion	El valor del producto se reembolsará completo.
+facturacion	Los costos de envío de la devolución los asumimos nosotros.
+facturacion	Le confirmamos el pago de la cuota inicial.
+facturacion	El pago de la cuota inicial fue rechazado.
+facturacion	Su crédito fue aprobado por un valor de {VALOR}.
+facturacion	El crédito tiene un plazo de doce meses.
+facturacion	Le compartimos el plan de pagos de su crédito.
+facturacion	El valor de la cuota mensual es de {VALOR}.
+facturacion	Su financiación quedó activa.
+facturacion	Puede adelantar cuotas sin ningún costo adicional.
+facturacion	Le recomendamos guardar el comprobante de pago.
+facturacion	Por favor, envíenos el comprobante para validar su pago.
+facturacion	Ya validamos el comprobante y aplicamos el pago.
+facturacion	El comprobante que nos envió no corresponde a nuestra cuenta.
+facturacion	El número de referencia del pago no coincide.
+facturacion	Para pagar en el banco, use la referencia que aparece en su factura.
+facturacion	El código de pago tiene una vigencia de tres días.
+facturacion	El pago en efectivo se refleja al día hábil siguiente.
+facturacion	Su cuenta presenta un saldo vencido de {VALOR}.
+facturacion	Le invitamos a ponerse al día con su obligación.
+facturacion	Si ya realizó el pago, haga caso omiso a este mensaje.
+facturacion	Le confirmamos que no tiene pagos pendientes.
+facturacion	El valor facturado corresponde al consumo del periodo.
+facturacion	El periodo facturado va del {FECHA} al {FECHA}.
+facturacion	El cobro proporcional se debe al cambio de plan.
+facturacion	El cambio de plan se verá reflejado en la próxima factura.
+facturacion	El valor pagado en exceso quedará como saldo a favor.
+facturacion	Su pago fue aplicado a la factura más reciente.
+facturacion	Le confirmo que su factura fue pagada en su totalidad.
+facturacion	Gracias por su pago, {NOMBRE}.
+facturacion	Gracias por mantenerse al día con sus pagos.
+facturacion	Revisé su historial de pagos y todo está correcto.
+facturacion	En su historial aparece un pago pendiente del mes anterior.
+facturacion	El sistema aún no registra su pago.
+facturacion	El pago puede tardar hasta un día hábil en aparecer en el sistema.
+facturacion	La factura se envía únicamente en formato electrónico.
+facturacion	Si desea la factura impresa, puede solicitarla en cualquiera de nuestras tiendas.
+facturacion	La factura incluye el detalle de cada producto comprado.
+facturacion	Revisé su factura y encontré un cobro adicional que no corresponde. Vamos a realizar el ajuste en la próxima factura.
+facturacion	Le confirmo que su pago fue aplicado correctamente. Su cuenta se encuentra al día.
+facturacion	El reembolso ya fue procesado. Dependiendo de su banco, puede tardar entre cinco y quince días hábiles en verse reflejado.
+facturacion	Su factura vence el {FECHA}. Puede pagarla en línea por PSE o en cualquier punto autorizado.
+facturacion	Detectamos que el pago se realizó dos veces. Ya solicitamos la reversión de uno de los cobros.
+facturacion	El valor adicional en su factura corresponde a la instalación. Este cobro se realiza una sola vez.
+facturacion	Le enviamos la factura electrónica al correo registrado. Si no la encuentra, revise la carpeta de correo no deseado.
+facturacion	Para generar la factura a nombre de su empresa, necesito el NIT y la razón social.
+facturacion	Su servicio fue suspendido por falta de pago. Una vez realice el pago, se reactivará en un máximo de cuatro horas.
+facturacion	Le podemos ofrecer un acuerdo de pago en tres cuotas. ¿Desea que lo registremos?
+facturacion	El cobro que observa corresponde a la renovación anual de su suscripción. Si desea, puede cancelar la renovación automática.
+facturacion	Ya generamos la nota crédito por {VALOR}. Se aplicará automáticamente en su próxima compra.
+facturacion	Su pago fue rechazado por el banco. Le recomiendo comunicarse con su entidad o intentar con otro medio de pago.
+facturacion	Le explico su factura: el primer valor corresponde al plan mensual y el segundo a los servicios adicionales.
+facturacion	Vamos a exonerarle el cargo por mora por esta única vez. El ajuste se verá en su próxima factura.
+facturacion	Revisé su factura con detalle. El valor adicional corresponde a los días de servicio del mes anterior que no se habían facturado, por el cambio de plan que realizó.
+facturacion	Le confirmo que el reembolso por {VALOR} ya fue enviado a su banco. Dependiendo de la entidad, el dinero puede verse reflejado entre cinco y quince días hábiles.
+facturacion	Su pago fue recibido, pero se aplicó a la factura del mes anterior porque tenía un saldo pendiente. El valor restante quedará como saldo a favor.
+facturacion	Para realizar el reembolso por transferencia, necesitamos una certificación bancaria a nombre del titular, con una fecha de expedición no mayor a treinta días.
+facturacion	Detectamos que el cobro automático falló porque la tarjeta registrada está vencida. Le recomiendo actualizar los datos de la tarjeta para evitar la suspensión del servicio.
+facturacion	Ya anulamos la factura con los datos incorrectos y generamos una nueva a nombre de la empresa. Le llegará al correo registrado en los próximos minutos.
+facturacion	El servicio fue suspendido por falta de pago, pero si realiza el pago hoy, se reactivará en un plazo máximo de cuatro horas y no tendrá cargo por reconexión.
+facturacion	Le podemos ofrecer un acuerdo de pago para que pague el saldo pendiente en tres cuotas mensuales, sin intereses adicionales. ¿Le gustaría que lo registremos?
+facturacion	El cobro que aparece en su extracto con un nombre diferente sí corresponde a nuestra empresa, ya que la plataforma de pagos usa otro nombre comercial.
+facturacion	Le confirmo que su cuenta quedó a paz y salvo. En las próximas horas le enviaremos el certificado a su correo para que lo tenga como soporte.
+facturacion	Le explico los valores de su factura: el cargo fijo mensual del plan, el valor de los servicios adicionales que activó este mes y los impuestos de ley.
+facturacion	Ya validamos el comprobante que nos envió y aplicamos el pago a su cuenta. Su servicio quedó activo y no tiene saldos pendientes.
+cuenta	Para restablecer su contraseña, ingrese a la opción Olvidé mi contraseña.
+cuenta	Le enviamos un enlace para restablecer su contraseña a su correo.
+cuenta	El enlace para cambiar la contraseña tiene una vigencia de treinta minutos.
+cuenta	Su contraseña fue actualizada correctamente.
+cuenta	Por seguridad, le recomendamos no compartir su contraseña con nadie.
+cuenta	La contraseña debe tener al menos ocho caracteres, una mayúscula y un número.
+cuenta	Su cuenta fue bloqueada por varios intentos fallidos de ingreso.
+cuenta	Ya desbloqueamos su cuenta.
+cuenta	Puede intentar ingresar nuevamente en quince minutos.
+cuenta	Le enviamos un código de verificación a su celular.
+cuenta	El código de verificación tiene una vigencia de cinco minutos.
+cuenta	Ingrese el código de seis dígitos que le llegó por mensaje de texto.
+cuenta	Si no recibió el código, puede solicitar uno nuevo.
+cuenta	Su usuario es el correo electrónico con el que se registró.
+cuenta	Le confirmo que su cuenta está activa.
+cuenta	Su cuenta se encuentra inactiva por falta de uso.
+cuenta	Ya reactivamos su cuenta.
+cuenta	Para crear una cuenta, ingrese a nuestra página y seleccione Registrarse.
+cuenta	El registro es gratuito y solo toma unos minutos.
+cuenta	Le llegará un correo para confirmar su cuenta.
+cuenta	Por favor, confirme su cuenta desde el enlace que le enviamos.
+cuenta	Su cuenta quedó verificada.
+cuenta	Para actualizar sus datos, ingrese a la sección Mi perfil.
+cuenta	Ya actualizamos su número de celular.
+cuenta	Ya actualizamos su correo electrónico.
+cuenta	Su nueva dirección quedó registrada.
+cuenta	Por seguridad, necesitamos validar su identidad antes de actualizar sus datos.
+cuenta	Le haremos algunas preguntas de seguridad para validar su identidad.
+cuenta	La validación de identidad fue exitosa.
+cuenta	No fue posible validar su identidad con la información suministrada.
+cuenta	Por favor, envíenos una foto de su documento de identidad por ambos lados.
+cuenta	Sus datos están protegidos según nuestra política de tratamiento de datos.
+cuenta	Puede consultar nuestra política de privacidad en la página web.
+cuenta	Puede solicitar la eliminación de sus datos personales en cualquier momento.
+cuenta	Su solicitud de eliminación de datos fue recibida.
+cuenta	Su cuenta será eliminada en un plazo de quince días hábiles.
+cuenta	Una vez eliminada la cuenta, no será posible recuperar la información.
+cuenta	Le confirmo que su cuenta fue eliminada.
+cuenta	Puede darse de baja de nuestros correos desde el enlace al final del mensaje.
+cuenta	Ya lo retiramos de nuestra lista de correos promocionales.
+cuenta	No volverá a recibir mensajes publicitarios.
+cuenta	Su cuenta tiene activada la verificación en dos pasos.
+cuenta	Le recomendamos activar la verificación en dos pasos para mayor seguridad.
+cuenta	Detectamos un ingreso inusual a su cuenta.
+cuenta	Si no reconoce este ingreso, le recomendamos cambiar su contraseña de inmediato.
+cuenta	Cerramos todas las sesiones abiertas en otros dispositivos.
+cuenta	Su cuenta está asociada al documento terminado en cuatro cinco.
+cuenta	Solo el titular de la cuenta puede solicitar cambios.
+cuenta	Necesitamos la autorización del titular para continuar.
+cuenta	El titular puede autorizar a otra persona mediante una carta firmada.
+cuenta	Ya agregamos a la persona autorizada en su cuenta.
+cuenta	Su cuenta tiene dos usuarios registrados.
+cuenta	Puede agregar hasta cinco usuarios a su cuenta familiar.
+cuenta	El usuario adicional recibirá una invitación por correo.
+cuenta	Su cuenta empresarial ya fue creada.
+cuenta	El administrador de la cuenta puede gestionar los permisos de los usuarios.
+cuenta	Le asignamos el rol de administrador.
+cuenta	El correo ingresado ya está registrado en otra cuenta.
+cuenta	No encontramos ninguna cuenta asociada a ese correo.
+cuenta	¿Es posible que se haya registrado con otro correo?
+cuenta	Encontré una cuenta registrada con el correo {CORREO}.
+cuenta	Su cuenta fue creada el {FECHA}.
+cuenta	Le confirmo que el cambio de titular quedó registrado.
+cuenta	Para el cambio de titular necesitamos la firma de ambas personas.
+cuenta	Su cuenta tiene un beneficio activo hasta el {FECHA}.
+cuenta	Sus puntos acumulados son suficientes para redimir un premio.
+cuenta	Puede consultar sus puntos en la sección Mis beneficios.
+cuenta	Los puntos vencen doce meses después de ser acumulados.
+cuenta	Su nivel en el programa de beneficios es oro.
+cuenta	Le confirmo que su plan actual es el plan básico.
+cuenta	Puede cambiar de plan en cualquier momento desde su cuenta.
+cuenta	El cambio de plan se aplicará a partir del próximo ciclo de facturación.
+cuenta	Su plan fue actualizado al plan premium.
+cuenta	Su suscripción está activa hasta el {FECHA}.
+cuenta	La suscripción se renueva automáticamente.
+cuenta	Puede cancelar la renovación automática cuando lo desee.
+cuenta	Ya cancelamos la renovación automática de su suscripción.
+cuenta	Su cuenta seguirá activa hasta el final del periodo pagado.
+cuenta	Le confirmo que su cuenta quedó suspendida temporalmente.
+cuenta	Puede reactivar su cuenta cuando lo desee.
+cuenta	La aplicación le pedirá iniciar sesión nuevamente.
+cuenta	Le recomendamos cerrar sesión e ingresar de nuevo.
+cuenta	Intente borrar la caché de la aplicación y vuelva a ingresar.
+cuenta	Por favor, actualice la aplicación a la última versión disponible.
+cuenta	La aplicación está disponible para celulares y tabletas.
+cuenta	El inicio de sesión con huella está disponible en la configuración de la aplicación.
+cuenta	Puede ingresar a su cuenta desde el computador o desde el celular.
+cuenta	Le recomendamos usar un navegador actualizado.
+cuenta	El ingreso a la plataforma presenta intermitencias en este momento.
+cuenta	Nuestro equipo técnico ya está trabajando en la solución.
+cuenta	La plataforma ya se encuentra funcionando con normalidad.
+cuenta	Por favor, intente ingresar nuevamente.
+cuenta	Su sesión se cerró por inactividad.
+cuenta	Por seguridad, la sesión se cierra después de diez minutos sin actividad.
+cuenta	Su perfil está incompleto.
+cuenta	Le invitamos a completar su perfil para disfrutar de todos los beneficios.
+cuenta	Su foto de perfil fue actualizada.
+cuenta	Las notificaciones de su cuenta están activadas.
+cuenta	Puede configurar las notificaciones desde el menú de ajustes.
+cuenta	Ya desactivamos las notificaciones por mensaje de texto.
+cuenta	Le enviaremos las notificaciones únicamente al correo.
+cuenta	Su historial de compras está disponible en su cuenta.
+cuenta	Su lista de favoritos se guardó correctamente.
+cuenta	Sus direcciones guardadas aparecen en la sección Mis direcciones.
+cuenta	Puede guardar hasta tres direcciones de entrega.
+cuenta	Su tarjeta fue guardada de forma segura.
+cuenta	No almacenamos los datos completos de su tarjeta.
+cuenta	Ya eliminamos la tarjeta guardada en su cuenta.
+cuenta	Su cuenta está vinculada a su número de celular.
+cuenta	Para desvincular el celular, necesitamos validar su identidad.
+cuenta	Le enviamos un correo para confirmar el cambio de datos.
+cuenta	Si no solicitó este cambio, por favor comuníquese con nosotros.
+cuenta	Su solicitud de actualización de datos fue aprobada.
+cuenta	Los cambios pueden tardar hasta veinticuatro horas en reflejarse.
+cuenta	Su documento de identidad quedó registrado correctamente.
+cuenta	El número de documento no coincide con el registrado en la cuenta.
+cuenta	Por favor, verifique el número de documento e intente de nuevo.
+cuenta	El tipo de documento seleccionado no es válido.
+cuenta	Para extranjeros, puede registrarse con cédula de extranjería o pasaporte.
+cuenta	Su cuenta de menor de edad debe estar asociada a un adulto responsable.
+cuenta	Su acceso fue restablecido.
+cuenta	Ya puede ingresar con su nueva contraseña.
+cuenta	Le recuerdo que la contraseña distingue entre mayúsculas y minúsculas.
+cuenta	Verifique que no tenga activada la tecla de mayúsculas.
+cuenta	Su usuario no tiene permisos para realizar esta acción.
+cuenta	Le asignamos los permisos necesarios.
+cuenta	La cuenta está a nombre de {NOMBRE}.
+cuenta	El correo registrado en la cuenta es {CORREO}.
+cuenta	El número de celular registrado es {TELEFONO}.
+cuenta	Por seguridad, solo le mostramos los últimos dígitos de su número.
+cuenta	Nunca le pediremos su contraseña por teléfono ni por correo.
+cuenta	Si recibe un mensaje sospechoso a nuestro nombre, por favor repórtelo.
+cuenta	Gracias por reportarlo, vamos a revisar el caso con el área de seguridad.
+cuenta	Su cuenta está segura.
+cuenta	Le recomendamos cambiar su contraseña periódicamente.
+cuenta	Su contraseña vence en cinco días.
+cuenta	Es necesario que cree una nueva contraseña.
+cuenta	La nueva contraseña no puede ser igual a las tres anteriores.
+cuenta	Su cuenta tiene una solicitud pendiente de aprobación.
+cuenta	La solicitud de su cuenta fue aprobada.
+cuenta	Ya puede disfrutar de todos los servicios de su cuenta.
+cuenta	Bienvenido, su cuenta está lista para usar.
+cuenta	Le enviamos un correo de bienvenida con la información de su cuenta.
+cuenta	Su cuenta de prueba vence el {FECHA}.
+cuenta	Puede convertir su cuenta de prueba en una cuenta pagada en cualquier momento.
+cuenta	Su cuenta tiene un mensaje pendiente por leer.
+cuenta	Revise la bandeja de mensajes de su cuenta.
+cuenta	Le enviamos un enlace a su correo para restablecer la contraseña. El enlace tiene una vigencia de treinta minutos.
+cuenta	Su cuenta fue bloqueada por varios intentos fallidos. Ya la desbloqueamos, puede intentar ingresar nuevamente.
+cuenta	Para actualizar su correo, necesito validar su identidad. Le haré algunas preguntas de seguridad.
+cuenta	Ya actualizamos su número de celular. A partir de ahora, los códigos de verificación le llegarán a ese número.
+cuenta	Detectamos un ingreso desde un dispositivo nuevo. Si no fue usted, le recomendamos cambiar la contraseña de inmediato.
+cuenta	Su cuenta ya quedó verificada. Ahora puede disfrutar de todos los beneficios de nuestro programa.
+cuenta	No encontramos ninguna cuenta con ese correo. ¿Es posible que se haya registrado con otro?
+cuenta	Por seguridad, solo el titular puede solicitar cambios en la cuenta. ¿Me confirma si usted es el titular?
+cuenta	Le confirmo que su solicitud de eliminación de datos fue recibida. La cuenta será eliminada en quince días hábiles.
+cuenta	Ya lo retiramos de nuestra lista de correos promocionales. Seguirá recibiendo únicamente las notificaciones de sus pedidos.
+cuenta	El código de verificación tiene una vigencia de cinco minutos. Si ya venció, puede solicitar uno nuevo.
+cuenta	Le recomiendo cerrar sesión, borrar la caché del navegador e ingresar de nuevo.
+cuenta	Su plan fue actualizado correctamente. El nuevo valor se verá reflejado en la próxima factura.
+cuenta	Su sesión se cerró por inactividad. Por seguridad, la sesión se cierra después de diez minutos sin uso.
+cuenta	Recuerde que nunca le pediremos su contraseña por teléfono, por correo ni por chat.
+cuenta	Para restablecer su contraseña, ingrese a la página web, seleccione Olvidé mi contraseña y siga las instrucciones que le llegarán al correo registrado.
+cuenta	Por seguridad, bloqueamos temporalmente su cuenta después de varios intentos fallidos. Ya la desbloqueamos, pero le recomiendo crear una contraseña nueva.
+cuenta	Para actualizar el correo de su cuenta, necesitamos validar su identidad. Le enviaremos un código al celular registrado y le haremos algunas preguntas de seguridad.
+cuenta	Detectamos un ingreso a su cuenta desde una ciudad diferente. Si no fue usted, cambie su contraseña de inmediato y active la verificación en dos pasos.
+cuenta	Su solicitud de eliminación de datos fue recibida. En un plazo de quince días hábiles eliminaremos su cuenta, y le enviaremos un correo cuando el proceso termine.
+cuenta	Le confirmo que su cuenta quedó activa nuevamente. Puede ingresar con su usuario y la contraseña que tenía antes de la suspensión.
+cuenta	El correo que me indica ya está registrado en otra cuenta. Es posible que haya creado una cuenta anterior, ¿desea que le ayude a recuperarla?
+cuenta	Su plan fue actualizado al plan premium. Los nuevos beneficios ya están activos, y el nuevo valor se verá reflejado en su próxima factura.
+cuenta	Le recuerdo que nunca le pediremos su contraseña ni los códigos de verificación. Si alguien se los solicita a nuestro nombre, por favor repórtelo.
+cuenta	Para agregar un usuario adicional a su cuenta, ingrese a Mi perfil, seleccione Usuarios y escriba el correo de la persona que desea invitar.
+cuenta	Su cuenta tiene activada la verificación en dos pasos. Cada vez que ingrese desde un dispositivo nuevo, le enviaremos un código al celular registrado.
+cuenta	Le confirmo que agregamos a la persona autorizada en su cuenta. A partir de ahora, ella también podrá consultar el estado de sus pedidos y facturas.
+cierre	Muchas gracias por comunicarse con nosotros. Que tenga un feliz día.
+cierre	Fue un gusto atenderle, {NOMBRE}.
+cierre	Quedamos atentos a cualquier inquietud.
+cierre	Con mucho gusto, {NOMBRE}. Que esté muy bien.
+cierre	Gracias por su paciencia y comprensión.
+cierre	Si tiene alguna otra inquietud, no dude en escribirnos.
+cierre	Estamos para servirle.
+cierre	A la orden, {NOMBRE}.
+cierre	Que tenga una excelente tarde.
+cierre	Que tenga una feliz noche.
+cierre	Gracias por preferirnos, que tenga un buen día.
+cierre	Fue un placer ayudarle.
+cierre	Me alegra haberle ayudado, {NOMBRE}.
+cierre	Quedo atento a su respuesta.
+cierre	Quedo atenta a sus comentarios.
+cierre	Cualquier cosa, estamos a la orden.
+cierre	Gracias por su tiempo, {NOMBRE}.
+cierre	Le agradezco mucho su amabilidad.
+cierre	Gracias por confiar en nosotros.
+cierre	Hasta pronto, {NOMBRE}.
+cierre	Que tenga un excelente fin de semana.
+cierre	Feliz día, {NOMBRE}.
+cierre	Feliz tarde, gracias por escribirnos.
+cierre	Le deseo un excelente día.
+cierre	Le deseamos un feliz resto de día.
+cierre	Gracias por elegirnos, esperamos verle pronto.
+cierre	Esperamos haber resuelto su inquietud.
+cierre	Esperamos que la información le haya sido útil.
+cierre	Recuerde que puede comunicarse con nosotros en cualquier momento.
+cierre	Nuestro horario de atención es de lunes a sábado de siete de la mañana a nueve de la noche.
+cierre	Le invitamos a calificar nuestra atención en la encuesta que le llegará al correo.
+cierre	Su opinión es muy importante para nosotros.
+cierre	Gracias por sus comentarios, nos ayudan a mejorar.
+cierre	Le confirmo que su caso quedó cerrado.
+cierre	Su caso quedó registrado con el número de radicado {NUMERO_PEDIDO}.
+cierre	Guarde el número de radicado para futuras consultas.
+cierre	Le daremos respuesta en un plazo máximo de cinco días hábiles.
+cierre	Le estaremos contactando en cuanto tengamos novedades.
+cierre	En cuanto tenga respuesta, le aviso por este medio.
+cierre	Le escribiré nuevamente cuando tenga la información.
+cierre	Quedamos pendientes de su confirmación.
+cierre	Quedo pendiente de los documentos para continuar con el proceso.
+cierre	Una vez nos envíe la información, continuamos con su solicitud.
+cierre	Gracias, {NOMBRE}. Que Dios le bendiga.
+cierre	Con gusto, para eso estamos.
+cierre	No hay de qué, {NOMBRE}.
+cierre	Con todo el gusto.
+cierre	Gracias a usted por comunicarse.
+cierre	Gracias a usted, que tenga buen día.
+cierre	Siempre es un gusto atenderle.
+cierre	Quedamos a su disposición para cualquier inquietud adicional.
+cierre	Para nosotros fue un gusto atenderle.
+cierre	Muchas gracias por su compra, esperamos que disfrute su producto.
+cierre	Esperamos que disfrute su pedido.
+cierre	Gracias por ser parte de nuestra comunidad.
+cierre	Gracias por su confianza, {NOMBRE}.
+cierre	Le agradecemos por darnos la oportunidad de solucionar su caso.
+cierre	Le agradecemos su paciencia mientras resolvemos su caso.
+cierre	Daremos cierre a este chat por inactividad.
+cierre	Al no recibir respuesta, procederemos a cerrar la conversación.
+cierre	Si desea continuar, puede escribirnos nuevamente.
+cierre	El chat se cerrará en unos minutos.
+cierre	Gracias por escribirnos, el chat ha finalizado.
+cierre	Le recuerdo que este chat será cerrado en dos minutos si no recibimos respuesta.
+cierre	Fue un gusto, {NOMBRE}. Cuídese mucho.
+cierre	Que esté muy bien, hasta luego.
+cierre	Hasta luego, que tenga un buen día.
+cierre	Que tenga un buen regreso a casa.
+cierre	Le deseamos mucho éxito.
+cierre	Esperamos seguir contando con usted.
+cierre	Será un gusto atenderle nuevamente.
+cierre	Gracias, {NOMBRE}. Cualquier inquietud adicional, aquí estaremos.
+cierre	Muchas gracias, quedo atento.
+cierre	Muchas gracias, quedamos atentos.
+cierre	Muchas gracias por la información.
+cierre	Muchas gracias por su colaboración.
+cierre	Gracias por su colaboración y paciencia.
+cierre	Gracias por la confirmación.
+cierre	Gracias por enviarnos los documentos.
+cierre	Recibimos los documentos, muchas gracias.
+cierre	Su solicitud fue completada con éxito.
+cierre	Le confirmo que su solicitud quedó solucionada.
+cierre	Me alegra que se haya solucionado el inconveniente.
+cierre	Qué bueno que ya pudo ingresar a su cuenta.
+cierre	Qué bien que ya recibió su pedido.
+cierre	Excelente, me alegra saberlo.
+cierre	Perfecto, {NOMBRE}. Quedamos así entonces.
+cierre	Perfecto, muchas gracias por confirmar.
+cierre	Listo, ya quedó registrada su solicitud.
+cierre	Listo, {NOMBRE}. Ya quedó solucionado.
+cierre	Con esto damos por finalizada su solicitud.
+cierre	Si el inconveniente persiste, por favor comuníquese de nuevo con nosotros.
+cierre	Si necesita algo más, con gusto le ayudamos.
+cierre	Si requiere más información, puede visitar nuestra página web.
+cierre	Le invitamos a seguirnos en nuestras redes sociales.
+cierre	Gracias por su atención.
+cierre	Gracias por su amable atención.
+cierre	Agradecemos su comprensión.
+cierre	Agradecemos de antemano su colaboración.
+cierre	Gracias de antemano por su paciencia.
+cierre	Le agradezco por el tiempo que nos dedicó.
+cierre	Un abrazo, {NOMBRE}, y feliz día.
+cierre	Cordialmente, el equipo de servicio al cliente.
+cierre	Atentamente, {NOMBRE}.
+cierre	Cordial saludo y feliz día.
+cierre	Quedamos atentos a sus comentarios.
+cierre	Esperamos su respuesta.
+cierre	Quedamos a la espera de su respuesta.
+cierre	Quedo a la espera del comprobante.
+cierre	Quedo a la espera de las fotos del producto.
+cierre	En el transcurso del día le daremos respuesta.
+cierre	Mañana le estaremos llamando para confirmar.
+cierre	Le llamaremos el {FECHA} para hacer seguimiento.
+cierre	Le haremos seguimiento a su caso hasta que quede solucionado.
+cierre	Su caso está en buenas manos.
+cierre	No se preocupe, nosotros nos encargamos.
+cierre	Tranquilo, {NOMBRE}, ya quedó todo solucionado.
+cierre	Tranquila, ya le ayudamos con eso.
+cierre	Fue un gusto conversar con usted.
+cierre	Gracias por la paciencia durante la llamada.
+cierre	Gracias por permanecer en línea.
+cierre	Gracias por su llamada, que tenga un buen día.
+cierre	Finalizamos la llamada, muchas gracias.
+cierre	Le deseo una feliz Navidad, {NOMBRE}.
+cierre	Le deseamos un próspero año nuevo.
+cierre	Feliz día de la madre, {NOMBRE}.
+cierre	Que tenga un feliz cumpleaños.
+cierre	Gracias por todo, {NOMBRE}.
+cierre	Mil gracias por su ayuda.
+cierre	Mil gracias, {NOMBRE}.
+cierre	Que tenga una linda semana.
+cierre	Que tenga un lindo día.
+cierre	Bendiciones, {NOMBRE}.
+cierre	Feliz noche, descanse.
+cierre	Hasta la próxima.
+cierre	Nos vemos pronto.
+cierre	Gracias por escribir, hasta pronto.
+cierre	Estaremos encantados de atenderle de nuevo.
+cierre	Le esperamos en nuestra tienda.
+cierre	Esperamos verle pronto en nuestras tiendas.
+cierre	Gracias, que tenga un buen día y un excelente fin de semana.
+cierre	Le agradezco su paciencia, que tenga un feliz día.
+cierre	Gracias por comunicarse con servicio al cliente.
+cierre	Le habló {NOMBRE}, fue un gusto atenderle.
+cierre	Le atendió {NOMBRE}, muchas gracias por comunicarse.
+cierre	Gracias por su mensaje, que tenga un excelente día.
+cierre	Quedamos atentos a cualquier novedad con su pedido.
+cierre	Quedamos atentos a cualquier inquietud con su factura.
+cierre	Quedamos atentos a cualquier inquietud con su cuenta.
+cierre	Quedamos atentos a cualquier novedad con su envío.
+cierre	Recuerde que estamos disponibles las veinticuatro horas.
+cierre	Estamos disponibles para ayudarle cuando lo necesite.
+cierre	Gracias, {NOMBRE}. Estaremos en contacto.
+cierre	Seguimos en contacto, {NOMBRE}.
+cierre	Gracias y que tenga un excelente día.
+cierre	Me alegra haberle ayudado, {NOMBRE}. Si tiene alguna otra inquietud, estamos a la orden. Que tenga un feliz día.
+cierre	Su caso quedó solucionado. Gracias por su paciencia y por confiar en nosotros.
+cierre	Quedamos atentos a cualquier novedad con su pedido. Que tenga una excelente tarde.
+cierre	Gracias por comunicarse con nosotros, {NOMBRE}. Fue un gusto atenderle, que esté muy bien.
+cierre	Le confirmo que su solicitud quedó radicada. Le daremos respuesta en un máximo de cinco días hábiles. Feliz día.
+cierre	Esperamos que la información le haya sido útil. Si necesita algo más, con gusto le ayudamos.
+cierre	Gracias por su comprensión, {NOMBRE}. Le haremos seguimiento a su caso hasta que quede solucionado.
+cierre	Al no recibir respuesta, daremos por finalizada la conversación. Puede escribirnos nuevamente cuando lo desee.
+cierre	Muchas gracias por su compra. Esperamos que disfrute su producto y verle pronto.
+cierre	Le agradezco su tiempo, {NOMBRE}. En cuanto tenga respuesta del área encargada, le escribo por este medio.
+cierre	Perfecto, quedamos así. Mañana le llamamos para confirmar que todo esté funcionando. Que tenga buena noche.
+cierre	Gracias por sus comentarios, {NOMBRE}. Los compartiremos con el equipo para seguir mejorando.
+cierre	Listo, ya quedó registrada su solicitud. Gracias por comunicarse, que tenga un excelente día.
+cierre	Con mucho gusto, {NOMBRE}. Recuerde que puede escribirnos las veinticuatro horas.
+cierre	Fue un placer ayudarle con su cuenta. Que tenga un feliz resto de día.
+cierre	Me alegra mucho haber podido ayudarle, {NOMBRE}. Su caso quedó solucionado, y si llega a presentar algún otro inconveniente, no dude en escribirnos. Que tenga un feliz día.
+cierre	Le confirmo que su solicitud quedó registrada con éxito. En cuanto tengamos respuesta del área encargada, le contactaremos por este mismo medio. Gracias por su paciencia.
+cierre	Gracias por comunicarse con nosotros, {NOMBRE}. Fue un gusto atenderle. Le llegará una encuesta al correo, y le agradeceríamos mucho que nos contara cómo fue su experiencia.
+cierre	Quedamos atentos a cualquier novedad con la entrega de su pedido. Recuerde que puede hacer seguimiento con el número de guía. Que tenga una excelente tarde.
+cierre	Muchas gracias por su comprensión, {NOMBRE}. Vamos a hacerle seguimiento a su caso hasta que quede completamente solucionado. Que esté muy bien.
+cierre	Esperamos que la información le haya sido útil. Si tiene alguna otra pregunta sobre su factura o su cuenta, con mucho gusto le ayudamos.
+cierre	Al no recibir respuesta en los últimos minutos, daremos por finalizado este chat. Si desea continuar con su solicitud, puede escribirnos nuevamente cuando lo desee.
+cierre	Perfecto, {NOMBRE}. Entonces quedamos así: mañana le llamamos entre las ocho y las diez de la mañana para confirmar que el servicio esté funcionando.
+cierre	Gracias por su compra y por confiar en nosotros. Esperamos que disfrute mucho su producto y que vuelva pronto. Feliz día.
+cierre	Le agradezco su tiempo y su paciencia durante la llamada, {NOMBRE}. Que tenga un excelente resto de día y un feliz fin de semana.
+cierre	Fue un placer atenderle, {NOMBRE}. Recuerde que estamos disponibles las veinticuatro horas por el chat de nuestra página web. Que tenga una feliz noche.
+cierre	Gracias por escribirnos, {NOMBRE}. Si el inconveniente vuelve a presentarse, comuníquese con nosotros y mencione su número de radicado para atenderle más rápido.
+otro	Permítame un momento, por favor.
+otro	Permítame unos minutos mientras reviso la información.
+otro	Gracias por esperar en línea.
+otro	Le voy a poner en espera un momento.
+otro	Ya regreso con usted, no se retire.
+otro	Gracias por la espera, ya tengo la información.
+otro	Le voy a transferir con el área encargada.
+otro	Le comunico con un asesor especializado.
+otro	En un momento le atenderá un compañero del área técnica.
+otro	Su caso será escalado al área de soporte.
+otro	Le informo que nuestro horario de atención es de lunes a viernes de ocho de la mañana a seis de la tarde.
+otro	Los sábados atendemos de nueve de la mañana a una de la tarde.
+otro	Los domingos y festivos no tenemos atención telefónica.
+otro	Puede escribirnos por el chat en cualquier momento.
+otro	Le recuerdo que esta conversación puede ser grabada para fines de calidad.
+otro	Para continuar, necesitamos que acepte la política de tratamiento de datos.
+otro	Según nuestra política, los cambios se realizan dentro de los treinta días siguientes a la compra.
+otro	La garantía cubre defectos de fábrica durante un año.
+otro	La garantía no cubre daños por mal uso.
+otro	Para hacer efectiva la garantía, debe presentar la factura de compra.
+otro	El producto será revisado por el servicio técnico.
+otro	El diagnóstico del servicio técnico tarda hasta diez días hábiles.
+otro	Le informaremos el resultado del diagnóstico por correo.
+otro	La reparación no tiene costo, ya que el producto está en garantía.
+otro	La reparación tiene un costo de {VALOR}, ya que la garantía venció.
+otro	El producto reparado estará listo el {FECHA}.
+otro	Puede consultar nuestras tiendas en la página web.
+otro	Nuestra tienda más cercana queda en el centro comercial de su ciudad.
+otro	La tienda atiende de diez de la mañana a ocho de la noche.
+otro	En este momento estamos presentando alta demanda.
+otro	El tiempo de espera estimado es de diez minutos.
+otro	Su turno es el número cinco en la fila.
+otro	Le informo que la línea presenta fallas técnicas.
+otro	Le recomiendo intentar más tarde.
+otro	Por favor, no cierre esta ventana.
+otro	Para su seguridad, no comparta información confidencial por este medio.
+otro	No es necesario que comparta los datos completos de su tarjeta.
+otro	Le enviaré la información por escrito para que la tenga a la mano.
+otro	Le envío un resumen de lo que hablamos.
+otro	Le comparto los pasos a seguir.
+otro	Primero, ingrese a la página web.
+otro	Luego, seleccione la opción Mi cuenta.
+otro	Después, haga clic en Mis pedidos.
+otro	Por último, seleccione el pedido que desea consultar.
+otro	Le explico cómo funciona el proceso.
+otro	El proceso tiene tres pasos sencillos.
+otro	Tenga en cuenta que este trámite es personal.
+otro	El trámite no tiene ningún costo.
+otro	El trámite se puede hacer en línea.
+otro	Le recomiendo tener a la mano su documento de identidad.
+otro	Le sugiero revisar los términos y condiciones de la promoción.
+otro	La promoción es válida hasta agotar existencias.
+otro	La promoción aplica solo para compras en línea.
+otro	Las promociones no son acumulables.
+otro	Este mes tenemos descuentos especiales en tecnología.
+otro	Le invitamos a conocer nuestro catálogo.
+otro	Le comparto el catálogo de productos.
+otro	El catálogo está disponible en nuestra página web.
+otro	Le informo que el producto tiene un precio de {VALOR}.
+otro	El precio incluye IVA.
+otro	El precio puede variar según la ciudad.
+otro	Ese producto solo se vende en tiendas físicas.
+otro	Ese producto no lo manejamos actualmente.
+otro	Le recomiendo este producto, que tiene características similares.
+otro	El producto tiene una calificación muy buena por parte de nuestros clientes.
+otro	Le dejo la ficha técnica del producto.
+otro	El producto es compatible con la mayoría de los equipos.
+otro	El producto viene con manual de instrucciones en español.
+otro	El manual también está disponible para descargar.
+otro	Si desea, le puedo enviar el manual a su correo.
+otro	Le recuerdo que tenemos una encuesta de satisfacción.
+otro	La encuesta toma menos de un minuto.
+otro	Su respuesta nos ayuda a mejorar nuestro servicio.
+otro	Estamos actualizando nuestros sistemas.
+otro	Algunos servicios pueden presentar demoras durante la actualización.
+otro	Le notificaremos cuando la actualización haya finalizado.
+otro	Le informo que cambiamos nuestros términos y condiciones.
+otro	Puede consultar los nuevos términos en la página web.
+otro	Le recomiendo guardar este mensaje para futuras consultas.
+otro	Le informo que ya registré la observación en su caso.
+otro	Su solicitud fue radicada con éxito.
+otro	El radicado de su solicitud es {NUMERO_PEDIDO}.
+otro	El área encargada le dará respuesta en los próximos días.
+otro	Por normatividad, tenemos quince días hábiles para dar respuesta a su petición.
+otro	Su petición, queja o reclamo fue recibida.
+otro	Le daremos respuesta dentro de los tiempos establecidos por la ley.
+otro	Puede consultar el estado de su solicitud con el número de radicado.
+otro	Le agradecemos por hacernos llegar su sugerencia.
+otro	Su felicitación será compartida con el equipo.
+otro	Nos alegra mucho saber que tuvo una buena experiencia.
+otro	Le compartiré su comentario al área correspondiente.
+otro	Para nosotros es muy importante conocer su opinión.
+otro	Le confirmo que la información que le di es correcta.
+otro	Le aclaro que el proceso es diferente para compras en tienda.
+otro	Para compras en tienda, el cambio se realiza directamente en el punto de venta.
+otro	Para compras en línea, el cambio se solicita desde la página web.
+otro	Le informo que no podemos dar información de terceros.
+otro	Por protección de datos, solo podemos dar información al titular.
+otro	Entiendo su solicitud, pero no es posible realizar esa gestión por este medio.
+otro	Esa gestión solo se puede hacer de manera presencial.
+otro	Le sugiero acercarse a uno de nuestros puntos de atención.
+otro	Puede agendar su cita en el punto de atención desde nuestra página.
+otro	Su cita quedó agendada para el {FECHA}.
+otro	Por favor, llegue diez minutos antes de su cita.
+otro	Si no puede asistir, le agradecemos cancelar la cita con anticipación.
+otro	Su cita fue cancelada.
+otro	Su cita fue reprogramada.
+otro	Le recordamos su cita para mañana.
+otro	El técnico llegará entre las ocho de la mañana y las doce del mediodía.
+otro	El técnico se identificará con su carné de la empresa.
+otro	Por favor, verifique el carné del técnico antes de permitir su ingreso.
+otro	El servicio técnico a domicilio tiene un costo de {VALOR}.
+otro	La visita técnica fue programada con éxito.
+otro	El técnico ya está en camino.
+otro	La visita técnica quedó registrada como exitosa.
+otro	El técnico dejó un reporte de la visita.
+otro	Le enviaremos el reporte técnico por correo.
+otro	Le informo que el servicio quedó restablecido.
+otro	Estamos presentando una falla general en su zona.
+otro	El servicio será restablecido en las próximas horas.
+otro	Le pedimos que reinicie el equipo cuando se restablezca el servicio.
+otro	Le informo que hay un mantenimiento programado para el {FECHA}.
+otro	Durante el mantenimiento, el servicio no estará disponible.
+otro	El mantenimiento tendrá una duración aproximada de cuatro horas.
+otro	Le sugiero desconectar el equipo durante diez segundos y volverlo a conectar.
+otro	Verifique que todas las luces del equipo estén encendidas.
+otro	Si la luz roja continúa encendida, por favor infórmeme.
+otro	Vamos a realizar una prueba desde nuestro sistema.
+otro	La prueba fue exitosa.
+otro	La prueba indica que el equipo presenta una falla.
+otro	Vamos a programar el cambio del equipo.
+otro	El cambio del equipo no tiene costo para usted.
+otro	Le enviaremos un equipo nuevo a su dirección.
+otro	Por favor, devuelva el equipo anterior al técnico.
+otro	Le recuerdo que el equipo es propiedad de la empresa.
+otro	Le informo que el contrato tiene una cláusula de permanencia.
+otro	La cláusula de permanencia termina el {FECHA}.
+otro	Si cancela antes de esa fecha, se genera un cobro de {VALOR}.
+otro	Puede consultar su contrato en la sección Mis documentos.
+otro	Le enviaremos una copia del contrato a su correo.
+otro	Su contrato fue renovado automáticamente.
+otro	El contrato se puede cancelar con treinta días de anticipación.
+otro	Le confirmo que su solicitud de cancelación quedó radicada.
+otro	Antes de cancelar, ¿me permite ofrecerle una alternativa?
+otro	Tenemos una oferta especial para usted.
+otro	Le podemos ofrecer un mes gratis de servicio.
+otro	Le podemos ofrecer un plan con mejor precio.
+otro	Entiendo su decisión y la respetamos.
+otro	Permítame un momento mientras consulto con el área encargada. Gracias por su paciencia.
+otro	Le voy a transferir con el área de soporte técnico. Por favor, no cuelgue la llamada.
+otro	Le informo que la garantía cubre defectos de fábrica durante un año. Para hacerla efectiva, necesitamos la factura de compra.
+otro	Nuestro horario de atención es de lunes a viernes de ocho de la mañana a seis de la tarde, y los sábados hasta el mediodía.
+otro	Le comparto los pasos: ingrese a la página web, seleccione Mi cuenta y luego la opción Mis pedidos.
+otro	En este momento estamos presentando una falla general en su zona. El servicio será restablecido en las próximas horas.
+otro	Su cita quedó agendada para el {FECHA}. Por favor, llegue diez minutos antes con su documento de identidad.
+otro	Por protección de datos, solo podemos dar información al titular de la cuenta.
+otro	El técnico llegará entre las ocho de la mañana y el mediodía. Se identificará con su carné de la empresa.
+otro	Le recuerdo que esta conversación puede ser grabada para fines de calidad y seguridad.
+otro	La promoción es válida hasta agotar existencias y aplica solo para compras en línea.
+otro	Su petición fue radicada. Por normatividad, tenemos quince días hábiles para darle respuesta.
+otro	Antes de cancelar el servicio, me gustaría ofrecerle un plan con un mejor precio. ¿Le parece bien si le explico?
+otro	Vamos a realizar una prueba desde nuestro sistema. Por favor, deje el equipo encendido unos minutos.
+otro	Le enviaré un resumen de lo que hablamos al correo registrado, para que lo tenga a la mano.
+otro	Permítame unos minutos mientras consulto la información con el área encargada. Le pido el favor de no cerrar esta ventana, ya regreso con usted.
+otro	Le voy a transferir con un asesor del área de soporte técnico, que le podrá ayudar con el diagnóstico del equipo. Por favor, permanezca en línea.
+otro	La garantía cubre defectos de fábrica durante un año a partir de la fecha de compra. No cubre daños por golpes, humedad o mal uso del producto.
+otro	Le cuento que nuestro horario de atención telefónica es de lunes a viernes de siete de la mañana a ocho de la noche, y los sábados de ocho de la mañana a dos de la tarde.
+otro	En este momento hay una falla general en su sector, y nuestro equipo técnico ya está trabajando para solucionarla. Estimamos que el servicio se restablecerá en unas tres horas.
+otro	Su petición quedó radicada con el número {NUMERO_PEDIDO}. Por normatividad, tenemos un plazo de quince días hábiles para darle una respuesta de fondo.
+otro	Le explico el proceso: primero revisamos el producto en el servicio técnico, luego le enviamos el diagnóstico, y si aplica la garantía, la reparación no tiene costo.
+otro	Por protección de datos personales, no podemos compartir información de la cuenta con terceros. Si necesita hacer la gestión por otra persona, debe tener una autorización firmada.
+otro	Le recuerdo que su contrato tiene una cláusula de permanencia hasta el {FECHA}. Si cancela antes de esa fecha, se generará un cobro proporcional.
+otro	Antes de procesar la cancelación, me gustaría ofrecerle un mes de servicio gratis y un plan con un menor valor mensual. ¿Le interesa que le cuente los detalles?
+otro	Le sugiero agendar una cita en el punto de atención más cercano, ya que este trámite se debe realizar de manera presencial con el documento original.
+otro	Vamos a realizar una prueba remota a su equipo. Durante la prueba, es posible que el servicio se interrumpa por un par de minutos, así que no se preocupe.
