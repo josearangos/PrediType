@@ -14,8 +14,18 @@ The asset is a single little-endian binary file, produced only by `predi-build` 
 | 36 | 4 | Backoff α (f32) |
 | 40 | 32 | SHA-256 of the source manifest |
 | 72 | 32 | SHA-256 of the payload (bytes from offset 128 to end of file) |
-| 104 | 24 | Section table: 6 × u32 offsets (lexicon FST, spellings, casing flags, n-gram tables, top-next lists, reserved) |
+| 104 | 24 | Section table: 6 × u32 offsets (lexicon FST, spellings, word flags, n-gram tables, top-next lists, reserved) |
 | 128 | … | Payload sections, each 8-byte aligned |
+
+## Word flags
+
+One byte per word id:
+
+| Bits | Meaning |
+|------|---------|
+| 0–1 | Casing: `0` Lower, `1` Capitalized, `2` Acronym (`3` invalid) |
+| 2 | `register_other`: a *tú*-form or other-variant word, filtered per FR-022 |
+| 3–7 | Reserved. Must be 0; the reader rejects the asset otherwise (`Malformed`) |
 
 ## Rules
 

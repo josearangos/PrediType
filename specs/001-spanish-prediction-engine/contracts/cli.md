@@ -4,15 +4,34 @@ These are developer and evaluation tools only. They are not shipped to agents an
 client protocol, which is chosen in the client features. No tool reads typed text except from the
 files or arguments given to it.
 
-## `predi-build`: build the language asset
+## `predi-build`: corpus splits and language asset
+
+`predi-build` has two subcommands.
+
+### `predi-build split`: assign the corpus splits (run once)
 
 ```text
-predi-build --manifest data/sources/manifest.toml \
-            --corpus data/corpus/es-co-cs \
-            --allowlist data/allowlist-proper-nouns.txt \
-            --asset-version 1.0.0 \
-            --out assets/es-CO-1.0.0.pta
-            [--tune-tau]            # tune tau on the dev split (research R6)
+predi-build split --corpus data/corpus/es-co-cs
+```
+
+- Assigns `test`/`dev`/`build` by SHA-256 rank of each message's NFC-normalized text, and writes
+  `splits.tsv`. It never reassigns a hash that is already listed.
+- Exit codes: 0 on success, 2 if the minimums aren't met (≥ 500 test, ≥ 250 dev, ≥ 5,000 test word
+  positions).
+
+### `predi-build build`: build the language asset
+
+```text
+predi-build build --manifest data/sources/manifest.toml \
+                  --corpus data/corpus/es-co-cs \
+                  --allowlist data/allowlist-proper-nouns.txt \
+                  --asset-version 1.0.0 \
+                  --out assets/es-CO-1.0.0.pta
+                  [--tune-tau]            # tune tau on the dev split (research R6)
+
+predi-build build --plain-sources crates/predi-core/fixtures/mini-sources \
+                  --asset-version 0.0.0-fixture \
+                  --out crates/predi-core/fixtures/mini.pta   # test fixtures only
 ```
 
 - **Inputs**: it reads only the `build` split for counts, and the `dev` split for `--tune-tau`. It

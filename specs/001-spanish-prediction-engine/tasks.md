@@ -37,6 +37,8 @@ independently.
   - `rust-toolchain.toml`: pinned to stable 1.99 with the `wasm32-unknown-unknown` target.
   - `.gitignore`: ignore `target/`, `data/sources/raw/`, and `reports/*`, but keep
     `reports/baseline-eval.json`.
+  - `.gitattributes`: `data/sources/snapshots/** filter=lfs diff=lfs merge=lfs -text`, so the pinned
+    source snapshots are stored with Git LFS.
 - [ ] T002 Create `crates/predi-core/Cargo.toml`:
   - Runtime dependencies are only `fst`, `unicode-normalization`, and `sha2`. `sha2` is pure Rust,
     WASM-compatible, and needed for the asset checksum (R10). Add `sha2` to the plan.md Technical
@@ -64,6 +66,9 @@ independently.
   - `cargo test --workspace`
   - `cargo build -p predi-core --target wasm32-unknown-unknown`
   - `cargo deny check`
+  - A `windows-latest` job running `cargo build --workspace` and `cargo test --workspace` (FR-032,
+    constitution §V). This verifies that the code builds and passes tests on the target OS. It
+    doesn't replace measurement on the reference computer (T065).
 - [ ] T007 [P] Create the directory scaffolding with short `README.md` files explaining each purpose:
   `data/sources/`, `data/corpus/es-co-cs/`, `data/correctness/`, `data/lexicon/`, `assets/`,
   `docs/`, `scripts/`, `reports/`.
@@ -90,10 +95,19 @@ engine skeleton, and test harness
     sign-off is still recommended before the first public release.
 - [ ] T009 Create `data/sources/manifest.toml`, with fields `name`, `url`, `license`, `retrieved`,
   `sha256`, and `role` (`general` | `spelling` | `domain`) per entry.
-  - Create `scripts/fetch-sources.sh`. It downloads the sources into `data/sources/raw/`, verifies
-    each `sha256`, and expands the dictionary with Hunspell `unmunch es_CO.dic es_CO.aff` into
-    `data/sources/raw/es_CO.words` (UTF-8, one word per line).
-  - The script fails with a clear message if `unmunch` isn't installed.
+  - Commit the pinned snapshots `data/sources/snapshots/spa_sentences.tsv.bz2` and
+    `data/sources/snapshots/es_CO.oxt` through Git LFS. Their SHA-256 values are recorded in
+    `docs/data-sources.md`. Tatoeba regenerates its export weekly, so the live URL can't be the
+    canonical input.
+  - Create `scripts/fetch-sources.sh`:
+    - By default it verifies each snapshot's `sha256` against the manifest, then extracts it into
+      `data/sources/raw/`: decompress the Tatoeba TSV, unzip `es_CO.aff` and `es_CO.dic` from the
+      `.oxt` file, and expand the dictionary with Hunspell `unmunch es_CO.dic es_CO.aff` into
+      `data/sources/raw/es_CO.words` (UTF-8, one word per line).
+    - It downloads from the upstream URLs only with `--refresh`, which also prints the new hashes.
+      A refresh requires updating the manifest and bumping the asset version.
+    - It fails with a clear message if `unmunch` or `git lfs` isn't installed, or if a hash doesn't
+      match.
 - [ ] T010 [P] Write `docs/locale-profile.md` for Colombian Spanish with formal *usted* (FR-022):
   - register rules;
   - a vocabulary-differences table (`celular`/`móvil`, `computador`/`ordenador`, and similar);
@@ -124,8 +138,10 @@ engine skeleton, and test harness
   - **Draft done 2026-10-16** (AI-assisted): 1,629 messages, 16,557 words, 174–194 per category, no
     duplicates, digits, or *tú* forms. **Still open**: the human review checklist in
     `data/corpus/es-co-cs/README.md`. Tick this task only after that review.
-- [ ] T014 Implement the split assignment in `crates/predi-tools/src/build/splits.rs` and the
-  `predi-build split` subcommand:
+- [ ] T014a Implement the split assignment in `crates/predi-tools/src/build/splits.rs` and the
+  `predi-build split` subcommand, with unit tests that run on a temporary copy of the corpus. This
+  task only writes and tests the code; it does **not** freeze the real splits:
+  - Hash each message's `text` field only (not the category), after NFC normalization.
   - Assign each message to a split by the **rank** of its SHA-256 hash (sorted ascending): the first
     ⌈n/3⌉ are `test`, the next ⌈n/6⌉ are `dev`, the rest `build`. Using rank instead of a random
     ratio gives exact counts. With the current 1,629 messages, that's 543 test messages (about
@@ -134,6 +150,9 @@ engine skeleton, and test harness
   - Never reassign a hash that's already listed: the split is "assigned once and immutable".
   - Fail unless there are at least 500 test messages, at least 250 dev messages, and at least 5,000
     word positions in test.
+- [ ] T014b 🧑 Run `predi-build split` once on the real corpus and commit
+  `data/corpus/es-co-cs/splits.tsv`. Do this **only after** the T013 human review, because editing
+  a message after freezing changes its split. It blocks T058, T064, and T065, but not US1–US4.
 
 ### Core types and text handling (`predi-core`)
 
@@ -160,6 +179,9 @@ engine skeleton, and test harness
 - [ ] T017 [P] Implement `crates/predi-core/src/tokenize.rs` with unit tests:
   - Truncate the input to the last 1,000 Unicode scalar values at a word boundary (FR-031).
   - Word characters are letters, plus a hyphen or apostrophe only between letters (research R4).
+  - Normalize to NFC only for lookups. Report the partial word's start offset and length against
+    the **original** input string, so replacement counts match the client's text even when it
+    arrives in decomposed form (NFD) (FR-003).
   - Classify the ending as `Empty`, `InsideWord { partial, start }`, or `Boundary`. Report the
     previous words of the current message, the last boundary characters (for sentence-start
     detection), and whether a leading space is needed.
@@ -171,8 +193,9 @@ engine skeleton, and test harness
   - Check the magic `PREDITYP`, format version `1`, the reserved bytes, the asset version string,
     the τ values and α, the source-manifest hash, the payload SHA-256 (offset 128 to end of file),
     and the 6-entry section table with 8-byte alignment.
-  - Load the lexicon section: the folded-key FST mapping to word ids, canonical spellings, casing
-    flags (`Lower`, `Capitalized`, `Acronym`), and register flags.
+  - Load the lexicon section: the folded-key FST mapping to word ids, canonical spellings, and the
+    word-flags byte per word id. Bits 0–1 hold the casing (`Lower`, `Capitalized`, `Acronym`),
+    bit 2 holds `register_other`, and bits 3–7 are reserved and must be 0.
   - Reject the asset with the matching `AssetError` (FR-038, FR-039).
   - The reader works on `&[u8]` only, with no filesystem access.
 - [ ] T019 Implement the asset writer in `crates/predi-tools/src/build/writer.rs`, mirroring the
@@ -197,8 +220,8 @@ engine skeleton, and test harness
   - Count with a domain weight parameter.
   - Pick the canonical spelling: the most frequent form that is present in `es_CO.words`, or present
     in `data/lexicon/domain-words.txt`.
-  - Set casing flags: `Capitalized` if allowlisted, `Acronym` if all-caps in the allowlist.
-  - Set register flags from `data/lexicon/register-flags.txt`.
+  - Set the word flags: casing bits `Capitalized` if allowlisted, `Acronym` if all-caps in the
+    allowlist; the `register_other` bit from `data/lexicon/register-flags.txt`.
   - Build the folded-key FST.
 - [ ] T023 Implement the `predi-build build` subcommand in `crates/predi-tools/src/bin/predi-build.rs`:
   - Arguments per `contracts/cli.md`: `--manifest`, `--corpus`, `--allowlist`, `--asset-version`,
@@ -207,6 +230,9 @@ engine skeleton, and test harness
     them.
   - Write the asset and `<out>.build-report.txt` (sizes, pruning, dropped-token counts, τ).
   - Exit codes: 0, 2 (invalid input), 3 (test leakage).
+  - Add a `--plain-sources <dir>` mode for test fixtures. It reads `sentences.txt` (one sentence per
+    line) and `words.txt` (one word per line) from the directory, needs no manifest and no splits,
+    and writes a source-manifest hash of all zeros. Only `scripts/build-fixture.sh` uses it.
 
 ### Engine skeleton and test harness
 
@@ -226,8 +252,8 @@ engine skeleton, and test harness
   - Set status `LowConfidence` when nothing qualifies.
 - [ ] T026 Create the small test sources in `crates/predi-core/fixtures/mini-sources/`, about 300
   Colombian customer-service sentences plus a word list.
-  - Create `scripts/build-fixture.sh`, which runs `predi-build` to produce
-    `crates/predi-core/fixtures/mini.pta`.
+  - Create `scripts/build-fixture.sh`, which runs `predi-build build --plain-sources
+    crates/predi-core/fixtures/mini-sources` to produce `crates/predi-core/fixtures/mini.pta`.
   - Commit the built fixture, so `predi-core` tests don't depend on `predi-tools` at test time.
 - [ ] T027 Implement the correctness test runner in `crates/predi-core/tests/correctness.rs`:
   - Parse each line of `data/correctness/cases.jsonl` according to
@@ -275,7 +301,13 @@ cases), then run `predi-cli predict "Buenos dí"` and see `días` with `replace_
     word byte-identical (FR-004);
   - repeated calls give identical results (FR-007);
   - `text` has no leading or trailing whitespace;
-  - when the input ends inside a word, every suggestion is a `Completion` (G10).
+  - when the input ends inside a word, every suggestion is a `Completion` (G10);
+  - **deletion**: for any input and any number of characters removed from its end, the result for
+    the shortened text equals that of a freshly constructed engine, even after the engine has
+    served the longer text (constitution §IX);
+  - **decomposed input**: for inputs converted to NFD (for example `Buenos di` + U+0301), applying
+    any suggestion by `replace_chars`/`replace_utf16` against the original string yields correct,
+    uncorrupted text (FR-003, SC-007).
 
 ### Implementation for User Story 1
 
@@ -320,6 +352,10 @@ context. Completions also benefit from context.
   - `¿En qué puedo ` → contains `ayudarle`, not_contains `ayudarte`.
   - Empty input → status `Ok` or `LowConfidence`, at most 3 suggestions, all capitalized.
   - `¿` → `leading_space` false.
+  - Deletion sequence (`area: deletion`): `Buenos días` (the complete word, no suggestion is
+    `días`) → `Buenos dí` (contains `días`) → `Buenos d` → `Buenos ` (next-word results) →
+    `Bueno` (completion results only). None of them suggests text that was only present before
+    the deletion.
 
 ### Implementation for User Story 2
 
@@ -594,7 +630,8 @@ sentence-ending punctuation, and the continuation rate is reported by `predi-eva
 - T036 → T037 → T038 → T039 and T040.
 - T053 → T054, T055, T056 → T057. T053 and T054 → T058.
 - T008 (licenses) must be done before T064 (building a distributable asset).
-- T013 and T014 (corpus and splits) must be done before T058, T064, and T065.
+- T013 (reviewed) → T014b (freeze splits). T014b must be done before T058, T064, and T065.
+- T014a (split code) is part of Phase 2 and doesn't wait for the corpus review.
 
 ### Parallel Opportunities
 

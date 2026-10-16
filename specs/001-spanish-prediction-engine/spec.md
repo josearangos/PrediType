@@ -278,7 +278,9 @@ verify they never exceed four words or cross a sentence end.
   how many trailing characters of the current partial word it replaces (zero for a next word), and
   whether a leading space is required. Suggestion text MUST NOT begin or end with whitespace. Any
   space after an accepted suggestion is a client behavior, defined once in a shared client
-  interaction spec and applied identically by both clients.
+  interaction spec and applied identically by both clients. Replacement counts MUST refer to the
+  text exactly as the client sent it, before any internal normalization, so that decomposed
+  accents (NFD) are counted correctly.
 - **FR-004**: Applying any suggestion MUST change only the current trailing partial word and/or append
   text. All text before the current partial word MUST remain unchanged.
 - **FR-005**: The engine MUST NOT insert, send, or submit text itself. It only returns suggestions,

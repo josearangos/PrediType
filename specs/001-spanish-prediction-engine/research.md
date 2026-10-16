@@ -97,7 +97,9 @@ distributed.
 ## R4. Text normalization, tokenization, and accent tolerance (FR-015–FR-016, FR-029)
 
 **Decision**:
-- **Normalization**: input is normalized to Unicode NFC. Control characters other than line breaks
+- **Normalization**: a copy of the input is normalized to Unicode NFC for lookups only. The
+  partial word's span is always measured on the original input, so replacement counts are correct
+  for decomposed (NFD) text. Control characters other than line breaks
   are treated as separators.
 - **Word characters**: letters (including á é í ó ú ü ñ and their capitals). A hyphen or apostrophe
   counts only between letters.

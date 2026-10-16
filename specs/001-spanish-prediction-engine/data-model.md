@@ -63,7 +63,7 @@ user text.
 | Part | Contents |
 |------|----------|
 | Header | Magic number, format version, asset version (semver), `tau_completion`, `tau_next`, backoff α, source-manifest hash, payload checksum |
-| Lexicon | Folded-key FST → word ids; canonical spelling per id; casing flag (`Lower`, `Capitalized`, `Acronym`) |
+| Lexicon | Folded-key FST → word ids; canonical spelling per id; one word-flags byte per id: bits 0–1 casing (`Lower`, `Capitalized`, `Acronym`), bit 2 `register_other` (*tú*-form or other-variant word, FR-022), bits 3–7 reserved (0) |
 | N-gram tables | Unigram, bigram, and trigram scores, quantized, with domain weighting applied at build time |
 | Top-next lists | Up to 32 ranked next-word ids per frequent unigram or bigram context |
 

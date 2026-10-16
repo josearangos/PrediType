@@ -70,6 +70,10 @@ and Spanish language behavior, and the engine contract and text safety, before `
 
 ## Notes
 
+- **Review status (2026-10-16)**: the spec was amended for CHK010–CHK013, CHK027, CHK031, and CHK032
+  (see spec Clarifications). These are pending reviewer confirmation. The remaining items are
+  **deferred** to implementation review by author decision, after `/speckit-analyze` found no
+  critical issues among them. They don't block `/speckit-implement`.
 - Mark items `[x]` only after review confirms the requirement-quality criterion is satisfied
 - Leave items unchecked when they still require clarification, correction, or reviewer evaluation
 - `/speckit-implement` reads checklist checkbox state as a gate and must not modify markers
