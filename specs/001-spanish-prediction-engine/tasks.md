@@ -65,6 +65,10 @@ independently.
   - `cargo clippy --workspace -- -D warnings`
   - `cargo test --workspace`
   - `cargo build -p predi-core --target wasm32-unknown-unknown`
+  - A WASM test job: `wasm-pack test --node crates/predi-core` (or `cargo test` with the
+    `wasm-bindgen-test-runner`), running the correctness cases and comparing them with native output
+    (SC-008, FR-007). The cases and fixture are embedded with `include_str!`/`include_bytes!` so the
+    test needs no filesystem.
   - `cargo deny check`
   - A `windows-latest` job running `cargo build --workspace` and `cargo test --workspace` (FR-032,
     constitution §V). This verifies that the code builds and passes tests on the target OS. It
@@ -124,6 +128,10 @@ engine skeleton, and test harness
   acronyms that must keep their capitalization (FR-019), for example `Colombia`, `Bogotá`,
   `Medellín`, `Cali`, `Barranquilla`, `PSE`, `DIAN`, `NIT`. Add a header comment explaining the
   rule: no person names.
+
+  Also create `data/given-names.txt` (one name per line), a list of common Colombian given names
+  used by the build-time personal-data scan (FR-028). Record its source and license in
+  `docs/data-sources.md`, or note that the team wrote it.
 - [ ] T013 🧑 Write the corpus guidelines in `data/corpus/es-co-cs/README.md`:
   - Placeholders instead of personal data: `{NOMBRE}`, `{NUMERO_PEDIDO}`, `{TELEFONO}`, `{CORREO}`,
     `{FECHA}`, `{VALOR}`.
@@ -184,10 +192,12 @@ engine skeleton, and test harness
     arrives in decomposed form (NFD) (FR-003).
   - Classify the ending as `Empty`, `InsideWord { partial, start }`, or `Boundary`. Report the
     previous words of the current message, the last boundary characters (for sentence-start
-    detection), and whether a leading space is needed.
-  - Return `NotApplicable` when the current token contains a digit, `@`, `/`, `.` or `:` inside it,
-    is longer than 30 characters, or contains characters that are neither letters nor standard
-    Spanish punctuation (FR-012, FR-029).
+    detection), and whether a leading space is needed, per the FR-041 table (`¿ ¡ ( «`, an opening
+    straight quote, whitespace, and line breaks need none).
+  - Return `NotApplicable` when the current token contains a digit, `@`, `/`, `\`, `_`, `=`, `{`,
+    `}`, `<`, `>`, or a `.` or `:` between two letters or digits, is longer than 30 characters, or
+    the partial word contains a letter outside Latin plus áéíóúüñ (FR-012, FR-029, FR-040). Emoji
+    and other symbols are boundaries.
 - [ ] T018 Implement the asset reader in `crates/predi-core/src/asset.rs`, following
   `contracts/asset-format.md`:
   - Check the magic `PREDITYP`, format version `1`, the reserved bytes, the asset version string,
@@ -214,6 +224,10 @@ engine skeleton, and test harness
   - Drop tokens that appear only capitalized mid-sentence and aren't in
     `data/allowlist-proper-nouns.txt`.
   - Collect dropped tokens with counts for the build report.
+  - After the asset is assembled, scan its vocabulary and phrases for email and phone patterns,
+    digit runs, and entries with `Capitalized` casing that are on `data/given-names.txt` but not in
+    the allowlist, and fail the build if any match (FR-028, SC-005). Lowercase words that are also
+    names (`luz`, `paz`) pass.
 - [ ] T022 Implement unigram counting and lexicon building in `crates/predi-tools/src/build/lexicon.rs`
   (depends on T020, T021):
   - Tokenize with `predi_core::tokenize`.
@@ -257,7 +271,8 @@ engine skeleton, and test harness
   - Commit the built fixture, so `predi-core` tests don't depend on `predi-tools` at test time.
 - [ ] T027 Implement the correctness test runner in `crates/predi-core/tests/correctness.rs`:
   - Parse each line of `data/correctness/cases.jsonl` according to
-    `contracts/correctness-case.schema.json`.
+    `contracts/correctness-case.schema.json`. Embed the file and `fixtures/mini.pta` with
+    `include_str!`/`include_bytes!`, so the same runner also works on WASM (T006).
   - Run each case against `fixtures/mini.pta` and assert every `expect` key.
   - Report failing case ids.
   - Seed `data/correctness/cases.jsonl` with `empty` and `not_applicable` cases, for example the
@@ -352,6 +367,8 @@ context. Completions also benefit from context.
   - `¿En qué puedo ` → contains `ayudarle`, not_contains `ayudarte`.
   - Empty input → status `Ok` or `LowConfidence`, at most 3 suggestions, all capitalized.
   - `¿` → `leading_space` false.
+  - FR-041 leading-space cases. `leading_space` true: `Listo;`, `Gracias.`, `(ver anexo)`,
+    `«Hola»`. `leading_space` false: `(`, `«`, `"` (at the start), `Hola\n`.
   - Deletion sequence (`area: deletion`): `Buenos días` (the complete word, no suggestion is
     `días`) → `Buenos dí` (contains `días`) → `Buenos d` → `Buenos ` (next-word results) →
     `Bueno` (completion results only). None of them suggests text that was only present before
@@ -378,8 +395,7 @@ context. Completions also benefit from context.
   than 3 survive.
 - [ ] T040 [US2] Wire the `Boundary` and `Empty` paths in `crates/predi-core/src/lib.rs`:
   - `kind = NextWord`, `replace_chars = 0`.
-  - `leading_space` is true only after punctuation with no following whitespace, and never after
-    `¿`, `¡`, `(`, an opening quotation mark, or a line break.
+  - Take `leading_space` from the tokenizer (T017), which applies FR-041. Don't recompute it here.
   - Exclude register-flagged words (FR-022).
   - Empty input uses the `<s>` context, with openers subject to the cutoff (FR-011).
 - [ ] T041 [US2] Rebuild `crates/predi-core/fixtures/mini.pta` with n-grams via
@@ -408,6 +424,12 @@ the correctness set pass.
   - `Lo esperamos en Bog` → contains `Bogotá`.
   - `Hola dias ` → no suggestion has `replace_chars` > 0 (FR-021).
   - `Gracias por esperar… ` → `all_capitalized`.
+  - `Gracias por esperar... ` → `all_capitalized`.
+  - `Gracias, ¿c` → `all_lowercase`; `Listo. ¿C` → `all_capitalized` (FR-017).
+  - `Tenga en cuenta lo siguiente: ` → `all_lowercase`; `Estimado cliente:\n` → `all_capitalized`.
+  - `Le dijimos "gracias` → `all_lowercase` (quotes follow the surrounding sentence).
+  - `Hola, bUe` → `all_lowercase`; `Hola, BUe` → `all_capitalized` (FR-018).
+  - `Su 2do` → empty, status `NotApplicable` (FR-040).
 
 ### Implementation for User Story 3
 
@@ -415,9 +437,12 @@ the correctness set pass.
   R5, and unit tests for each rule:
   1. Lexicon casing, unless the partial word is all-caps.
   2. All-caps partial word with at least 2 letters → output all-caps.
-  3. Sentence start (message start, or after `.`, `?`, `!`, `…`, or a line break, optionally
-     followed by `¿`/`¡` and whitespace) → capitalize the first word.
-  4. Partial word with a capital first letter → keep the initial capital.
+  3. Sentence start (message start, or after `.`, `?`, `!`, `…`, `...`, or a line break, optionally
+     followed by `¿`/`¡` and whitespace) → capitalize the first word. A mid-sentence `¿`/`¡` does
+     not start a sentence; after a colon, lowercase unless a line break follows; quotes and
+     parentheses are transparent (FR-017).
+  4. Partial word with a capital first letter → keep the initial capital. Other mixed case is
+     ignored (FR-018).
   5. Otherwise lowercase.
 - [ ] T044 [US3] Apply casing in the output pipeline in `crates/predi-core/src/lib.rs` before
   `rank.rs` deduplication, so duplicates are detected on the final text. Continuations case only
@@ -489,14 +514,17 @@ metrics should be identical, and the report should validate against
 
 - [ ] T051 [P] [US5] Write `crates/predi-tools/tests/eval_report.rs`:
   - A generated report validates against `contracts/eval-report.schema.json`. Check required keys,
-    criterion ids matching `^SC-0(0[1-9]|1[0-4])$`, and the `comparison` enum.
+    criterion ids matching `^SC-0(0[1-9]|1[0-5])$`, and the `comparison` enum.
+  - `detail` values are only numbers, booleans, or case-id lists, and no string anywhere in the
+    report contains corpus text (FR-037). Check this by searching the report for every test-split
+    message.
   - Provisional criteria never cause a non-zero exit code.
 
 ### Implementation for User Story 5
 
 - [ ] T052 [P] [US5] Implement the report types and JSON writer in
   `crates/predi-tools/src/eval/report.rs`, following `contracts/eval-report.schema.json`.
-  - Mark SC-001–SC-004 and SC-014 as `provisional: true`.
+  - Mark SC-001–SC-004, SC-014, and SC-015 as `provisional: true`.
   - Write to `reports/eval-<UTC timestamp>.json`.
 - [ ] T053 [US5] Implement the keystroke replay in `crates/predi-tools/src/eval/replay.rs`:
   - For each test message, issue a request at every character position.
@@ -508,13 +536,14 @@ metrics should be identical, and the report should validate against
 
   | Criterion | What it measures |
   |-----------|------------------|
-  | SC-001 | Partial words with at least 2 typed letters: intended word in top 3, with empty results counted as misses |
-  | SC-002 | Boundaries: actual next word in top 3 |
-  | SC-003 | Simulated keystroke savings: characters not typed minus one per acceptance |
+  | SC-001 | Partial-word points (spec "Prediction points"): intended word in top 3, with empty results counted as misses |
+  | SC-002 | Boundary points: actual next word in top 3 |
+  | SC-003 | Simulated keystroke savings per the spec formula: characters not typed minus one per acceptance; inserted leading space saved, trailing space typed, accent-only replacement saves nothing |
   | SC-004 | First rank given that a correct suggestion is present |
   | SC-014 | First-rank precision among non-empty results |
   | SC-005 | Suggestions not in `es_CO.words` or the domain list, or matching the personal-data patterns |
   | SC-007 | Prefix preservation for every applied suggestion |
+  | SC-015 | Share of shown continuations that match the following corpus text in full, plus the count shown (provisional) |
 - [ ] T055 [US5] Implement the performance measurement in `crates/predi-tools/src/eval/perf.rs`:
   - Run a 1,000-request warm-up, then time each `predict` with `std::time::Instant` and report p50,
     p95, p99, and max (SC-009).
@@ -573,8 +602,8 @@ sentence-ending punctuation, and the continuation rate is reported by `predi-eva
 - [ ] T062 [US6] Integrate continuations in `crates/predi-core/src/rank.rs`. A continuation takes its
   first word's slot when that word is already a candidate (no duplicates, FR-013), and counts toward
   the limit of 3.
-- [ ] T063 [US6] Report the continuation offer rate and full-match rate as informational (non-gating)
-  metrics in `crates/predi-tools/src/eval/metrics.rs`.
+- [ ] T063 [US6] Confirm `predi-eval` reports SC-015 (defined in T054) with real continuations: the
+  full-match rate as a provisional criterion, plus the number of continuations shown.
 
 **Checkpoint**: All six user stories work and are tested.
 
@@ -591,8 +620,9 @@ sentence-ending punctuation, and the continuation rate is reported by `predi-eva
 - [ ] T065 🧑 Run `predi-eval --check-determinism` on the reference computer.
   - Save the output as `reports/baseline-eval.json`.
   - All hard gates (SC-005–SC-013) must pass. Record the provisional values.
-- [ ] T066 🧑 Amend the provisional quality targets SC-001–SC-004 and SC-014 once in
-  `specs/001-spanish-prediction-engine/spec.md`, citing `reports/baseline-eval.json`. Add a dated
+- [ ] T066 🧑 The project owner amends the provisional quality targets SC-001–SC-004, SC-014, and
+  SC-015 once in `specs/001-spanish-prediction-engine/spec.md`, within one week of T065 and before
+  any release, citing `reports/baseline-eval.json`. Add a dated
   note under Success Criteria, and mark the criteria as hard gates from then on.
 - [ ] T067 [P] Write `README.md`:
   - project purpose, workspace layout, and how to fetch sources, build the asset, run the CLI, and
@@ -604,6 +634,7 @@ sentence-ending punctuation, and the continuation rate is reported by `predi-eva
 - [ ] T069 Run the full `quickstart.md` validation, steps 1–6. This includes the Windows Process
   Monitor privacy check (SC-012), with the outcome recorded in `docs/privacy-verification.md`.
 - [ ] T070 Confirm CI is green: fmt, Clippy (no-I/O lints), tests, the WASM build of `predi-core`,
+  the correctness set run on the WASM build with results identical to native (SC-008, FR-007),
   `cargo deny`, and `scripts/check-privacy.sh`.
 
 ---

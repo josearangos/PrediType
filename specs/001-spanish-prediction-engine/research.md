@@ -103,9 +103,11 @@ distributed.
   are treated as separators.
 - **Word characters**: letters (including á é í ó ú ü ñ and their capitals). A hyphen or apostrophe
   counts only between letters.
-- **Everything else** is a boundary. Digits, `@`, `/`, `.` or `:` inside a token mark it as
-  non-word (number, email, URL, code). So does a token longer than 30 characters. Either case gives
-  zero suggestions (FR-012).
+- **Everything else** is a boundary. A digit, `@`, `/`, `\`, `_`, `=`, `{`, `}`, `<`, `>`, or a `.`
+  or `:` between two letters or digits inside a token marks it as non-word (number, email, URL,
+  code; spec FR-012, FR-040). So does a token longer than 30 characters. Either case gives zero
+  suggestions (FR-012). A partial word with a letter other than a–z, A–Z, and áéíóúüñ is
+  unsupported; emoji and other symbols are boundaries (FR-029).
 - **Folded key**: lookups use a folded form (lowercase, diacritics removed, `ñ`→`n`). Suggestions
   always use the canonical dictionary spelling.
 - **Ranking**: when the typed letters exactly match the canonical spelling, including accents, that
@@ -133,9 +135,12 @@ priority order:
 1. **Lexicon casing**: a lexicon entry marked with canonical casing (proper noun or acronym) keeps
    that casing. The exception is an all-caps partial word, which forces all-caps.
 2. **All-caps**: a partial word that is all-caps with at least 2 letters makes the output all-caps.
-3. **Sentence start**: at message start, or after `.`, `?`, `!`, `…` or a line break (optionally
-   followed by `¿`/`¡` and whitespace), only the first word is capitalized.
-4. **Partial-word initial capital**: a partial word with a capital first letter keeps that capital.
+3. **Sentence start**: at message start, or after `.`, `?`, `!`, `…`, `...` or a line break
+   (optionally followed by `¿`/`¡` and whitespace), only the first word is capitalized. A `¿`/`¡`
+   mid-sentence does not start a sentence. After a colon, lowercase unless a line break follows.
+   Quotes and parentheses are transparent: casing follows the surrounding sentence.
+4. **Partial-word initial capital**: a partial word with a capital first letter keeps that capital. Other
+   mixed case (for example `bUe`) is ignored.
 5. Otherwise, lowercase.
 
 Continuations (R7) apply rule 3 or 4 only to their first word.

@@ -29,7 +29,7 @@
         "type": "object",
         "required": ["id", "description", "value", "threshold", "comparison", "provisional", "passed"],
         "properties": {
-          "id": { "type": "string", "pattern": "^SC-0(0[1-9]|1[0-4])$" },
+          "id": { "type": "string", "pattern": "^SC-0(0[1-9]|1[0-5])$" },
           "description": { "type": "string" },
           "value": { "type": "number" },
           "unit": { "type": "string" },
@@ -37,7 +37,16 @@
           "comparison": { "enum": [">=", "<=", "=="] },
           "provisional": { "type": "boolean" },
           "passed": { "type": "boolean" },
-          "detail": { "type": "object" }
+          "detail": {
+            "type": "object",
+            "description": "Numbers, flags, and failing case ids only. Never corpus, typed, or suggestion text (spec FR-037).",
+            "additionalProperties": {
+              "anyOf": [
+                { "type": ["number", "boolean"] },
+                { "type": "array", "items": { "type": "string", "pattern": "^[a-z0-9_-]+$" } }
+              ]
+            }
+          }
         }
       }
     },

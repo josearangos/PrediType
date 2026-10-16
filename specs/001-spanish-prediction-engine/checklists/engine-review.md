@@ -11,69 +11,72 @@ and Spanish language behavior, and the engine contract and text safety, before `
 
 ## Requirement Completeness: Privacy and Data Handling
 
-- [ ] CHK001 - Does the spec state that error messages, panics, and crash output must not contain typed text, or does FR-023 cover only normal-operation writes? [Gap, Spec §FR-023]
-- [ ] CHK002 - Is "personal data" defined beyond names, phones, and emails, for example national ID numbers (*cédula*), addresses, and order or account numbers? [Completeness, Spec §FR-014]
-- [ ] CHK003 - Is there a measurable criterion that the language asset itself, not just the suggestions, contains no personal data or conversations? [Gap, Spec §FR-028, §SC-005]
-- [ ] CHK004 - Are attribution and license-text obligations for bundled sources stated as requirements, or only implied by "documented"? [Completeness, Spec §FR-028]
-- [ ] CHK005 - Is the use of placeholders (such as `{NOMBRE}`) instead of personal data in the team-written corpus a spec requirement, or only a plan detail? [Gap, Spec §FR-034]
-- [ ] CHK006 - Does the spec make clear that the evaluation report may contain only metrics and never corpus or typed text, so it doesn't conflict with SC-012's "0 bytes written"? [Ambiguity, Spec §SC-012, §FR-037]
+- [x] CHK001 - Does the spec state that error messages, panics, and crash output must not contain typed text, or does FR-023 cover only normal-operation writes? [Gap, Spec §FR-023]
+- [x] CHK002 - Is "personal data" defined beyond names, phones, and emails, for example national ID numbers (*cédula*), addresses, and order or account numbers? [Completeness, Spec §FR-014]
+- [x] CHK003 - Is there a measurable criterion that the language asset itself, not just the suggestions, contains no personal data or conversations? [Gap, Spec §FR-028, §SC-005]
+- [x] CHK004 - Are attribution and license-text obligations for bundled sources stated as requirements, or only implied by "documented"? [Completeness, Spec §FR-028]
+- [x] CHK005 - Is the use of placeholders (such as `{NOMBRE}`) instead of personal data in the team-written corpus a spec requirement, or only a plan detail? [Gap, Spec §FR-034]
+- [x] CHK006 - Does the spec make clear that the evaluation report may contain only metrics and never corpus or typed text, so it doesn't conflict with SC-012's "0 bytes written"? [Ambiguity, Spec §SC-012, §FR-037]
 
 ## Requirement Clarity: Privacy and Data Handling
 
-- [ ] CHK007 - Is "names of real people" defined in a way a reviewer could objectively apply to a vocabulary list? [Ambiguity, Spec §FR-014]
-- [ ] CHK008 - Is the meaning of "held context" consistent with a stateless design, so FR-024 and the Transient Context entity don't imply text must be retained between requests? [Consistency, Spec §FR-024, Key Entities]
-- [ ] CHK009 - Is the accepted risk of having no offensive-word filter documented with a trigger for revisiting it (for example "any vulgar suggestion observed in evaluation")? [Assumption, Spec §Assumptions]
+- [x] CHK007 - Is "names of real people" defined in a way a reviewer could objectively apply to a vocabulary list? [Ambiguity, Spec §FR-014]
+- [x] CHK008 - Is the meaning of "held context" consistent with a stateless design, so FR-024 and the Transient Context entity don't imply text must be retained between requests? [Consistency, Spec §FR-024, Key Entities]
+- [x] CHK009 - Is the accepted risk of having no offensive-word filter documented with a trigger for revisiting it (for example "any vulgar suggestion observed in evaluation")? [Assumption, Spec §Assumptions]
 
 ## Requirement Consistency: Prediction Behavior
 
-- [ ] CHK010 - Do FR-008's "completion must add at least 2 characters" and FR-016 / User Story 1 scenario 4 (`comunicacion` → `comunicación`, which adds 0 characters) conflict? [Conflict, Spec §FR-008, §FR-016, US1-AS4]
-- [ ] CHK011 - Must the empty-context openers (FR-011) pass the minimum-confidence rule (FR-002), or are they exempt? [Conflict, Spec §FR-002, §FR-011]
-- [ ] CHK012 - Does the edge case "partial word already a complete word … may include next words" conflict with FR-008 and FR-009, which reserve next words for word boundaries? [Conflict, Spec §Edge Cases, §FR-008, §FR-009]
-- [ ] CHK013 - Does "never `ayudarte`" (US2-AS4, FR-022) conflict with "MUST still complete other-variant words the agent starts typing" when the agent types `ayudart`? [Conflict, Spec §FR-022]
-- [ ] CHK014 - Is it specified whether continuations may be offered when the text ends inside a word, or only at word boundaries? [Ambiguity, Spec §FR-010]
+- [x] CHK010 - Do FR-008's "completion must add at least 2 characters" and FR-016 / User Story 1 scenario 4 (`comunicacion` → `comunicación`, which adds 0 characters) conflict? [Conflict, Spec §FR-008, §FR-016, US1-AS4]
+- [x] CHK011 - Must the empty-context openers (FR-011) pass the minimum-confidence rule (FR-002), or are they exempt? [Conflict, Spec §FR-002, §FR-011]
+- [x] CHK012 - Does the edge case "partial word already a complete word … may include next words" conflict with FR-008 and FR-009, which reserve next words for word boundaries? [Conflict, Spec §Edge Cases, §FR-008, §FR-009]
+- [x] CHK013 - Does "never `ayudarte`" (US2-AS4, FR-022) conflict with "MUST still complete other-variant words the agent starts typing" when the agent types `ayudart`? [Conflict, Spec §FR-022]
+- [x] CHK014 - Is it specified whether continuations may be offered when the text ends inside a word, or only at word boundaries? [Ambiguity, Spec §FR-010]
 
 ## Requirement Clarity: Spanish Language Rules
 
-- [ ] CHK015 - Is the capitalization rule defined for an opening `¿` or `¡` mid-sentence (for example `Gracias, ¿cómo…`), where Spanish keeps lowercase? [Gap, Spec §FR-017]
-- [ ] CHK016 - Are casing rules defined after a colon, inside quotation marks or parentheses, and after a three-dot `...` as well as the `…` character? [Coverage, Spec §FR-017, §FR-020]
-- [ ] CHK017 - Is mixed-case partial-word behavior (for example `bUe`) specified, or explicitly left to the default? [Edge Case, Spec §FR-018]
-- [ ] CHK018 - Are word-boundary rules for hyphens, apostrophes, and numbers attached to letters (for example `2do`) defined in the spec rather than only in the plan? [Clarity, Spec §FR-008, §FR-009]
-- [ ] CHK019 - Is "code-like string" defined with objective criteria? [Ambiguity, Spec §FR-012]
-- [ ] CHK020 - Are "unsupported characters" enumerated or defined by rule? [Ambiguity, Spec §FR-029]
-- [ ] CHK021 - Is the content and location of the "documented locale profile" specified as a deliverable (vocabulary differences, register rules, examples)? [Completeness, Spec §FR-022]
+- [x] CHK015 - Is the capitalization rule defined for an opening `¿` or `¡` mid-sentence (for example `Gracias, ¿cómo…`), where Spanish keeps lowercase? [Gap, Spec §FR-017]
+- [x] CHK016 - Are casing rules defined after a colon, inside quotation marks or parentheses, and after a three-dot `...` as well as the `…` character? [Coverage, Spec §FR-017, §FR-020]
+- [x] CHK017 - Is mixed-case partial-word behavior (for example `bUe`) specified, or explicitly left to the default? [Edge Case, Spec §FR-018]
+- [x] CHK018 - Are word-boundary rules for hyphens, apostrophes, and numbers attached to letters (for example `2do`) defined in the spec rather than only in the plan? [Clarity, Spec §FR-008, §FR-009]
+- [x] CHK019 - Is "code-like string" defined with objective criteria? [Ambiguity, Spec §FR-012]
+- [x] CHK020 - Are "unsupported characters" enumerated or defined by rule? [Ambiguity, Spec §FR-029]
+- [x] CHK021 - Is the content and location of the "documented locale profile" specified as a deliverable (vocabulary differences, register rules, examples)? [Completeness, Spec §FR-022]
 
 ## Acceptance Criteria Quality: Prediction Behavior
 
-- [ ] CHK022 - Are the denominators for SC-001 and SC-002 defined: which keystroke positions count as a "case", and whether positions after punctuation or inside non-word tokens are included? [Measurability, Spec §SC-001, §SC-002]
-- [ ] CHK023 - Does the SC-003 keystroke-savings formula state how inserted spaces and accented-character corrections are counted? [Clarity, Spec §SC-003]
-- [ ] CHK024 - Is the relationship between SC-004 and SC-014 explained, so the two first-rank metrics aren't redundant or contradictory? [Consistency, Spec §SC-004, §SC-014]
-- [ ] CHK025 - Is there a measurable criterion for continuation quality and frequency, or is FR-010 left unmeasured? [Gap, Spec §FR-010, US6]
+- [x] CHK022 - Are the denominators for SC-001 and SC-002 defined: which keystroke positions count as a "case", and whether positions after punctuation or inside non-word tokens are included? [Measurability, Spec §SC-001, §SC-002]
+- [x] CHK023 - Does the SC-003 keystroke-savings formula state how inserted spaces and accented-character corrections are counted? [Clarity, Spec §SC-003]
+- [x] CHK024 - Is the relationship between SC-004 and SC-014 explained, so the two first-rank metrics aren't redundant or contradictory? [Consistency, Spec §SC-004, §SC-014]
+- [x] CHK025 - Is there a measurable criterion for continuation quality and frequency, or is FR-010 left unmeasured? [Gap, Spec §FR-010, US6]
 
 ## Requirement Completeness: Engine Contract and Text Safety
 
-- [ ] CHK026 - Does the spec say what unit `replace` counts are in (characters vs. code units), given accented characters and different host text APIs? [Clarity, Spec §FR-003]
-- [ ] CHK027 - Does the spec define whether a suggestion includes a trailing space or punctuation after insertion, so behavior is consistent across clients? [Gap, Spec §FR-003, Constitution §VIII]
-- [ ] CHK028 - Is leading-space behavior specified after opening punctuation (`¿`, `¡`, `(`, quotation marks) and after a line break? [Coverage, Spec §FR-003]
-- [ ] CHK029 - Are request-identifier semantics specified (uniqueness, ordering, whether the engine relies on them)? [Clarity, Spec §FR-006]
-- [ ] CHK030 - Is determinism required across build targets (native Windows vs. WebAssembly), as well as across runs? [Gap, Spec §FR-007, Constitution §VI]
+- [x] CHK026 - Does the spec say what unit `replace` counts are in (characters vs. code units), given accented characters and different host text APIs? [Clarity, Spec §FR-003]
+- [x] CHK027 - Does the spec define whether a suggestion includes a trailing space or punctuation after insertion, so behavior is consistent across clients? [Gap, Spec §FR-003, Constitution §VIII]
+- [x] CHK028 - Is leading-space behavior specified after opening punctuation (`¿`, `¡`, `(`, quotation marks) and after a line break? [Coverage, Spec §FR-003]
+- [x] CHK029 - Are request-identifier semantics specified (uniqueness, ordering, whether the engine relies on them)? [Clarity, Spec §FR-006]
+- [x] CHK030 - Is determinism required across build targets (native Windows vs. WebAssembly), as well as across runs? [Gap, Spec §FR-007, Constitution §VI]
 
 ## Exception and Recovery Flows
 
-- [ ] CHK031 - Are requirements defined for a missing, corrupt, or incompatible language asset (refuse to start, report the error, never produce suggestions)? [Gap, Exception Flow]
-- [ ] CHK032 - Is version compatibility between the engine and its language asset stated as a requirement? [Gap, Spec §Key Entities]
-- [ ] CHK033 - Is FR-030 ("MUST NOT block … keyboard input") expressed as something verifiable at the engine level, or should it be restated as an engine guarantee (bounded, reentrant) plus a client obligation? [Measurability, Spec §FR-030]
+- [x] CHK031 - Are requirements defined for a missing, corrupt, or incompatible language asset (refuse to start, report the error, never produce suggestions)? [Gap, Exception Flow]
+- [x] CHK032 - Is version compatibility between the engine and its language asset stated as a requirement? [Gap, Spec §Key Entities]
+- [x] CHK033 - Is FR-030 ("MUST NOT block … keyboard input") expressed as something verifiable at the engine level, or should it be restated as an engine guarantee (bounded, reentrant) plus a client obligation? [Measurability, Spec §FR-030]
 
 ## Dependencies and Assumptions
 
-- [ ] CHK034 - Is the minimum size of the team-written corpus (build + dev + test) a spec requirement, consistent with the plan's at least 1,500 messages, or only the 500-message test minimum? [Consistency, Spec §Assumptions, Plan §Scale/Scope]
-- [ ] CHK035 - Are the owner and timing of the one-time amendment of the provisional quality targets defined (who amends, by when after the baseline run)? [Completeness, Spec §Success Criteria]
+- [x] CHK034 - Is the minimum size of the team-written corpus (build + dev + test) a spec requirement, consistent with the plan's at least 1,500 messages, or only the 500-message test minimum? [Consistency, Spec §Assumptions, Plan §Scale/Scope]
+- [x] CHK035 - Are the owner and timing of the one-time amendment of the provisional quality targets defined (who amends, by when after the baseline run)? [Completeness, Spec §Success Criteria]
 
 ## Notes
 
-- **Review status (2026-10-16)**: the spec was amended for CHK010–CHK013, CHK027, CHK031, and CHK032
-  (see spec Clarifications). These are pending reviewer confirmation. The remaining items are
-  **deferred** to implementation review by author decision, after `/speckit-analyze` found no
-  critical issues among them. They don't block `/speckit-implement`.
+- **Review status (2026-10-16, updated)**: the spec now addresses all 35 items. CHK010–CHK013,
+  CHK027, CHK031, and CHK032 were resolved in the first Clarifications session. The other 28 were
+  resolved in the "engine-review checklist" Clarifications session and the follow-up
+  `/speckit-analyze` remediation (FR-040, FR-041, SC-015, and amendments to FR-003, FR-006, FR-007,
+  FR-012, FR-014, FR-017, FR-018, FR-022, FR-023, FR-028–FR-030, FR-034, FR-037, the Success
+  Criteria, and the Assumptions). **All 35 items were confirmed by the reviewer on 2026-10-16**
+  and are ticked.
 - Mark items `[x]` only after review confirms the requirement-quality criterion is satisfied
 - Leave items unchecked when they still require clarification, correction, or reviewer evaluation
 - `/speckit-implement` reads checklist checkbox state as a gate and must not modify markers

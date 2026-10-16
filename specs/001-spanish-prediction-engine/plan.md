@@ -1,6 +1,6 @@
 # Implementation Plan: Spanish Prediction Engine
 
-**Branch**: `001-spanish-prediction-engine` (spec directory; the git branch is still `main`) |
+**Branch**: `001-spanish-prediction-engine` |
 **Date**: 2026-10-16 | **Spec**: [spec.md](spec.md)
 
 **Input**: Feature specification from `/specs/001-spanish-prediction-engine/spec.md`
@@ -26,7 +26,8 @@ accent-folded prefix index, precomputed into one static, versioned binary asset.
 **Language/Version**: Rust stable, edition 2024 (local toolchain 1.99.1)
 
 **Primary Dependencies**:
-- `predi-core`: `fst` (prefix/lexicon maps), `unicode-normalization`. Nothing else at runtime.
+- `predi-core`: `fst` (prefix/lexicon maps), `unicode-normalization`, `sha2` (asset checksum, R10;
+  pure Rust and WASM-compatible). Nothing else at runtime.
 - `predi-tools`: `clap`, `serde`, `serde_json`, `toml`, `sha2`, `memory-stats`.
 - Development: `proptest`, `criterion`.
 
@@ -57,7 +58,8 @@ internal design target is p95 ≤ 10 ms. Ready in ≤ 3 s.
 **Scale/Scope**:
 - One concurrent active field.
 - Vocabulary of about 50–100 k words.
-- Evaluation corpus of at least 1,500 messages (at least 500 test).
+- Team-written corpus of at least 1,500 messages, split into at least 500 test (the evaluation
+  corpus), at least 250 dev, and the rest build.
 - One locale (es-CO, *usted*).
 
 ## Constitution Check
@@ -96,7 +98,8 @@ specs/001-spanish-prediction-engine/
 │   ├── correctness-case.schema.json   # curated test case format
 │   └── eval-report.schema.json        # evaluation report format
 ├── checklists/
-│   └── requirements.md
+│   ├── requirements.md
+│   └── engine-review.md
 └── tasks.md             # Phase 2 (/speckit-tasks; not created here)
 ```
 
@@ -121,9 +124,12 @@ crates/
 │   ├── tests/
 │   │   ├── correctness.rs      # runs data/correctness/cases.jsonl on fixture asset
 │   │   ├── lifecycle.rs        # pause/resume/field_changed
+│   │   ├── asset_errors.rs     # missing/corrupt/incompatible asset (FR-038, FR-039)
 │   │   └── properties.rs       # proptest: no panic, prefix preservation, determinism
 │   ├── benches/predict.rs      # criterion
-│   └── fixtures/mini.pta       # tiny asset for tests (built by predi-build)
+│   └── fixtures/
+│       ├── mini-sources/       # small test sources for the fixture
+│       └── mini.pta            # tiny asset for tests (built by predi-build)
 └── predi-tools/                # developer tools (not shipped to agents)
     └── src/
         ├── bin/predi-build.rs
@@ -136,14 +142,21 @@ data/
 ├── sources/manifest.toml       # external sources, licenses, hashes (downloads git-ignored)
 ├── corpus/es-co-cs/            # team-written messages + splits.tsv
 ├── correctness/cases.jsonl
-└── allowlist-proper-nouns.txt
+├── lexicon/
+│   ├── register-flags.txt      # tú-form and other-variant words (FR-022)
+│   └── domain-words.txt        # legitimate domain terms (spelling check)
+├── allowlist-proper-nouns.txt  # places, brands, acronyms (FR-014, FR-019)
+└── given-names.txt             # personal-data scan list (FR-028)
 
 assets/                         # built .pta + build reports (versioned releases)
 docs/
 ├── locale-profile.md           # es-CO, usted (FR-022)
 ├── reference-computer.toml     # agreed hardware (spec Assumptions)
 └── data-sources.md             # attribution + licenses (FR-028)
-scripts/check-privacy.sh        # strace-based CI privacy check (R11)
+scripts/
+├── fetch-sources.sh            # verify and extract pinned source snapshots
+├── build-fixture.sh            # rebuild crates/predi-core/fixtures/mini.pta
+└── check-privacy.sh            # strace-based CI privacy check (R11)
 reports/                        # evaluation outputs (git-ignored except baseline)
 ```
 

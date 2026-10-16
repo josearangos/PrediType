@@ -87,8 +87,9 @@ cargo run --release -p predi-tools --bin predi-eval -- \
   | SC-011 | Ready in ≤ 3 s |
   | SC-013 | Field-change results equal a fresh engine |
 
-- SC-001–SC-004 and SC-014 are reported with `provisional: true`. On the **first baseline run**,
-  record the values and amend the spec's quality targets once (spec, Success Criteria).
+- SC-001–SC-004, SC-014, and SC-015 are reported with `provisional: true`. On the **first baseline
+  run**, record the values. The project owner then amends the spec's quality targets once, within one
+  week and before any release (spec, Success Criteria).
 
 ## 5. Privacy verification (SC-012)
 

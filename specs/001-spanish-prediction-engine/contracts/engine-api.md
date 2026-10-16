@@ -35,7 +35,7 @@ impl Engine {
 | G1 | `predict` never panics for any `&str` input. Unsupported input gives an empty result with status `NotApplicable`. | FR-029 |
 | G2 | At most 3 suggestions, contiguous ranks, no case- or accent-folded duplicates | FR-002, FR-013 |
 | G3 | Applying any suggestion (data-model application rule) changes only the trailing partial word or appends | FR-004 |
-| G4 | The same asset, engine version, and request always give the same result | FR-007 |
+| G4 | The same asset, engine version, and request always give the same result, on native and WASM builds alike: scoring uses only quantized scores and basic IEEE arithmetic (no platform math functions such as `ln`/`exp` at runtime), and ties break by canonical spelling | FR-007, SC-008 |
 | G5 | No I/O of any kind during `predict`, `pause`, `resume`, or `field_changed` | FR-023, FR-027 |
 | G6 | The work per call is bounded: input is truncated to 1,000 scalar values, and lookups are bounded | FR-031, SC-009 |
 | G7 | While paused, `predict` returns an empty result with status `Paused` | FR-025 |
