@@ -5,8 +5,7 @@ This guide checks that the delivered engine meets the spec. Interfaces are defin
 
 ## Prerequisites
 
-- **Data tools**: Hunspell (for `unmunch`) and Git LFS, for example `brew install hunspell git-lfs`
-  followed by `git lfs install` (or the Windows equivalents).
+- **Data tools**: Hunspell (for `unmunch`), for example `brew install hunspell` (or the Windows equivalent).
 - **Rust toolchain**: stable Rust with edition 2024 support, plus the `wasm32-unknown-unknown`
   target (`rustup target add wasm32-unknown-unknown`).
 - **Data**: source data downloaded per `data/sources/manifest.toml`. The hashes are checked
@@ -32,7 +31,7 @@ VI).
 ## 2. Build the language asset
 
 ```text
-scripts/fetch-sources.sh            # verifies the LFS snapshots and extracts them
+scripts/fetch-sources.sh            # verifies the committed snapshots and extracts them
 cargo run --release -p predi-tools --bin predi-build -- build \
   --manifest data/sources/manifest.toml --corpus data/corpus/es-co-cs \
   --allowlist data/allowlist-proper-nouns.txt --asset-version 1.0.0 \

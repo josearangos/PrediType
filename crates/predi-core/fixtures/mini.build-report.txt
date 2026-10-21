@@ -1,0 +1,37 @@
+PrediType language asset build report
+asset version: 0.0.0-fixture
+format version: 1
+source manifest sha256: 0000000000000000000000000000000000000000000000000000000000000000
+payload sha256: bf936c7c743935956aef6c79b50f9e1743857a14cac339378d9c65ef3936a61f
+plain sources (test fixture): 295 sentences from crates/predi-core/fixtures/mini-sources
+
+size: 56008 bytes (0.05 MB, target <= 40 MB)
+  lexicon FST: 3240 bytes
+  spellings: 3776 bytes
+  word flags: 352 bytes
+  n-gram tables: 28144 bytes
+  top-next lists: 20368 bytes
+  reserved: 0 bytes
+
+vocabulary: 345 words
+  register-flagged (FR-022): 2
+  allowlisted capitalized/acronym: 5
+tokens counted (weighted): 1843
+pruning: bigram min count 1, trigram min count 1
+  bigrams: 877 seen, 877 kept
+  trigrams: 1046 seen, 1046 kept
+  two-word contexts with next-word lists: 596
+
+tau_completion: 0.15
+tau_next: 0.15
+alpha: 0.4
+tau tuned on dev split: no (defaults)
+
+personal-data filter (research R8):
+  non-word tokens dropped (placeholders, numbers, emails, URLs, code): 0
+  likely proper names dropped: 1 distinct
+    laura	1
+  build-time vocabulary scan: passed (0 matches)
+
+spelling validation: 1 distinct non-dictionary words excluded (top 200 by count)
+    esto	1

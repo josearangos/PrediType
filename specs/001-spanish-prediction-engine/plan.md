@@ -107,11 +107,11 @@ specs/001-spanish-prediction-engine/
 
 ```text
 Cargo.toml                      # workspace
-clippy.toml                     # disallowed fs/net/process/log in predi-core
 deny.toml                       # dependency/license audit
 
 crates/
 ├── predi-core/                 # the engine library (no I/O)
+│   ├── clippy.toml             # disallowed fs/net/process/log (scoped to this crate)
 │   ├── src/
 │   │   ├── lib.rs              # Engine, public types (contracts/engine-api.md)
 │   │   ├── normalize.rs        # NFC, folding (R4)

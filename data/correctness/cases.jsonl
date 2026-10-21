@@ -1,0 +1,61 @@
+{"id": "empty-openers", "area": "empty", "input": "", "expect": {"all_capitalized": true, "max_words": 4}, "note": "Openers only if they meet the cutoff; zero is valid (FR-011)."}
+{"id": "na-email", "area": "not_applicable", "input": "Escríbanos a soporte@emp", "expect": {"empty": true, "status": "NotApplicable"}}
+{"id": "na-number", "area": "not_applicable", "input": "Pedido 12345", "expect": {"empty": true, "status": "NotApplicable"}}
+{"id": "na-url", "area": "not_applicable", "input": "https://ej", "expect": {"empty": true, "status": "NotApplicable"}}
+{"id": "na-www", "area": "not_applicable", "input": "Visite www.ej", "expect": {"empty": true, "status": "NotApplicable"}}
+{"id": "na-time", "area": "not_applicable", "input": "Lo llamamos a las 10:30", "expect": {"empty": true, "status": "NotApplicable"}}
+{"id": "na-code", "area": "not_applicable", "input": "Use el campo user_id", "expect": {"empty": true, "status": "NotApplicable"}}
+{"id": "na-long-token", "area": "not_applicable", "input": "Supercalifragilisticoespialidosoextra", "expect": {"empty": true, "status": "NotApplicable"}}
+{"id": "robustness-unsupported-letter", "area": "robustness", "input": "Bonjour garçon", "expect": {"empty": true, "status": "NotApplicable"}}
+{"id": "robustness-cyrillic", "area": "robustness", "input": "Hola привет", "expect": {"empty": true, "status": "NotApplicable"}}
+{"id": "robustness-emoji-boundary", "area": "robustness", "input": "Hola 😀 ", "expect": {"replace_chars": 0}, "note": "Emoji are boundaries; no failure (FR-029)."}
+{"id": "robustness-control-chars", "area": "robustness", "input": "Hola\u0007\u0000 ", "expect": {"replace_chars": 0}}
+{"id": "robustness-after-number", "area": "robustness", "input": "Pedido 12345 ", "expect": {"replace_chars": 0}, "note": "A completed non-word token is followed by a normal boundary."}
+{"id": "partial-buenos-dias", "area": "partial", "input": "Buenos dí", "expect": {"contains": ["días"], "replace_chars": 2}}
+{"id": "enye-contrasena", "area": "enye", "input": "Su contrase", "expect": {"contains": ["contraseña"], "replace_chars": 8}}
+{"id": "partial-molestias", "area": "partial", "input": "Le pedimos una disculpa por las molest", "expect": {"contains": ["molestias"]}}
+{"id": "accents-comunicacion", "area": "accents", "input": "Gracias por su comunicacion", "expect": {"contains": ["comunicación"], "replace_chars": 12}, "note": "Accent restoration replaces only the partial word (FR-016)."}
+{"id": "enye-an", "area": "enye", "input": "an", "expect": {"replace_chars": 2}, "note": "May contain Año (capitalized at message start); completions replace only the 2 typed letters."}
+{"id": "enye-feliz-ano", "area": "enye", "input": "Feliz an", "expect": {"contains": ["año"], "replace_chars": 2}}
+{"id": "partial-min-gain", "area": "partial", "input": "Muchas gracias d", "expect": {"not_contains": ["de"]}, "note": "`de` adds fewer than 2 characters (FR-008)."}
+{"id": "partial-complete-word", "area": "partial", "input": "gracias", "expect": {"not_contains": ["gracias"], "replace_chars": 7}, "note": "Only longer completions; never the identical word or next words (FR-008)."}
+{"id": "locale-ayud-no-tu", "area": "partial", "input": "ayud", "expect": {"not_contains": ["ayudarte"]}, "note": "ayudarle/ayudar still match, so the tú form is excluded (FR-022)."}
+{"id": "locale-vosot-only-variant", "area": "partial", "input": "Esto es para vosot", "expect": {"contains": ["vosotros"]}, "note": "Only an other-variant word matches, so it may be completed (FR-022)."}
+{"id": "boundary-gracias-por", "area": "boundary", "input": "Muchas gracias por ", "expect": {"empty": false, "leading_space": false, "replace_chars": 0}}
+{"id": "boundary-hola-comma", "area": "boundary", "input": "Hola,", "expect": {"leading_space": true}}
+{"id": "boundary-hola-comma-space", "area": "boundary", "input": "Hola, ", "expect": {"leading_space": false}}
+{"id": "locale-usted", "area": "boundary", "input": "¿En qué puedo ", "expect": {"contains": ["ayudarle"], "not_contains": ["ayudarte"]}}
+{"id": "opening-punct-question", "area": "opening_punct", "input": "¿", "expect": {"leading_space": false}}
+{"id": "punctuation-semicolon", "area": "punctuation", "input": "Listo;", "expect": {"leading_space": true}}
+{"id": "punctuation-period", "area": "punctuation", "input": "Gracias.", "expect": {"leading_space": true}}
+{"id": "punctuation-close-paren", "area": "punctuation", "input": "(ver anexo)", "expect": {"leading_space": true}}
+{"id": "punctuation-close-guillemet", "area": "punctuation", "input": "«Hola»", "expect": {"leading_space": true}}
+{"id": "opening-punct-paren", "area": "opening_punct", "input": "(", "expect": {"leading_space": false}}
+{"id": "opening-punct-guillemet", "area": "opening_punct", "input": "«", "expect": {"leading_space": false}}
+{"id": "opening-punct-straight-quote", "area": "opening_punct", "input": "\"", "expect": {"leading_space": false}}
+{"id": "punctuation-line-break", "area": "punctuation", "input": "Hola\n", "expect": {"leading_space": false}}
+{"id": "deletion-1-complete-word", "area": "deletion", "input": "Buenos días", "expect": {"not_contains": ["días"]}, "note": "Deletion sequence step 1: the complete word is never suggested."}
+{"id": "deletion-2-partial", "area": "deletion", "input": "Buenos dí", "expect": {"contains": ["días"], "replace_chars": 2}}
+{"id": "deletion-3-shorter-partial", "area": "deletion", "input": "Buenos d", "expect": {"contains": ["días"], "replace_chars": 1}}
+{"id": "deletion-4-boundary", "area": "deletion", "input": "Buenos ", "expect": {"replace_chars": 0}, "note": "Next-word results only."}
+{"id": "deletion-5-into-word", "area": "deletion", "input": "Bueno", "expect": {"replace_chars": 5}, "note": "Completion results only, of the 5 typed letters."}
+{"id": "casing-after-period", "area": "casing", "input": "Su pedido fue enviado. ", "expect": {"all_capitalized": true}}
+{"id": "casing-after-question-opener", "area": "casing", "input": "¿", "expect": {"all_capitalized": true}}
+{"id": "casing-all-caps", "area": "casing", "input": "BUE", "expect": {"all_uppercase": true, "contains": ["BUENOS"]}}
+{"id": "casing-mid-sentence", "area": "casing", "input": "Gracias, le", "expect": {"all_lowercase": true}}
+{"id": "casing-after-line-break", "area": "casing", "input": "Hola.\n", "expect": {"all_capitalized": true}}
+{"id": "casing-proper-noun", "area": "casing", "input": "Lo esperamos en Bog", "expect": {"contains": ["Bogotá"]}}
+{"id": "casing-no-edit-completed-word", "area": "casing", "input": "Hola dias ", "expect": {"replace_chars": 0}, "note": "The completed word `dias` is never modified (FR-021)."}
+{"id": "casing-after-ellipsis-char", "area": "casing", "input": "Gracias por esperar… ", "expect": {"all_capitalized": true}}
+{"id": "casing-after-three-dots", "area": "casing", "input": "Gracias por esperar... ", "expect": {"all_capitalized": true}}
+{"id": "casing-mid-sentence-question", "area": "casing", "input": "Gracias, ¿c", "expect": {"all_lowercase": true}}
+{"id": "casing-sentence-start-question", "area": "casing", "input": "Listo. ¿C", "expect": {"all_capitalized": true}}
+{"id": "casing-after-colon", "area": "casing", "input": "Tenga en cuenta lo siguiente: ", "expect": {"all_lowercase": true}}
+{"id": "casing-colon-line-break", "area": "casing", "input": "Estimado cliente:\n", "expect": {"all_capitalized": true}}
+{"id": "casing-inside-quotes", "area": "casing", "input": "Le dijimos \"gracias", "expect": {"all_lowercase": true}}
+{"id": "casing-mixed-lower-initial", "area": "casing", "input": "Hola, bUe", "expect": {"all_lowercase": true}}
+{"id": "casing-mixed-upper-initial", "area": "casing", "input": "Hola, BUe", "expect": {"all_capitalized": true}}
+{"id": "na-letters-and-digits", "area": "not_applicable", "input": "Su 2do", "expect": {"empty": true, "status": "NotApplicable"}}
+{"id": "continuation-quedamos", "area": "continuation", "input": "Quedamos atentos a ", "expect": {"max_words": 4}}
+{"id": "continuation-en-que", "area": "continuation", "input": "¿En qué ", "expect": {"max_words": 4}, "note": "May contain `puedo ayudarle`."}
+{"id": "continuation-not-inside-word", "area": "continuation", "input": "gracias", "expect": {"replace_chars": 7}, "note": "Inside a word: completions only, never continuations."}

@@ -61,13 +61,13 @@ The total is at least 1,500 messages.
 
 ## Review checklist (before freezing the splits)
 
-- [ ] No real personal data anywhere. Every identifier is a placeholder.
-- [ ] Every message uses *usted* and Colombian vocabulary.
-- [ ] Spelling and accents are correct.
-- [ ] No exact or trivial duplicates.
-- [ ] Category minimums are met.
+- [x] No real personal data anywhere. Every identifier is a placeholder.
+- [x] Every message uses *usted* and Colombian vocabulary.
+- [x] Spelling and accents are correct.
+- [x] No exact or trivial duplicates.
+- [x] Category minimums are met.
 
 ## Provenance
 
-The first draft was prepared with AI assistance on 2026-10-16 and needs the human review above
-before `predi-build split` is run.
+The first draft was prepared with AI assistance on 2026-10-16 and passed the human review above on 2026-10-21.
+The splits were frozen the same day with `predi-build split` (543 test, 272 dev, 814 build); do not edit messages from here on.

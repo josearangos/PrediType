@@ -9,8 +9,9 @@ Contains aggregated word statistics derived from sentences of the Tatoeba collec
 (<https://tatoeba.org>), © Tatoeba contributors, used under the Creative Commons Attribution 2.0
 France license (CC BY 2.0 FR, <https://creativecommons.org/licenses/by/2.0/fr/>).
 
-**Changes made**: sentences were tokenized and reduced to filtered, pruned word n-gram counts.
-No sentences are included.
+**Changes made**: sentences were tokenized and reduced to filtered, pruned, quantized word n-gram
+statistics. Likely personal names, numbers, emails and URLs were removed. No sentences are
+included.
 
 ## RLA-ES Spanish (Colombia) spelling dictionary
 
@@ -19,4 +20,13 @@ Contains a word list derived from the RLA-ES `es_CO` Hunspell dictionary, versio
 Mozilla Public License, version 2.0 (<https://mozilla.org/MPL/2.0/>), as permitted by the project's
 "MPL version 1.1 or later" option.
 
-**Source form**: <https://github.com/sbosio/rla-es/releases/tag/v2.9>
+**Changes made**: the dictionary was expanded into a plain word list (Hunspell `unmunch`, plus
+source words Hunspell accepts) and used to select and validate the asset's vocabulary.
+
+**Source form**: <https://github.com/sbosio/rla-es/releases/tag/v2.9>. The MPL 2.0 text is at
+<https://mozilla.org/MPL/2.0/>.
+
+## PrediType team data
+
+The Colombian customer-service corpus and the word lists under `data/` are original work of the
+PrediType project.

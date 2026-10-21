@@ -36,8 +36,8 @@ downloaded packages.
   "Tom", which the personal-data filter (research R8) removes.
 - **Reproducibility**: Tatoeba regenerates its exports weekly, so this URL won't keep serving the
   same file.
-  - Keep the snapshot above as the canonical input. Store it with Git LFS or as a project release
-    asset, and pin its SHA-256 in `data/sources/manifest.toml` (T009).
+  - Keep the snapshot above as the canonical input. Commit it to git (it is small) and pin
+    its SHA-256 in `data/sources/manifest.toml` (T009).
   - `scripts/fetch-sources.sh` must verify that hash instead of trusting the live URL.
 
 ## 2. RLA-ES `es_CO` Hunspell dictionary
@@ -68,6 +68,46 @@ downloaded packages.
 - **Status**: the first draft was prepared with AI assistance on 2026-10-16. It **must be reviewed
   by a person** for natural Colombian phrasing and absence of personal data before
   `predi-build split` freezes the splits (T013, T014).
+
+## 4. Project-written lists
+
+These are written by the PrediType team and are project-owned. They are build inputs, and only
+their effect (flags, casing, exclusions) reaches the asset.
+
+| File | Purpose |
+|------|---------|
+| `data/allowlist-proper-nouns.txt` | Places, institutions, brands and acronyms that keep their capitalization (FR-014, FR-019). No person names. |
+| `data/given-names.txt` | Common given names for the build-time personal-data scan (FR-028). Never added to the asset. |
+| `data/lexicon/register-flags.txt` | *Tú*-form and other-variant words (FR-022) |
+| `data/lexicon/domain-words.txt` | Correctly spelled customer-service words missing from the `es_CO` dictionary, mostly *usted* imperatives with enclitic pronouns (`permítame`, `infórmenos`) |
+
+## How the sources are used in a build
+
+1. `scripts/fetch-sources.sh` verifies each snapshot's SHA-256 against
+   `data/sources/manifest.toml`, decompresses the Tatoeba TSV, and expands the dictionary with
+   Hunspell `unmunch`. `unmunch` misses some affix combinations (for example the plural
+   `disponibles`), so the script also adds every word of the Tatoeba and corpus text that Hunspell
+   accepts with the same `es_CO` dictionary. The resulting `data/sources/raw/es_CO.words` is the
+   spelling reference.
+2. `predi-build build` reads the Tatoeba sentences, and only the `build` split of the team corpus;
+   the `dev` split is used only for τ tuning, and the `test` split never. Tatoeba sentences
+   identical to a test message are excluded, and any test message in the build input fails the
+   build (exit code 3).
+3. Placeholders, numbers, emails and URLs never become words. Words seen capitalized mid-sentence
+   but never lowercase are dropped as likely names unless allowlisted. Words not in the spelling
+   reference or the domain list are dropped. The finished vocabulary is scanned for personal data,
+   and any match fails the build.
+4. Only words, their flags, and pruned, quantized n-gram statistics are stored. No sentence is
+   stored. The build report (`assets/*.build-report.txt`) records sizes, pruning, τ values and
+   dropped-token counts.
+
+## Shipping obligations
+
+Every distribution of an asset (and of a product that bundles one) must include
+`THIRD_PARTY_DATA.md`, which carries:
+
+- for Tatoeba: the credit, the CC BY 2.0 FR license link, and the statement of changes;
+- for RLA-ES: the MPL 2.0 notice, the license link, and where the source form is available.
 
 ## Rejected sources
 

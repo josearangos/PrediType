@@ -38,3 +38,34 @@ One byte per word id:
 - **Size target**: ≤ 40 MB, and ≤ 70 MB working set once loaded (research R10).
 - **Distribution**: the asset is distributed with attribution and license texts for each source
   (`THIRD_PARTY_DATA.md`).
+
+## Payload sections (format version 1)
+
+Integers are little-endian. Every section starts 8-byte aligned, and padding bytes are 0. A
+section ends where the next non-zero section offset begins (the last one at end of file).
+
+**Ids**: word ids are `0 … n_words − 1`, assigned in (folded key, canonical spelling) order, so ids
+sharing a folded key are contiguous. Id `n_words` is the sentence-start marker `<s>` and
+`n_words + 1` the sentence-end marker `</s>`. N-gram keys pack ids into 21 bits each
+(`pack2(a, b) = a << 21 | b`, `pack3(a, b, c) = a << 42 | b << 21 | c`).
+
+**Scores**: probabilities are stored as `q = round(−log2(p) · 1024)` in a `u16`. The reader
+dequantizes with the stored table: `p = frac[q mod 1024] · 2^−(q div 1024)`. The power of two is
+built from its bit pattern, so runtime scoring needs no platform math functions (engine API G4).
+
+| Section | Contents |
+|---------|----------|
+| 0 Lexicon FST | `u64` FST length, then an `fst` map: folded key (lowercase, no diacritics) → `first_id << 8 \| count` |
+| 1 Spellings | `u32 n_words`; `u32 offsets[n_words + 1]` (first 0, strictly increasing, char boundaries); the UTF-8 spellings |
+| 2 Word flags | `u8 flags[n_words]` (see Word flags) |
+| 3 N-gram tables | `u32 n_unigram` (= `n_words + 2`), `u32 n_bigram`, `u32 n_trigram`, `u32 0`; `f64 frac[1024]`; `u16 unigram[n_unigram]`; pad; `u64 bigram_keys[n_bigram]` (strictly increasing); `u16 bigram_q[n_bigram]`; pad; `u64 trigram_keys[n_trigram]` (strictly increasing); `u16 trigram_q[n_trigram]`; pad |
+| 4 Top-next lists | `u32 pool_len`, `u32 global_len`, `u32 n_bictx`, `u32 prefix_fst_len`; `u32 pool[pool_len]` (word ids; the global list is `pool[0 … global_len]`); `u32 uni_offsets[n_unigram + 1]` (list after one-id context `a` is `pool[uni_offsets[a] … uni_offsets[a + 1]]`); pad; `u64 bictx_keys[n_bictx]` (strictly increasing `pack2` contexts); `u32 bictx_offsets[n_bictx + 1]`; pad; the prefix FST (`prefix_fst_len` bytes): folded prefix of 1–3 characters → `pool_offset << 8 \| len`; pad |
+| 5 Reserved | Offset must be 0 |
+
+- **Conditional probabilities**: a bigram stores `P(b | a)`, a trigram `P(c | a b)`, each divided by
+  the context's total count before pruning. Unigrams store `P(w)`; `<s>` stores `q = 65535`.
+- **Lists**: each list holds at most 32 ids, ranked by probability then spelling. Lists never
+  contain `<s>`, `</s>` or `register_other` words.
+- **Reader checks** (all give `Malformed` unless noted): table sizes, offsets and lengths within the
+  section (`Truncated`), sorted keys, ids in range, valid UTF-8 spellings, reserved flag bits,
+  τ ∈ [0, 1], α ∈ (0, 1], and each FST's own checksum.

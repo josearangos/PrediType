@@ -1,0 +1,297 @@
+# Test fixture sentences for crates/predi-core/fixtures/mini.pta (task T026).
+# Written for tests by the PrediType team. Not part of the evaluation corpus.
+Buenos días, ¿en qué le puedo ayudar?
+Buenos días, ¿en qué puedo ayudarle?
+Buenos días, gracias por comunicarse con nosotros.
+Buenos días, bienvenido a nuestro servicio al cliente.
+Buenos días, con mucho gusto le atiendo.
+Buenos días, mi nombre es Laura y estaré atendiendo su solicitud.
+Buenos días, ¿cómo está?
+Buenos días, señor.
+Buenos días, señora.
+Buenos días, ¿en qué le podemos colaborar?
+Buenas tardes, ¿en qué le puedo ayudar?
+Buenas tardes, gracias por comunicarse con nosotros.
+Buenas tardes, con mucho gusto le colaboro.
+Buenas noches, gracias por contactarnos.
+Hola, buenos días.
+Hola, buenos días, ¿en qué puedo ayudarle?
+Hola, buenas tardes.
+Hola, bienvenido a nuestro canal de atención.
+Hola, gracias por escribirnos.
+Hola, ¿cómo está?
+Hola, ¿cómo le va?
+Hola, con mucho gusto le ayudo.
+Hola, buenos días, gracias por su paciencia.
+¿En qué puedo ayudarle?
+¿En qué puedo ayudarle hoy?
+¿En qué puedo ayudarle el día de hoy?
+¿En qué le puedo ayudar?
+¿En qué le puedo colaborar?
+¿En qué más le puedo ayudar?
+¿En qué podemos ayudarle?
+¿Cómo puedo ayudarle?
+¿Cómo le puedo ayudar?
+¿Cómo está usted?
+¿Puedo ayudarle en algo más?
+¿Puedo ayudarle con algo más?
+¿Le puedo ayudar en algo más?
+¿Tiene alguna otra inquietud?
+¿Tiene el número de su pedido?
+¿Me regala su número de pedido, por favor?
+¿Me confirma su correo, por favor?
+¿Me confirma su número de celular?
+¿Podría confirmarme su dirección?
+¿Puede verificar su correo electrónico?
+Muchas gracias por su paciencia.
+Muchas gracias por su paciencia, ya reviso su caso.
+Muchas gracias por su comunicación.
+Muchas gracias por comunicarse con nosotros.
+Muchas gracias por contactarnos.
+Muchas gracias por su compra.
+Muchas gracias por su espera.
+Muchas gracias por preferirnos.
+Muchas gracias por escribirnos.
+Muchas gracias.
+Muchas gracias, que tenga un feliz día.
+Gracias por su paciencia.
+Gracias por su comunicación.
+Gracias por su comunicación, con gusto le ayudo.
+Gracias por comunicarse con nosotros.
+Gracias por esperar.
+Gracias por esperar, ya tengo la información.
+Gracias por esperar, ya reviso su pedido.
+Gracias por la información.
+Gracias por su compra.
+Gracias por su confianza.
+Gracias, le confirmo que su pedido fue enviado.
+Gracias, le informo que su caso fue escalado.
+Gracias, le colaboro con mucho gusto.
+Gracias, le escribo en un momento.
+Gracias, ¿cómo le puedo ayudar?
+Gracias, ¿cómo puedo ayudarle?
+Gracias, ¿cuál es su número de pedido?
+Con mucho gusto.
+Con mucho gusto le ayudo.
+Con mucho gusto le colaboro.
+Con gusto le colaboro con su solicitud.
+A la orden.
+Quedamos atentos a cualquier inquietud.
+Quedamos atentos a cualquier inquietud adicional.
+Quedamos atentos a su respuesta.
+Quedamos atentos a cualquier novedad.
+Quedo atento a cualquier inquietud.
+Quedo atenta a su respuesta.
+Que tenga un feliz día.
+Que tenga un excelente día.
+Que tenga una feliz tarde.
+Que tenga una excelente tarde.
+Le pedimos una disculpa por las molestias.
+Le pedimos una disculpa por las molestias ocasionadas.
+Le pedimos una disculpa por la demora.
+Le pedimos disculpas por las molestias.
+Le ofrecemos una disculpa por las molestias.
+Lamentamos las molestias ocasionadas.
+Qué pena con usted por la demora.
+Qué pena con usted, ya reviso.
+Lamento mucho la situación.
+Entiendo su molestia.
+Entiendo su preocupación.
+Su pedido fue enviado.
+Su pedido fue enviado ayer.
+Su pedido fue enviado a Bogotá.
+Su pedido fue entregado.
+Su pedido está en camino.
+Su pedido llegará mañana.
+Su pedido llegará en tres días hábiles.
+Su pedido se encuentra en tránsito.
+Su pedido fue cancelado.
+Su pedido fue confirmado.
+Su contraseña fue restablecida.
+Su contraseña debe tener al menos ocho caracteres.
+Su contraseña es personal.
+Su contraseña nueva ya está activa.
+Puede cambiar su contraseña desde la aplicación.
+Puede restablecer su contraseña desde la página.
+Le enviamos un enlace para cambiar la contraseña.
+Le enviamos un correo con la información.
+Le enviamos un mensaje a su celular.
+Le enviamos la factura a su correo.
+Le confirmo que el pago fue recibido.
+Le confirmo que su solicitud fue registrada.
+Le confirmo que su cuenta está activa.
+Le informo que su pedido fue enviado.
+Le informo que su caso está en revisión.
+Le informo que el reembolso fue aprobado.
+Le informamos que su factura está disponible.
+Le informamos que el envío está en camino.
+Lo esperamos en Bogotá.
+Lo esperamos en Medellín.
+Lo esperamos en nuestra tienda de Bogotá.
+Lo esperamos pronto.
+Tenemos tiendas en Bogotá, Medellín y Cali.
+El envío a Bogotá tarda dos días.
+El envío a Medellín tarda tres días.
+El envío es gratis en Bogotá.
+El pago por PSE se refleja de inmediato.
+Puede pagar por PSE o con tarjeta.
+El pago con PSE fue aprobado.
+La factura incluye el IVA.
+La factura electrónica llega a su correo.
+La factura fue enviada a su correo.
+El reembolso se verá reflejado en cinco días hábiles.
+El reembolso fue aprobado.
+El reembolso se hará al mismo medio de pago.
+Permítame un momento, por favor.
+Permítame un momento, ya reviso su caso.
+Permítame un momento mientras verifico la información.
+Un momento, por favor.
+Por favor, espere un momento.
+Por favor, confirme su número de pedido.
+Por favor, verifique su correo.
+Por favor, revise su bandeja de entrada.
+Estimado cliente:
+Estimado cliente, gracias por escribirnos.
+Estimada clienta, gracias por escribirnos.
+Tenga en cuenta lo siguiente: el envío tarda tres días.
+Tenga en cuenta que el envío tarda tres días.
+Tenga en cuenta que la promoción termina hoy.
+Listo, ya quedó registrado.
+Listo, ya quedó actualizado.
+Listo. ¿Cómo más le puedo ayudar?
+Listo. ¿Cuál es su número de pedido?
+Listo; su solicitud quedó registrada.
+Listo, con mucho gusto.
+Le dijimos que el pedido llegaría mañana.
+Le dijimos gracias por su paciencia.
+Le escribimos para confirmar su pedido.
+Le escribimos para informarle sobre su envío.
+Le llamaremos en un momento.
+Le llamaremos mañana.
+Le recordamos que su pago vence mañana.
+Le recordamos actualizar sus datos.
+Le recomendamos cambiar su contraseña.
+Le recomendamos revisar su correo.
+Su comunicación es muy importante para nosotros.
+Su solicitud fue recibida.
+Su solicitud está en proceso.
+Su solicitud será atendida pronto.
+Su caso fue escalado al área encargada.
+Su caso fue resuelto.
+Su cuenta fue bloqueada por seguridad.
+Su cuenta fue desbloqueada.
+Su cuenta está activa.
+Su cuenta fue creada con éxito.
+Su número de pedido es el siguiente.
+Su factura fue generada.
+Su reembolso fue aprobado.
+Su paquete fue entregado.
+Su paquete llegará mañana.
+Su compra fue exitosa.
+Su pago fue aprobado.
+Su pago fue rechazado.
+Su pago está pendiente.
+Su suscripción fue renovada.
+Su información fue actualizada.
+Su celular quedó registrado.
+Su correo quedó registrado.
+Su dirección quedó actualizada.
+Este año tenemos nuevas promociones.
+Este año el envío es gratis.
+El próximo año tendremos más tiendas.
+Feliz año nuevo.
+Feliz año.
+Puede anotar el número de su caso.
+Le sugiero anotar el número de la guía.
+Puede ayudarme con su número de documento.
+Ayuda en línea disponible todo el día.
+La ayuda llegará pronto.
+Con su ayuda podemos resolverlo.
+Necesitamos su ayuda para verificar los datos.
+Lo podemos ayudar con eso.
+Lo vamos a ayudar con su solicitud.
+Le vamos a ayudar con su solicitud.
+Estamos para ayudarle.
+Estamos para servirle.
+Estaré pendiente de su respuesta.
+Estaré atento a su respuesta.
+Es un gusto ayudarle.
+Es un gusto atenderle.
+Fue un gusto ayudarle.
+Fue un gusto atenderle.
+¿Puedo ayudarte en algo?
+Nuestro horario de atención es de lunes a viernes.
+Nuestro horario es de ocho a seis.
+Nuestras líneas de atención están disponibles.
+Nuestro equipo revisará su caso.
+Nuestro equipo le contactará pronto.
+El equipo de soporte le contactará.
+El equipo de soporte revisará su caso.
+El producto está agotado.
+El producto llegará la próxima semana.
+El producto tiene garantía de un año.
+La garantía cubre defectos de fábrica.
+La garantía es de un año.
+La entrega se realiza en tres días.
+La entrega fue programada para mañana.
+La transportadora le contactará.
+La transportadora tiene su paquete.
+La guía de su envío fue generada.
+La promoción es válida hasta el domingo.
+La tienda abre a las nueve.
+Las molestias fueron reportadas.
+Las devoluciones se hacen en la tienda.
+Los datos fueron actualizados.
+Los cambios se verán mañana.
+Hasta luego.
+Hasta pronto.
+Hasta luego, que tenga un feliz día.
+Adiós, que tenga un buen día.
+Buen día.
+Buena tarde.
+Bueno, le confirmo la información.
+Bueno, ya quedó registrado.
+Bueno, gracias por la información.
+Claro que sí.
+Claro, con gusto.
+Claro, le ayudo con eso.
+Perfecto, ya quedó.
+Perfecto, gracias.
+Entendido, ya reviso.
+De acuerdo, gracias.
+Sí, señor.
+Sí, señora.
+No se preocupe.
+No se preocupe, ya lo solucionamos.
+No hay problema.
+Disculpe la demora.
+Disculpe las molestias.
+Agradecemos su paciencia.
+Agradecemos su comprensión.
+Agradecemos su confianza.
+Valoramos su opinión.
+Valoramos su tiempo.
+Recuerde que puede escribirnos en cualquier momento.
+Recuerde que estamos para servirle.
+Recuerde revisar su correo.
+Si tiene alguna inquietud, con gusto le ayudamos.
+Si necesita algo más, estamos atentos.
+Si desea, le envío la información por correo.
+Cualquier inquietud, quedamos atentos.
+Cualquier novedad le informaremos.
+Mañana le llamamos.
+Mañana llega su pedido.
+Hoy enviamos su pedido.
+Hoy le confirmamos.
+Ya le envié la información.
+Ya le envié el enlace.
+Ya reviso su caso.
+Ya revisé su caso.
+Ya quedó registrado.
+Ya quedó actualizado.
+Ya está listo.
+Todo está listo.
+Todo quedó registrado.
+Gracias por esperar… ya tengo la información.
+Gracias por esperar... ya tengo la información.
+Esto es para vosotros.
