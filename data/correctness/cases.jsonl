@@ -21,7 +21,8 @@
 {"id": "partial-complete-word", "area": "partial", "input": "gracias", "expect": {"not_contains": ["gracias"], "replace_chars": 7}, "note": "Only longer completions; never the identical word or next words (FR-008)."}
 {"id": "locale-ayud-no-tu", "area": "partial", "input": "ayud", "expect": {"not_contains": ["ayudarte"]}, "note": "ayudarle/ayudar still match, so the tú form is excluded (FR-022)."}
 {"id": "locale-vosot-only-variant", "area": "partial", "input": "Esto es para vosot", "expect": {"contains": ["vosotros"]}, "note": "Only an other-variant word matches, so it may be completed (FR-022)."}
-{"id": "boundary-gracias-por", "area": "boundary", "input": "Muchas gracias por ", "expect": {"empty": false, "leading_space": false, "replace_chars": 0}}
+{"id": "boundary-permitame-un", "area": "boundary", "input": "Permítame un ", "expect": {"empty": false, "contains": ["momento"], "leading_space": false, "replace_chars": 0}}
+{"id": "boundary-gracias-por", "area": "boundary", "input": "Muchas gracias por ", "expect": {"leading_space": false, "replace_chars": 0}, "note": "Several continuations are equally likely (su, comunicarse, escribirnos), so LowConfidence is allowed (FR-002, spec amendment 2026-10-23)."}
 {"id": "boundary-hola-comma", "area": "boundary", "input": "Hola,", "expect": {"leading_space": true}}
 {"id": "boundary-hola-comma-space", "area": "boundary", "input": "Hola, ", "expect": {"leading_space": false}}
 {"id": "locale-usted", "area": "boundary", "input": "¿En qué puedo ", "expect": {"contains": ["ayudarle"], "not_contains": ["ayudarte"]}}

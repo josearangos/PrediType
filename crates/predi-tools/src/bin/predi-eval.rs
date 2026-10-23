@@ -26,7 +26,7 @@ enum OnlyArg {
     about = "Evaluate a PrediType language asset against the success criteria"
 )]
 struct Cli {
-    #[arg(long, default_value = "assets/es-CO-1.0.0.pta")]
+    #[arg(long, default_value = "assets/es-CO-1.1.0.pta")]
     asset: PathBuf,
     #[arg(long, default_value = "data/corpus/es-co-cs")]
     corpus: PathBuf,

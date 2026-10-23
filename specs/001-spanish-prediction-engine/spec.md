@@ -101,6 +101,15 @@ customer-service person typing, and "client" means the integration that calls th
 - Q: What would make the team revisit the no-blocklist decision? → A: Any vulgar suggestion observed
   in an evaluation replay (Assumptions).
 
+### Session 2026-10-23 (amendment: US2 acceptance scenario 1)
+
+- Q: US2 scenario 1 required 1–3 next words after `Muchas gracias por `, but there the likely
+  continuations (`su`, `comunicarse`, `escribirnos`) share the probability and none meets the
+  minimum confidence (FR-002), so the engine correctly returns none. Which rule wins? → A: FR-002.
+  Scenario 1 now uses `Permítame un `, which has one dominant continuation, and a new scenario 5
+  allows no suggestions at `Muchas gracias por `. Evidence: development evaluation
+  `reports/dev-eval.json` (asset 1.1.0).
+
 ## User Scenarios & Testing *(mandatory)*
 
 ### User Story 1 - Complete a partially typed word (Priority: P1)
@@ -143,15 +152,18 @@ measure how often the actual next word appears in the suggestions.
 
 **Acceptance Scenarios**:
 
-1. **Given** the text `Muchas gracias por `, **When** a prediction is requested, **Then** the engine
-   returns 1–3 plausible next words (for example `su`, `comunicarse`, `contactarnos`), most likely
-   first.
+1. **Given** the text `Permítame un `, **When** a prediction is requested, **Then** the engine
+   returns 1–3 plausible next words, most likely first, with `momento` first.
 2. **Given** the text `Hola, ` (ending with a space), **When** a prediction is requested, **Then**
    suggestions do not require an extra leading space.
 3. **Given** the text `Hola,` (no trailing space), **When** a prediction is requested, **Then** each
    next-word suggestion indicates that a space precedes it, so applying it produces `Hola, <word>`.
 4. **Given** the text `¿En qué puedo `, **When** a prediction is requested, **Then** `ayudarle`
    (formal *usted*) is among the suggestions and `ayudarte` is not.
+5. **Given** the text `Muchas gracias por `, where several continuations are about equally likely
+   (for example `su`, `comunicarse`, `escribirnos`), **When** a prediction is requested, **Then**
+   the engine returns only the next words that meet the minimum confidence (FR-002), possibly none,
+   and any suggestion it returns needs no extra leading space.
 
 ---
 

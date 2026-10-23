@@ -19,7 +19,7 @@ bans networking crates from the workspace.
 - The reference computer described in `docs/reference-computer.toml`.
 - Process Monitor from Sysinternals (`Procmon64.exe`).
 - A release build: `cargo build --release -p predi-tools`.
-- The asset `assets/es-CO-1.0.0.pta` and the corpus with its frozen `splits.tsv`.
+- The asset `assets/es-CO-1.1.0.pta` and the corpus with its frozen `splits.tsv`.
 
 ### 1. Configure the capture
 
@@ -44,7 +44,7 @@ bans networking crates from the workspace.
 From the repository root, in PowerShell:
 
 ```text
-target\release\predi-eval.exe --asset assets\es-CO-1.0.0.pta --corpus data\corpus\es-co-cs `
+target\release\predi-eval.exe --asset assets\es-CO-1.1.0.pta --corpus data\corpus\es-co-cs `
   --split test --machine docs\reference-computer.toml --out reports\ --only performance
 ```
 

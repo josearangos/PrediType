@@ -5,7 +5,7 @@
 #   - any network syscall;
 #   - any file opened for writing, created or renamed outside the report directory.
 #
-#   scripts/check-privacy.sh                 uses assets/es-CO-1.0.0.pta if present, else the fixture
+#   scripts/check-privacy.sh                 uses assets/es-CO-1.1.0.pta if present, else the fixture
 #   ASSET=path scripts/check-privacy.sh      checks a specific asset
 #
 # The corpus is split in a temporary copy, so the repository's splits are never touched.
@@ -18,8 +18,8 @@ command -v strace >/dev/null 2>&1 || { echo "check-privacy: strace is required (
 
 ASSET="${ASSET:-}"
 if [[ -z "$ASSET" ]]; then
-    if [[ -f assets/es-CO-1.0.0.pta ]]; then
-        ASSET=assets/es-CO-1.0.0.pta
+    if [[ -f assets/es-CO-1.1.0.pta ]]; then
+        ASSET=assets/es-CO-1.1.0.pta
     else
         ASSET=crates/predi-core/fixtures/mini.pta
     fi

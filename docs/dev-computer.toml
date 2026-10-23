@@ -1,0 +1,12 @@
+# Development computer used for the machine-independent gates of T065a (2026-10-23).
+# Performance criteria SC-009–SC-011 measured here are informative only: they must be measured
+# on the reference computer (docs/reference-computer.toml) in T065b.
+
+model = "Apple MacBook Pro (M2 Pro)"
+cpu = "Apple M2 Pro"
+cores = 10
+base_clock_ghz = 3.5
+ram_gb = 16
+os_build = "macOS 26.2 (25C56)"
+power_plan = "Default, on mains power"
+is_reference = false

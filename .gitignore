@@ -12,6 +12,7 @@ assets/*
 reports/*
 !reports/README.md
 !reports/baseline-eval.json
+!reports/dev-eval.json
 
 # Editors and OS
 .DS_Store

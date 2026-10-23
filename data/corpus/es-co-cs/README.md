@@ -71,3 +71,8 @@ The total is at least 1,500 messages.
 
 The first draft was prepared with AI assistance on 2026-10-16 and passed the human review above on 2026-10-21.
 The splits were frozen the same day with `predi-build split` (543 test, 272 dev, 814 build); do not edit messages from here on.
+
+On 2026-10-23, 53 messages were appended (no existing message changed) to cover common phrasing
+missing from the corpus, such as `¿En qué puedo ayudarle?` and `Muchas gracias por …`.
+`predi-build split` assigned only the new hashes (20 test, 11 dev, 22 build), giving 563 test,
+283 dev, 836 build. The asset version was bumped to 1.1.0.

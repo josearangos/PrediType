@@ -11,7 +11,7 @@ use std::process::ExitCode;
 #[derive(Parser)]
 #[command(name = "predi-cli", about = "Try the PrediType engine by hand")]
 struct Cli {
-    #[arg(long, default_value = "assets/es-CO-1.0.0.pta")]
+    #[arg(long, default_value = "assets/es-CO-1.1.0.pta")]
     asset: PathBuf,
     #[command(subcommand)]
     command: Command,

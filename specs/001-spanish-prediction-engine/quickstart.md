@@ -34,8 +34,8 @@ VI).
 scripts/fetch-sources.sh            # verifies the committed snapshots and extracts them
 cargo run --release -p predi-tools --bin predi-build -- build \
   --manifest data/sources/manifest.toml --corpus data/corpus/es-co-cs \
-  --allowlist data/allowlist-proper-nouns.txt --asset-version 1.0.0 \
-  --out assets/es-CO-1.0.0.pta --tune-tau
+  --allowlist data/allowlist-proper-nouns.txt --asset-version 1.1.0 \
+  --out assets/es-CO-1.1.0.pta --tune-tau
 ```
 
 **Expected**:
@@ -46,14 +46,15 @@ cargo run --release -p predi-tools --bin predi-build -- build \
 ## 3. Manual smoke test
 
 ```text
-cargo run --release -p predi-tools --bin predi-cli -- --asset assets/es-CO-1.0.0.pta repl
+cargo run --release -p predi-tools --bin predi-cli -- --asset assets/es-CO-1.1.0.pta repl
 ```
 
 | Type | Expect |
 |------|--------|
 | `Buenos dí` | `días` present, `replace_chars` = 2 |
 | `Su contrase` | `contraseña` |
-| `Muchas gracias por ` | 1–3 next words, most likely first |
+| `Permítame un ` | 1–3 next words, `momento` first |
+| `Muchas gracias por ` | next words, or none (`LowConfidence`) |
 | `Hola,` | `leading_space: true` |
 | `¿En qué puedo ` | `ayudarle` present, `ayudarte` absent |
 | `Su pedido fue enviado. ` | all suggestions capitalized |
@@ -65,7 +66,7 @@ cargo run --release -p predi-tools --bin predi-cli -- --asset assets/es-CO-1.0.0
 
 ```text
 cargo run --release -p predi-tools --bin predi-eval -- \
-  --asset assets/es-CO-1.0.0.pta --corpus data/corpus/es-co-cs --split test \
+  --asset assets/es-CO-1.1.0.pta --corpus data/corpus/es-co-cs --split test \
   --cases data/correctness/cases.jsonl --machine docs/reference-computer.toml \
   --out reports/ --check-determinism
 ```

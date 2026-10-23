@@ -1628,3 +1628,56 @@ otro	Le recuerdo que su contrato tiene una cláusula de permanencia hasta el {FE
 otro	Antes de procesar la cancelación, me gustaría ofrecerle un mes de servicio gratis y un plan con un menor valor mensual. ¿Le interesa que le cuente los detalles?
 otro	Le sugiero agendar una cita en el punto de atención más cercano, ya que este trámite se debe realizar de manera presencial con el documento original.
 otro	Vamos a realizar una prueba remota a su equipo. Durante la prueba, es posible que el servicio se interrumpa por un par de minutos, así que no se preocupe.
+saludo	Buenos días, {NOMBRE}. ¿En qué puedo ayudarle hoy?
+saludo	Buenas tardes, {NOMBRE}. Bienvenido, ¿en qué puedo ayudarle?
+saludo	Buenas noches. Gracias por escribirnos, ¿en qué puedo ayudarle?
+saludo	Hola, {NOMBRE}. Muchas gracias por comunicarse con nosotros. ¿En qué puedo ayudarle?
+saludo	Buen día. Mi nombre es {NOMBRE} y con gusto le atiendo. ¿En qué puedo servirle?
+saludo	Muchas gracias por comunicarse con nuestra línea de atención. ¿En qué puedo ayudarle?
+saludo	Bienvenido a nuestro chat, {NOMBRE}. Cuénteme, ¿en qué puedo colaborarle?
+saludo	Buenas tardes, gracias por contactarnos. ¿En qué puedo ayudarle el día de hoy?
+saludo	Hola, buenos días. Con mucho gusto, ¿en qué puedo ayudarle con su pedido?
+saludo	Buenas tardes, {NOMBRE}. Soy su asesor de hoy, ¿en qué puedo ayudarle?
+pregunta	¿En qué más puedo ayudarle, {NOMBRE}?
+pregunta	Claro que sí. ¿En qué otra cosa puedo ayudarle?
+pregunta	Perfecto, ya quedó registrado. ¿Hay algo más en lo que pueda ayudarle?
+pregunta	¿Me confirma, por favor, en qué puedo ayudarle con su factura?
+pregunta	Entiendo la situación. ¿En qué puedo ayudarle para solucionarlo hoy mismo?
+pregunta	¿Puedo ayudarle con algo adicional sobre su envío?
+pregunta	¿Desea que le ayude con el cambio de su dirección de entrega?
+pregunta	Con gusto reviso su caso. ¿Me regala el número de pedido, por favor?
+cierre	Muchas gracias por su paciencia, {NOMBRE}. Quedamos atentos a cualquier inquietud.
+cierre	Muchas gracias por su compra. Esperamos verlo pronto.
+cierre	Muchas gracias por escribirnos. Fue un gusto atenderle.
+cierre	Muchas gracias por confiar en nosotros, {NOMBRE}. Feliz tarde.
+cierre	Muchas gracias por su comprensión. Su caso ya quedó escalado.
+cierre	Muchas gracias por comunicarse. Recuerde que estamos a la orden.
+cierre	Muchas gracias por esperar en línea. Ya tengo la información de su pedido.
+cierre	Muchas gracias por su tiempo. Que tenga una excelente noche.
+cierre	Muchas gracias por la información, {NOMBRE}. Ya actualicé sus datos.
+cierre	Muchas gracias por contactarnos. Si necesita algo más, con gusto le atendemos.
+cierre	Muchas gracias por preferirnos. Que tenga un buen fin de semana.
+cierre	Muchas gracias por su mensaje. Le respondemos en el transcurso del día.
+cierre	Muchas gracias por comunicarse con nosotros, {NOMBRE}. Fue un placer ayudarle.
+cierre	Muchas gracias por calificar nuestra atención. Su opinión es muy importante.
+cierre	Muchas gracias por avisarnos. Ya revisamos el inconveniente con su envío.
+cierre	Con gusto, {NOMBRE}. Muchas gracias por su paciencia y que esté muy bien.
+cierre	Fue un gusto ayudarle. Muchas gracias por comunicarse con nosotros.
+cierre	Muchas gracias por enviar el comprobante. Ya validamos su pago.
+cierre	Muchas gracias por su llamada. Quedo atento a su confirmación.
+otro	Muchas gracias por esperar. En un momento le comunico con el área encargada.
+otro	Muchas gracias por la espera, {NOMBRE}. Ya tengo respuesta del área de despachos.
+otro	Muchas gracias por su paciencia mientras verificamos la información.
+otro	Muchas gracias por regalarnos esa información. Permítame un momento, por favor.
+otro	Muchas gracias por el número de guía. Ya estoy consultando el estado del envío.
+otro	Le transfiero con un asesor especializado que puede ayudarle con este trámite.
+otro	En este momento puedo ayudarle con la radicación de su solicitud.
+disculpa	Qué pena con usted, {NOMBRE}. Muchas gracias por su paciencia con este retraso.
+disculpa	Lamentamos el inconveniente. Muchas gracias por informarnos lo sucedido.
+disculpa	Le ofrezco disculpas por la demora. ¿En qué puedo ayudarle para compensar la situación?
+facturacion	Muchas gracias por su pago. El soporte le llegará al correo registrado.
+facturacion	Con gusto puedo ayudarle con el duplicado de su factura {NUMERO_FACTURA}.
+cuenta	Con gusto puedo ayudarle a restablecer su contraseña.
+cuenta	Muchas gracias por actualizar sus datos, {NOMBRE}. Los cambios ya quedaron guardados.
+envio	Muchas gracias por recibir el pedido. Si tiene alguna novedad, aquí estamos.
+pedido	Muchas gracias por su pedido {NUMERO_PEDIDO}. Ya está en proceso de alistamiento.

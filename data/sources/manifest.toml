@@ -33,5 +33,5 @@ license = "Project-owned"
 retrieved = "2026-10-16"
 snapshot = "data/corpus/es-co-cs/messages.tsv"
 # Update this hash whenever messages.tsv changes (predi-build checks it).
-sha256 = "311f51e1ca1cb71d583b96402242f8432c6fee3e9f09270f2c2bc7fd350a1526"
+sha256 = "8a3cbc85cc2e47ce37ca429e8f42b0874ab7c5ce32a13c57152cd4b81d6c8e74"
 extracted = "data/corpus/es-co-cs/messages.tsv"

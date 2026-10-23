@@ -46,14 +46,14 @@ cargo run --release -p predi-tools --bin predi-build -- split --corpus data/corp
 
 # 4. Build the language asset, tuning the confidence cutoffs on the dev split
 cargo run --release -p predi-tools --bin predi-build -- build --tune-tau \
-  --asset-version 1.0.0 --out assets/es-CO-1.0.0.pta
+  --asset-version 1.1.0 --out assets/es-CO-1.1.0.pta
 
 # 5. Try it
-cargo run --release -p predi-tools --bin predi-cli -- --asset assets/es-CO-1.0.0.pta predict "Buenos dí"
-cargo run --release -p predi-tools --bin predi-cli -- --asset assets/es-CO-1.0.0.pta repl
+cargo run --release -p predi-tools --bin predi-cli -- --asset assets/es-CO-1.1.0.pta predict "Buenos dí"
+cargo run --release -p predi-tools --bin predi-cli -- --asset assets/es-CO-1.1.0.pta repl
 
 # 6. Evaluate (on the reference computer for performance numbers)
-cargo run --release -p predi-tools --bin predi-eval -- --asset assets/es-CO-1.0.0.pta \
+cargo run --release -p predi-tools --bin predi-eval -- --asset assets/es-CO-1.1.0.pta \
   --machine docs/reference-computer.toml --out reports/ --check-determinism
 ```
 
