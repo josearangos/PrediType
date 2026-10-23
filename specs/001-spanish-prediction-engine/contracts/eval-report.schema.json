@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PrediType evaluation report",
+  "type": "object",
+  "required": ["generated_at", "engine_version", "asset_version", "corpus_manifest_sha256",
+               "machine", "criteria", "passed_hard_gates"],
+  "properties": {
+    "generated_at": { "type": "string", "format": "date-time" },
+    "engine_version": { "type": "string" },
+    "asset_version": { "type": "string" },
+    "corpus_manifest_sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+    "machine": {
+      "type": "object",
+      "required": ["model", "cpu", "cores", "base_clock_ghz", "ram_gb", "os_build", "power_plan"],
+      "properties": {
+        "model": { "type": "string" },
+        "cpu": { "type": "string" },
+        "cores": { "type": "integer" },
+        "base_clock_ghz": { "type": "number" },
+        "ram_gb": { "type": "number" },
+        "os_build": { "type": "string" },
+        "power_plan": { "type": "string" },
+        "is_reference": { "type": "boolean" }
+      }
+    },
+    "criteria": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "description", "value", "threshold", "comparison", "provisional", "passed"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^SC-0(0[1-9]|1[0-5])$" },
+          "description": { "type": "string" },
+          "value": { "type": "number" },
+          "unit": { "type": "string" },
+          "threshold": { "type": "number" },
+          "comparison": { "enum": [">=", "<=", "=="] },
+          "provisional": { "type": "boolean" },
+          "passed": { "type": "boolean" },
+          "detail": {
+            "type": "object",
+            "description": "Numbers, flags, and failing case ids only. Never corpus, typed, or suggestion text (spec FR-037).",
+            "additionalProperties": {
+              "anyOf": [
+                { "type": ["number", "boolean"] },
+                { "type": "array", "items": { "type": "string", "pattern": "^[a-z0-9_-]+$" } }
+              ]
+            }
+          }
+        }
+      }
+    },
+    "latency_ms": {
+      "type": "object",
+      "properties": {
+        "p50": { "type": "number" }, "p95": { "type": "number" },
+        "p99": { "type": "number" }, "max": { "type": "number" },
+        "requests": { "type": "integer" }
+      }
+    },
+    "passed_hard_gates": { "type": "boolean" }
+  }
+}

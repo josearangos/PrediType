@@ -1,0 +1,37 @@
+# External and team-written sources for the PrediType language asset (FR-028, research R3).
+# Licenses were verified on 2026-10-16 (task T008); see docs/data-sources.md.
+#
+# Changing any entry (new snapshot, new hash) requires bumping the asset version.
+# `snapshot` is the pinned, git-committed canonical input; `url` is only used by
+# `scripts/fetch-sources.sh --refresh`.
+
+[[source]]
+name = "tatoeba-spa"
+role = "general"
+url = "https://downloads.tatoeba.org/exports/per_language/spa/spa_sentences.tsv.bz2"
+license = "CC BY 2.0 FR"
+retrieved = "2026-10-16"
+snapshot = "data/sources/snapshots/spa_sentences.tsv.bz2"
+sha256 = "d1f7aa997368571e8bbba341ab60f9145fefe14970f21065bd97be8e03c8e6fb"
+extracted = "data/sources/raw/spa_sentences.tsv"
+
+[[source]]
+name = "rla-es-es_CO"
+role = "spelling"
+url = "https://github.com/sbosio/rla-es/releases/download/v2.9/es_CO.oxt"
+license = "MPL-2.0 (via MPL 1.1 or later; tri-licensed GPL/LGPL/MPL)"
+retrieved = "2026-10-16"
+snapshot = "data/sources/snapshots/es_CO.oxt"
+sha256 = "d47ff4cf5cab98577d9a1913e226e31bc8ade9334c15fd389b97ddc0341a2901"
+extracted = "data/sources/raw/es_CO.words"
+
+[[source]]
+name = "es-co-cs"
+role = "domain"
+url = "data/corpus/es-co-cs/messages.tsv"
+license = "Project-owned"
+retrieved = "2026-10-16"
+snapshot = "data/corpus/es-co-cs/messages.tsv"
+# Update this hash whenever messages.tsv changes (predi-build checks it).
+sha256 = "8a3cbc85cc2e47ce37ca429e8f42b0874ab7c5ce32a13c57152cd4b81d6c8e74"
+extracted = "data/corpus/es-co-cs/messages.tsv"

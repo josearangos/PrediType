@@ -1,0 +1,85 @@
+# Approved capitalized words (FR-014, FR-019, research R8).
+#
+# Words listed here keep their standard capitalization in suggestions and survive the
+# personal-data filter even though they appear capitalized mid-sentence.
+#
+# RULE: only places, institutions, brands of general use, and acronyms.
+# NEVER add names of people (given names or surnames).
+#
+# Write each entry in its standard form. An all-capitals entry (for example PSE) is an acronym.
+# One entry per line, UTF-8.
+
+# Country, cities and departments
+Colombia
+Bogotá
+Medellín
+Cali
+Barranquilla
+Cartagena
+Bucaramanga
+Pereira
+Manizales
+Cúcuta
+Ibagué
+Villavicencio
+Montería
+Neiva
+Popayán
+Valledupar
+Tunja
+Sincelejo
+Riohacha
+Quibdó
+Yopal
+Leticia
+Antioquia
+Cundinamarca
+Atlántico
+Santander
+Boyacá
+Caldas
+Risaralda
+Quindío
+Tolima
+Huila
+Nariño
+Cauca
+Casanare
+Amazonas
+# Other countries and regions
+Latinoamérica
+América
+México
+España
+Venezuela
+Ecuador
+Perú
+Panamá
+Chile
+Argentina
+# Do not add words that are also common lowercase words (meta, valle, pasto, envía) or names.
+# Institutions and services
+Bancolombia
+Davivienda
+Nequi
+Daviplata
+Servientrega
+Interrapidísimo
+Efecty
+Baloto
+WhatsApp
+# Acronyms
+PSE
+DIAN
+NIT
+RUT
+IVA
+PQR
+PQRS
+SOAT
+EPS
+COP
+SMS
+PDF
+PIN
+OTP

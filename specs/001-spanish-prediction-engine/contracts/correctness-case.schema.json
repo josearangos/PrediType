@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PrediType correctness case (one JSON object per line)",
+  "type": "object",
+  "required": ["id", "area", "input", "expect"],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9_-]+$" },
+    "area": {
+      "enum": ["accents", "enye", "opening_punct", "casing", "punctuation", "boundary", "empty",
+               "deletion", "partial", "not_applicable", "continuation", "robustness"]
+    },
+    "input": { "type": "string", "maxLength": 4000 },
+    "note": { "type": "string" },
+    "expect": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": false,
+      "properties": {
+        "contains": { "type": "array", "items": { "type": "string" } },
+        "not_contains": { "type": "array", "items": { "type": "string" } },
+        "empty": { "type": "boolean" },
+        "status": { "enum": ["Ok", "Paused", "NotApplicable", "LowConfidence"] },
+        "all_capitalized": { "type": "boolean" },
+        "all_lowercase": { "type": "boolean" },
+        "all_uppercase": { "type": "boolean" },
+        "leading_space": { "type": "boolean" },
+        "replace_chars": { "type": "integer", "minimum": 0 },
+        "max_words": { "type": "integer", "minimum": 1, "maximum": 4 }
+      }
+    }
+  },
+  "examples": [
+    { "id": "enye-contrasena", "area": "enye", "input": "Su contrase",
+      "expect": { "contains": ["contraseña"], "replace_chars": 7 } },
+    { "id": "casing-after-period", "area": "casing", "input": "Su pedido fue enviado. ",
+      "expect": { "all_capitalized": true } },
+    { "id": "na-email", "area": "not_applicable", "input": "Escríbanos a soporte@emp",
+      "expect": { "empty": true, "status": "NotApplicable" } },
+    { "id": "locale-usted", "area": "boundary", "input": "¿En qué puedo ",
+      "expect": { "contains": ["ayudarle"], "not_contains": ["ayudarte"] } }
+  ]
+}

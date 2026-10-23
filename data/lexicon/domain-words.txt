@@ -1,0 +1,39 @@
+# Legitimate customer-service terms that are not in the es_CO dictionary (T045, SC-005).
+# Every word in the asset must be in the dictionary or in this list.
+# Review rule: correctly spelled Spanish (or established loanwords used in Colombian customer
+# service) only. Never names, numbers, or misspellings. One lowercase word per line, UTF-8.
+
+# usted imperatives with enclitic pronouns (valid Spanish; Hunspell es_CO lacks them)
+permítame
+permítanos
+regáleme
+indíqueme
+confírmeme
+colabóreme
+compártame
+adjúntenos
+infórmenos
+infórmeme
+imprímala
+ingrésela
+descárguela
+actualícela
+verifíquelo
+# domain vocabulary
+contraentrega
+normatividad
+reconexión
+preventa
+tomacorriente
+reversado
+reversada
+reprogramar
+reprogramó
+reprogramamos
+reprogramado
+reprogramada
+debitado
+# loanwords in common customer-service use
+express
+premium
+cookies

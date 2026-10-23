@@ -1,0 +1,204 @@
+{
+  "generated_at": "2026-10-23T17:41:07Z",
+  "engine_version": "0.1.0",
+  "asset_version": "1.1.0",
+  "corpus_manifest_sha256": "af8a700c3b8e29f3733300df0bd46dd2709e81949ea2c32e45ab34e659ea22b2",
+  "machine": {
+    "model": "Apple MacBook Pro (M2 Pro)",
+    "cpu": "Apple M2 Pro",
+    "cores": 10,
+    "base_clock_ghz": 3.5,
+    "ram_gb": 16.0,
+    "os_build": "macOS 26.2 (25C56)",
+    "power_plan": "Default, on mains power",
+    "is_reference": false
+  },
+  "criteria": [
+    {
+      "id": "SC-001",
+      "description": "Partial-word points: intended word among the suggestions",
+      "value": 0.6224844274077623,
+      "threshold": 0.7,
+      "comparison": ">=",
+      "provisional": true,
+      "passed": false,
+      "detail": {
+        "points": 16696.0
+      }
+    },
+    {
+      "id": "SC-002",
+      "description": "Boundary points: actual next word among the suggestions",
+      "value": 0.187403400309119,
+      "threshold": 0.35,
+      "comparison": ">=",
+      "provisional": true,
+      "passed": false,
+      "detail": {
+        "points": 5176.0
+      }
+    },
+    {
+      "id": "SC-003",
+      "description": "Simulated keystroke savings",
+      "value": 0.39708933799494045,
+      "threshold": 0.2,
+      "comparison": ">=",
+      "provisional": true,
+      "passed": true,
+      "detail": {
+        "acceptances": 3842.0,
+        "characters": 35181.0,
+        "keystrokes_typed": 17369.0
+      }
+    },
+    {
+      "id": "SC-004",
+      "description": "First rank when a correct suggestion is present",
+      "value": 0.8583120654756666,
+      "threshold": 0.6,
+      "comparison": ">=",
+      "provisional": true,
+      "passed": true,
+      "detail": {
+        "points_with_correct": 11363.0
+      }
+    },
+    {
+      "id": "SC-005",
+      "description": "Suggestions with a misspelling or personal data, plus asset scan matches",
+      "value": 0.0,
+      "threshold": 0.0,
+      "comparison": "==",
+      "provisional": false,
+      "passed": true,
+      "detail": {
+        "asset_scan_matches": 0.0,
+        "suggestion_violations": 0.0,
+        "suggestions_checked": 75994.0
+      }
+    },
+    {
+      "id": "SC-006",
+      "description": "Correctness test set cases passing",
+      "value": 1.0,
+      "threshold": 1.0,
+      "comparison": "==",
+      "provisional": false,
+      "passed": true,
+      "detail": {
+        "cases": 62.0,
+        "failing": []
+      }
+    },
+    {
+      "id": "SC-007",
+      "description": "Applied suggestions that leave the text before the partial word unchanged",
+      "value": 1.0,
+      "threshold": 1.0,
+      "comparison": "==",
+      "provisional": false,
+      "passed": true,
+      "detail": {
+        "applied": 75994.0,
+        "violations": 0.0
+      }
+    },
+    {
+      "id": "SC-008",
+      "description": "Two runs give identical results (1 = identical)",
+      "value": 1.0,
+      "threshold": 1.0,
+      "comparison": "==",
+      "provisional": false,
+      "passed": true,
+      "detail": {
+        "differences": 0.0,
+        "full_replay": true,
+        "requests_compared": 35744.0
+      }
+    },
+    {
+      "id": "SC-009",
+      "description": "p95 latency per request (p99 must also be <= 200 ms)",
+      "value": 4.5679170000000004,
+      "unit": "ms",
+      "threshold": 100.0,
+      "comparison": "<=",
+      "provisional": false,
+      "passed": true,
+      "detail": {
+        "p99_ms": 4.819458,
+        "p99_threshold_ms": 200.0,
+        "requests": 35744.0
+      }
+    },
+    {
+      "id": "SC-010",
+      "description": "Peak working set of the evaluation process during the replay",
+      "value": 27.671875,
+      "unit": "MB",
+      "threshold": 100.0,
+      "comparison": "<=",
+      "provisional": false,
+      "passed": true,
+      "detail": {
+        "samples": 38.0
+      }
+    },
+    {
+      "id": "SC-011",
+      "description": "Time from process start to the first prediction",
+      "value": 0.017947417,
+      "unit": "s",
+      "threshold": 3.0,
+      "comparison": "<=",
+      "provisional": false,
+      "passed": true
+    },
+    {
+      "id": "SC-013",
+      "description": "Results after a field change equal a fresh engine's",
+      "value": 1.0,
+      "threshold": 1.0,
+      "comparison": "==",
+      "provisional": false,
+      "passed": true,
+      "detail": {
+        "requests_compared": 1000.0
+      }
+    },
+    {
+      "id": "SC-014",
+      "description": "First-rank precision among non-empty results",
+      "value": 0.5314500110350916,
+      "threshold": 0.5,
+      "comparison": ">=",
+      "provisional": true,
+      "passed": true,
+      "detail": {
+        "nonempty_points": 18124.0
+      }
+    },
+    {
+      "id": "SC-015",
+      "description": "Continuations shown that match the following text in full",
+      "value": 0.25121555915721233,
+      "threshold": 0.4,
+      "comparison": ">=",
+      "provisional": true,
+      "passed": false,
+      "detail": {
+        "continuations_shown": 617.0
+      }
+    }
+  ],
+  "latency_ms": {
+    "p50": 0.048625,
+    "p95": 4.5679170000000004,
+    "p99": 4.819458,
+    "max": 21.278125,
+    "requests": 35744
+  },
+  "passed_hard_gates": true
+}

@@ -1,0 +1,100 @@
+# Tú-form, voseo, vosotros and other-variant words (FR-022, docs/locale-profile.md).
+# Words here get the register_other flag: never proposed as next words or continuations, and
+# completed only once no usted/Colombian word still matches the typed prefix.
+# One lowercase word per line, UTF-8.
+
+# tú pronouns and possessives
+tú
+te
+ti
+contigo
+tu
+tus
+tuyo
+tuya
+tuyos
+tuyas
+# frequent tú verb forms
+eres
+estás
+tienes
+puedes
+quieres
+sabes
+necesitas
+vienes
+vas
+haces
+dices
+crees
+debes
+deberías
+podrías
+quisieras
+tendrías
+estarías
+puedas
+quieras
+tengas
+estés
+hayas
+seas
+hagas
+sepas
+digas
+mira
+oye
+dime
+dame
+hazme
+avísame
+escríbeme
+llámame
+cuéntame
+espérame
+perdona
+# tú enclitic infinitives and gerunds
+ayudarte
+atenderte
+contactarte
+llamarte
+escribirte
+enviarte
+informarte
+confirmarte
+responderte
+darte
+decirte
+verte
+ayudándote
+# vos / voseo
+vos
+podés
+tenés
+querés
+sabés
+sos
+# vosotros
+vosotros
+vosotras
+os
+vuestro
+vuestra
+vuestros
+vuestras
+tenéis
+podéis
+queréis
+sois
+estáis
+habéis
+# other-variant vocabulary
+móvil
+móviles
+ordenador
+ordenadores
+coche
+coches
+aparcamiento
+zumo
+coger

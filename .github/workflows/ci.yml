@@ -1,0 +1,86 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  fmt:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@1.99
+        with:
+          components: rustfmt
+      - run: cargo fmt --all --check
+
+  clippy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@1.99
+        with:
+          components: clippy
+      # predi-core/clippy.toml + lib.rs deny attributes enforce the no-I/O, no-logging rule.
+      - run: cargo clippy --workspace -- -D warnings
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@1.99
+      - run: cargo test --workspace
+
+  wasm-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@1.99
+        with:
+          targets: wasm32-unknown-unknown
+      - run: cargo build -p predi-core --target wasm32-unknown-unknown
+
+  wasm-test:
+    # Runs the correctness set on the WASM build and checks that its result digest equals the
+    # committed native digest (SC-008, FR-007). The cases and fixture are embedded, so no filesystem.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@1.99
+        with:
+          targets: wasm32-unknown-unknown
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: cargo install wasm-bindgen-cli --version 0.2.129 --locked
+      - run: cargo test -p predi-core --target wasm32-unknown-unknown --test correctness
+
+  deny:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: EmbarkStudios/cargo-deny-action@v2
+        with:
+          command: check
+
+  windows:
+    # Builds and tests on the target OS (FR-032, constitution §V). Performance is measured
+    # separately on the reference computer (T065).
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@1.99
+      - run: cargo build --workspace
+      - run: cargo test --workspace
+
+  privacy:
+    # strace-based runtime privacy check (T049, SC-012): no network syscalls, no writes outside reports/.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@1.99
+      - run: sudo apt-get update && sudo apt-get install -y strace
+      - run: scripts/check-privacy.sh

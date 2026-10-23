@@ -1,0 +1,23 @@
+# Rust build output
+target/
+
+# Extracted / downloaded source data (regenerate with scripts/fetch-sources.sh)
+data/sources/raw/
+
+# Built language assets (up to 40 MB; rebuild with predi-build build)
+assets/*
+!assets/README.md
+
+# Evaluation outputs: keep only the committed baseline
+reports/*
+!reports/README.md
+!reports/baseline-eval.json
+!reports/dev-eval.json
+
+# Editors and OS
+.DS_Store
+Thumbs.db
+*.tmp
+*.swp
+.vscode/
+.idea/

@@ -1,0 +1,15 @@
+# Reference computer for the performance criteria SC-009–SC-011 (spec Assumptions, agreed
+# 2026-10-16). Keys match the `machine` object of contracts/eval-report.schema.json.
+#
+# Before the baseline run (T065), replace the prefilled description with the exact machine used,
+# and keep is_reference = true only for the agreed reference laptop. Evaluations on any other
+# machine must pass their own description with is_reference = false.
+
+model = "Reference laptop (to be recorded at T065)"
+cpu = "4-core x86-64, <= 2.5 GHz base (e.g. Intel Core i5 8th-10th gen U-series)"
+cores = 4
+base_clock_ghz = 2.5
+ram_gb = 8
+os_build = "Windows 10/11 (to be recorded at T065)"
+power_plan = "Default (Balanced), on mains power"
+is_reference = true

@@ -1,0 +1,41 @@
+# Dependency and license audit (cargo deny check). Constitution §III/§IV, research R11.
+
+[graph]
+all-features = true
+
+[advisories]
+version = 2
+yanked = "deny"
+
+[licenses]
+version = 2
+allow = [
+    "MIT",
+    "Apache-2.0",
+    "Apache-2.0 WITH LLVM-exception",
+    "BSD-2-Clause",
+    "BSD-3-Clause",
+    "Unicode-3.0",
+    "Zlib",
+    "MPL-2.0",
+]
+confidence-threshold = 0.9
+
+[licenses.private]
+ignore = true
+
+[bans]
+multiple-versions = "warn"
+wildcards = "deny"
+allow-wildcard-paths = true
+deny = [
+    { crate = "reqwest", reason = "no networking anywhere in the workspace (FR-027)" },
+    { crate = "hyper", reason = "no networking anywhere in the workspace (FR-027)" },
+    { crate = "ureq", reason = "no networking anywhere in the workspace (FR-027)" },
+    # wasm-bindgen-futures (dev-only, via the WASM test runner) depends on tokio; nothing shipped may.
+    { crate = "tokio", reason = "no networking anywhere in the workspace (FR-027)", wrappers = ["wasm-bindgen-futures"] },
+]
+
+[sources]
+unknown-registry = "deny"
+unknown-git = "deny"

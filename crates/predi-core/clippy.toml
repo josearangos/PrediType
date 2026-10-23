@@ -1,0 +1,47 @@
+# No-I/O, no-logging rule for the engine core (FR-023, FR-027, research R11).
+# This file lives in the predi-core crate directory so it applies only to predi-core;
+# predi-tools legitimately reads files and prints. lib.rs denies these lints.
+
+disallowed-methods = [
+    { path = "std::fs::read", reason = "predi-core must not touch the filesystem" },
+    { path = "std::fs::read_to_string", reason = "predi-core must not touch the filesystem" },
+    { path = "std::fs::read_dir", reason = "predi-core must not touch the filesystem" },
+    { path = "std::fs::write", reason = "predi-core must not touch the filesystem" },
+    { path = "std::fs::copy", reason = "predi-core must not touch the filesystem" },
+    { path = "std::fs::rename", reason = "predi-core must not touch the filesystem" },
+    { path = "std::fs::create_dir", reason = "predi-core must not touch the filesystem" },
+    { path = "std::fs::create_dir_all", reason = "predi-core must not touch the filesystem" },
+    { path = "std::fs::remove_file", reason = "predi-core must not touch the filesystem" },
+    { path = "std::fs::remove_dir", reason = "predi-core must not touch the filesystem" },
+    { path = "std::fs::remove_dir_all", reason = "predi-core must not touch the filesystem" },
+    { path = "std::fs::metadata", reason = "predi-core must not touch the filesystem" },
+    { path = "std::fs::File::open", reason = "predi-core must not touch the filesystem" },
+    { path = "std::fs::File::create", reason = "predi-core must not touch the filesystem" },
+    { path = "std::fs::OpenOptions::open", reason = "predi-core must not touch the filesystem" },
+    { path = "std::net::TcpStream::connect", reason = "predi-core must not use the network" },
+    { path = "std::net::TcpListener::bind", reason = "predi-core must not use the network" },
+    { path = "std::net::UdpSocket::bind", reason = "predi-core must not use the network" },
+    { path = "std::process::Command::new", reason = "predi-core must not spawn processes" },
+    { path = "std::process::exit", reason = "predi-core must not end the host process" },
+    { path = "std::process::abort", reason = "predi-core must not end the host process" },
+    { path = "std::env::var", reason = "predi-core must not depend on the environment" },
+]
+
+disallowed-types = [
+    { path = "std::fs::File", reason = "predi-core must not touch the filesystem" },
+    { path = "std::fs::OpenOptions", reason = "predi-core must not touch the filesystem" },
+    { path = "std::fs::DirEntry", reason = "predi-core must not touch the filesystem" },
+    { path = "std::net::TcpStream", reason = "predi-core must not use the network" },
+    { path = "std::net::TcpListener", reason = "predi-core must not use the network" },
+    { path = "std::net::UdpSocket", reason = "predi-core must not use the network" },
+    { path = "std::process::Command", reason = "predi-core must not spawn processes" },
+    { path = "std::process::Child", reason = "predi-core must not spawn processes" },
+]
+
+disallowed-macros = [
+    { path = "std::println", reason = "predi-core must not log or print (FR-023)" },
+    { path = "std::eprintln", reason = "predi-core must not log or print (FR-023)" },
+    { path = "std::print", reason = "predi-core must not log or print (FR-023)" },
+    { path = "std::eprint", reason = "predi-core must not log or print (FR-023)" },
+    { path = "std::dbg", reason = "predi-core must not log or print (FR-023)" },
+]
